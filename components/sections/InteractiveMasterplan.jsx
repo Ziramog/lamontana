@@ -4,35 +4,45 @@ import { APIProvider, Map, useMap } from '@vis.gl/react-google-maps';
 import SectionBox from '@/components/sections/SectionBox';
 import ScrollReveal from '@/components/shared/ScrollReveal';
 
-// Reusable Polygon component for @vis.gl/react-google-maps
-const Polygon = ({ paths, options, onClick, onMouseOver, onMouseOut }) => {
+// Reusable Geometry component for @vis.gl/react-google-maps (supports Polygon and Polyline)
+const Geometry = ({ type = 'Polygon', paths, options, onClick, onMouseOver, onMouseOut }) => {
   const map = useMap();
-  const [polygon, setPolygon] = useState(null);
+  const [shape, setShape] = useState(null);
 
   useEffect(() => {
     if (!map || !window.google) return;
-    const poly = new window.google.maps.Polygon({
-      paths,
-      ...options,
-      map
-    });
+    
+    let geom;
+    if (type === 'LineString') {
+      geom = new window.google.maps.Polyline({
+        path: paths,
+        ...options,
+        map
+      });
+    } else {
+      geom = new window.google.maps.Polygon({
+        paths,
+        ...options,
+        map
+      });
+    }
 
-    if (onClick) poly.addListener('click', (e) => onClick(e, poly));
-    if (onMouseOver) poly.addListener('mouseover', (e) => onMouseOver(e, poly));
-    if (onMouseOut) poly.addListener('mouseout', (e) => onMouseOut(e, poly));
+    if (onClick) geom.addListener('click', (e) => onClick(e, geom));
+    if (onMouseOver) geom.addListener('mouseover', (e) => onMouseOver(e, geom));
+    if (onMouseOut) geom.addListener('mouseout', (e) => onMouseOut(e, geom));
 
-    setPolygon(poly);
+    setShape(geom);
 
     return () => {
-      poly.setMap(null);
+      geom.setMap(null);
     };
-  }, [map, paths]);
+  }, [map, paths, type]);
 
   useEffect(() => {
-    if (polygon) {
-      polygon.setOptions(options);
+    if (shape) {
+      shape.setOptions(options);
     }
-  }, [polygon, options]);
+  }, [shape, options]);
 
   return null;
 };
@@ -165,13 +175,14 @@ const InteractiveMasterplan = ({ polygonsData }) => {
                 gestureHandling="greedy"
               >
                 {mapPolygons.map((p) => (
-                  <Polygon
+                  <Geometry
                     key={p.name}
+                    type={p.type}
                     paths={p.coords}
                     options={p.options}
                     onMouseOver={() => setHoveredPoly(p.index)}
                     onMouseOut={() => setHoveredPoly(null)}
-                    onClick={(e, poly) => handlePolyClick(e, poly, p)}
+                    onClick={(e, geom) => handlePolyClick(e, geom, p)}
                   />
                 ))}
               </Map>

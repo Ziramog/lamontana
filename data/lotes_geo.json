@@ -1,6 +1,7 @@
 [
   {
     "name": "Lote 1",
+    "type": "Polygon",
     "coords": [
       {
         "lat": -32.17978510438,
@@ -90,6 +91,7 @@
   },
   {
     "name": "Lote1frente",
+    "type": "Polygon",
     "coords": [
       {
         "lat": -32.18268535994465,
@@ -119,6 +121,7 @@
   },
   {
     "name": "Lote2frente",
+    "type": "Polygon",
     "coords": [
       {
         "lat": -32.18274347554288,
@@ -144,6 +147,7 @@
   },
   {
     "name": "Lote3frente",
+    "type": "Polygon",
     "coords": [
       {
         "lat": -32.18427171701364,
@@ -169,6 +173,7 @@
   },
   {
     "name": "Ruta sin título",
+    "type": "LineString",
     "coords": [
       {
         "lat": -32.18594735067887,
@@ -234,6 +239,7 @@
   },
   {
     "name": "Lote 2 - Polígono",
+    "type": "Polygon",
     "coords": [
       {
         "lat": -32.182865337062,
@@ -303,6 +309,7 @@
   },
   {
     "name": "Lote 3",
+    "type": "Polygon",
     "coords": [
       {
         "lat": -32.183879592,
@@ -352,6 +359,7 @@
   },
   {
     "name": "Lote 4",
+    "type": "Polygon",
     "coords": [
       {
         "lat": -32.184372313651,
@@ -425,6 +433,7 @@
   },
   {
     "name": "Lote 5",
+    "type": "Polygon",
     "coords": [
       {
         "lat": -32.184002896636,
@@ -478,6 +487,7 @@
   },
   {
     "name": "Lote 7 - Pasaje Privado",
+    "type": "Polygon",
     "coords": [
       {
         "lat": -32.179394252,
@@ -695,6 +705,7 @@
   },
   {
     "name": "Lote 6",
+    "type": "Polygon",
     "coords": [
       {
         "lat": -32.183729112,
@@ -796,6 +807,7 @@
   },
   {
     "name": "campo arriba",
+    "type": "LineString",
     "coords": [
       {
         "lat": -32.16714160349546,
@@ -817,6 +829,7 @@
   },
   {
     "name": "Ruta sin título",
+    "type": "LineString",
     "coords": [
       {
         "lat": -32.1671243650453,
@@ -830,6 +843,7 @@
   },
   {
     "name": "ElDurazno - La Montaña",
+    "type": "LineString",
     "coords": [
       {
         "lat": -32.17222804260091,
@@ -1083,6 +1097,7 @@
   },
   {
     "name": "Campo Arriba",
+    "type": "LineString",
     "coords": [
       {
         "lat": -32.17921713645254,
