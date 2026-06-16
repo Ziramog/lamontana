@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo, useRef } from 'react';
 import { APIProvider, Map, useMap } from '@vis.gl/react-google-maps';
 import SectionBox from '@/components/sections/SectionBox';
 import ScrollReveal from '@/components/shared/ScrollReveal';
@@ -43,6 +43,9 @@ const Geometry = ({ type = 'Polygon', paths, options, onClick, onMouseOver, onMo
       shape.setOptions(options);
     }
   }, [shape, options]);
+
+  return null;
+};
 
 // Center roughly around the polygons (based on Córdoba)
 const defaultCenter = { lat: -32.1818, lng: -64.8093 };
