@@ -4,14 +4,15 @@ import User from '@/models/User';
 import GoogleProvider from 'next-auth/providers/google';
 
 export const authOptions = {
+  secret: process.env.NEXTAUTH_SECRET || 'fallback-secret-for-static-deployment-do-not-use-in-real-prod',
   session: {
     strategy: 'jwt',
     maxAge: 30 * 24 * 60 * 60, // 30 days
   },
   providers: [
     GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      clientId: process.env.GOOGLE_CLIENT_ID || 'dummy-client-id',
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET || 'dummy-client-secret',
       authorization: {
         params: {
           prompt: 'consent',
