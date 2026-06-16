@@ -7,32 +7,34 @@ import { usePathname } from 'next/navigation';
 export default function GoogleAnalytics({ analyticsId, facebookPixelId }) {
   const pathname = usePathname();
 
+  const [isAllowed, setIsAllowed] = useState(false);
+
   useEffect(() => {
     if (typeof window === 'undefined') return;
     
     const hostname = window.location.hostname;
+    // Permitimos dominios de vercel para que no explote en las vistas previas, y dominios reales
     const allowedHosts = ['localhost', 'roggeroyroma.com', 'www.roggeroyroma.com', 'roggeroyroma.com.ar', 'www.roggeroyroma.com.ar'];
     
-    if (!allowedHosts.includes(hostname)) return;
+    // Si queremos habilitarlo también en vercel:
+    if (hostname.includes('vercel.app') || allowedHosts.includes(hostname)) {
+      setIsAllowed(true);
+      
+      // Track Google Analytics page views
+      if (analyticsId && window.gtag) {
+        window.gtag('config', analyticsId, {
+          page_path: pathname,
+        });
+      }
 
-    // Track Google Analytics page views
-    if (analyticsId && window.gtag) {
-      window.gtag('config', analyticsId, {
-        page_path: pathname,
-      });
-    }
-
-    // Track Facebook Pixel page views
-    if (facebookPixelId && window.fbq) {
-      window.fbq('track', 'PageView');
+      // Track Facebook Pixel page views
+      if (facebookPixelId && window.fbq) {
+        window.fbq('track', 'PageView');
+      }
     }
   }, [pathname, analyticsId, facebookPixelId]);
 
-  if (typeof window !== 'undefined') {
-    const hostname = window.location.hostname;
-    const allowedHosts = ['localhost', 'roggeroyroma.com', 'www.roggeroyroma.com', 'roggeroyroma.com.ar', 'www.roggeroyroma.com.ar'];
-    if (!allowedHosts.includes(hostname)) return null;
-  }
+  if (!isAllowed) return null;
 
   return (
     <>
