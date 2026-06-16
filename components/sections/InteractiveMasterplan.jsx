@@ -101,7 +101,18 @@ const InteractiveMasterplan = ({ polygonsData }) => {
   };
 
   if (!API_KEY) {
-    return null; // Don't render if no API key
+    return (
+      <section className="pt-[12px] pb-[12px]" id="masterplan">
+        <SectionBox className="px-4 md:px-[50px] py-16 md:py-24">
+          <div className="w-full relative rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center bg-gray-100" style={{ height: '70vh', minHeight: '500px' }}>
+            <div className="text-center p-8">
+              <h3 className="text-xl font-bold text-red-600 mb-2">Error de Configuración</h3>
+              <p className="text-gray-700">Falta la variable de entorno <code className="bg-gray-200 px-2 py-1 rounded">NEXT_PUBLIC_GOOGLE_MAPS_API_KEY</code> en Vercel.</p>
+            </div>
+          </div>
+        </SectionBox>
+      </section>
+    );
   }
 
   return (
