@@ -44,34 +44,37 @@ const Geometry = ({ type = 'Polygon', paths, options, onClick, onMouseOver, onMo
     }
   }, [shape, options]);
 
-  return null;
-};
+// Center roughly around the polygons (based on Córdoba)
+const defaultCenter = { lat: -32.1818, lng: -64.8093 };
 
 // Animator to perform a Google Earth like fly-in on mount
 const MapAnimator = ({ targetCenter, targetZoom }) => {
   const map = useMap();
+  const hasAnimated = useRef(false);
   
   useEffect(() => {
-    if (!map) return;
+    if (!map || hasAnimated.current) return;
     
-    // We start zoomed out
-    map.setZoom(targetZoom - 6);
+    hasAnimated.current = true;
+    
+    // We start zoomed out further (zoom 6: state/province level)
+    map.setZoom(6);
     
     // Animate to target
     setTimeout(() => {
       map.panTo(targetCenter);
       
-      let currentZoom = targetZoom - 6;
+      let currentZoom = 6;
       const zoomInterval = setInterval(() => {
         if (currentZoom >= targetZoom) {
           clearInterval(zoomInterval);
           map.setZoom(targetZoom);
         } else {
-          currentZoom += 0.2;
+          currentZoom += 0.25;
           map.setZoom(currentZoom);
         }
-      }, 50);
-    }, 1000);
+      }, 40);
+    }, 800);
   }, [map, targetCenter, targetZoom]);
   
   return null;
@@ -83,9 +86,6 @@ const InteractiveMasterplan = ({ polygonsData }) => {
   const [infoWindowPos, setInfoWindowPos] = useState(null);
 
   const API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
-
-  // Center roughly around the polygons (based on Córdoba)
-  const defaultCenter = { lat: -32.1818, lng: -64.8093 };
 
   // Generate map-ready polygons
   const mapPolygons = useMemo(() => {
