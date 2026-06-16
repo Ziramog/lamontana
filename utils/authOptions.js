@@ -69,7 +69,12 @@ export const authOptions = {
       return true;
     },
     async session({ session }) {
+      if (!session || !session.user || !session.user.email) return session;
+
       try {
+        if (!process.env.MONGODB_URI) return session;
+        await connectDB();
+        
         const user = await User.findOne({ email: session.user.email });
         if (!user) {
           console.error('[auth:session] CRITICAL: User not found for email:', session.user.email);
