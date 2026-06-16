@@ -4,19 +4,25 @@ import BusinessInfo from '@/models/BusinessInfo';
 import ReviewsCarousel from '@/components/ReviewsCarousel';
 
 export default async function ReviewsSection() {
+  if (!process.env.MONGODB_URI) {
+    console.warn('MONGODB_URI not set, skipping Reviews');
+    return null;
+  }
+
   await connectDB();
 
-  const [reviews, businessInfo] = await Promise.all([
-    Review.find({ 
-      featured: true, 
-      hidden: false,
-      authorPhoto: { $ne: null, $ne: "" }
-    })
-      .sort({ priority: -1, publishTime: -1 })
-      .limit(8)
-      .lean(),
-    BusinessInfo.findOne({}).lean(),
-  ]);
+  try {
+    const [reviews, businessInfo] = await Promise.all([
+      Review.find({ 
+        featured: true, 
+        hidden: false,
+        authorPhoto: { $ne: null, $ne: "" }
+      })
+        .sort({ priority: -1, publishTime: -1 })
+        .limit(8)
+        .lean(),
+      BusinessInfo.findOne({}).lean(),
+    ]);
 
   if (reviews.length === 0) return null;
 
@@ -43,4 +49,8 @@ export default async function ReviewsSection() {
       totalRatings={totalRatings}
     />
   );
+  } catch (error) {
+    console.error('Error in ReviewsSection:', error);
+    return null;
+  }
 }
