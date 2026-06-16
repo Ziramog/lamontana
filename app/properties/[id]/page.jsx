@@ -1,8 +1,6 @@
 export const dynamic = 'force-dynamic';
 
 import PropertyDetails from '@/components/PropertyDetails';
-import connectDB from '@/config/database';
-import Property from '@/models/Property';
 import PropertyGallery from '@/components/PropertyGallery';
 import PropertyMap from '@/components/PropertyMap';
 import MapErrorBoundary from '@/components/shared/MapErrorBoundary';
@@ -10,29 +8,28 @@ import FullGallery from '@/components/FullGallery';
 import ScrollReveal from '@/components/shared/ScrollReveal';
 import SectionTitle from '@/components/shared/SectionTitle';
 import JsonLd from '@/components/JsonLd';
-import { convertToSerializeableObject } from '@/utils/convertToObject';
 import Link from 'next/link';
+import { getLotById } from '@/utils/getLots';
 
 export async function generateMetadata({ params }) {
-  await connectDB();
-  const propertyDoc = await Property.findById(params.id).lean();
+  const propertyDoc = await getLotById(params.id);
 
   if (!propertyDoc) {
     return {
-      title: 'Propiedad no encontrada',
+      title: 'Lote no encontrado',
     };
   }
 
-  const property = convertToSerializeableObject(propertyDoc);
-  const title = `${property.name || 'Propiedad'} · ${property.location?.city || 'Alta Gracia'}`;
-  const description = `${property.type || 'Propiedad'} en ${property.operation || 'venta'} · U$D ${property.price || 'Consultar'} · ${property.description?.slice(0, 150) || 'Roggero & Roma Inmobiliaria'}`;
-  const image = property.images?.[0]?.url || '/images/og-default.jpg';
+  const property = propertyDoc;
+  const title = `${property.name || 'Lote'} · ${property.location?.city || 'La Montaña'}`;
+  const description = `${property.type || 'Lote'} en ${property.operation || 'venta'} · U$D ${property.price || 'Consultar'} · ${property.description?.slice(0, 150) || 'Loteo La Montaña'}`;
+  const image = property.images?.[0] || '/images/og-default.jpg';
 
   return {
     title,
     description,
     openGraph: {
-      title: `${property.name || 'Propiedad'} · Roggero & Roma`,
+      title: `${property.name || 'Lote'} · La Montaña`,
       description,
       images: [image],
       type: 'article',
@@ -40,7 +37,7 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${property.name || 'Propiedad'} · Roggero & Roma`,
+      title: `${property.name || 'Lote'} · La Montaña`,
       description,
       images: [image],
     },
@@ -52,26 +49,25 @@ export async function generateMetadata({ params }) {
 
 const PropertyPage = async ({ params }) => {
   try {
-    await connectDB();
-    const propertyDoc = await Property.findById(params.id).lean();
+    const propertyDoc = await getLotById(params.id);
 
     if (!propertyDoc) {
       return (
         <h1 className='text-center text-2xl font-bold mt-10'>
-          Propiedad No Encontrada
+          Lote No Encontrado
         </h1>
       );
     }
 
-    const property = convertToSerializeableObject(propertyDoc);
+    const property = propertyDoc;
 
     const parsePrice = (priceStr) => {
       if (!priceStr) return null;
-      const cleaned = priceStr.replace(/[^0-9]/g, '');
+      const cleaned = String(priceStr).replace(/[^0-9]/g, '');
       return cleaned ? parseInt(cleaned, 10) : null;
     };
 
-    const propertyImage = property.images?.[0]?.url || 'https://properties-srs5.vercel.app/images/og-default.jpg';
+    const propertyImage = property.images?.[0] || 'https://properties-srs5.vercel.app/images/og-default.jpg';
     const propertyPrice = parsePrice(property.price);
 
     const realEstateJsonLd = {

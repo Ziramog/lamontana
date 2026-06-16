@@ -1,0 +1,71 @@
+[
+  {
+    "_id": "1",
+    "name": "Lote 1 - Sector Cumbre",
+    "type": "Lote",
+    "description": "Excelente lote con vista panorámica a la montaña. Ideal para construir la casa de tus sueños en un entorno natural y tranquilo.",
+    "location": {
+      "street": "Calle Los Pinos 100",
+      "city": "La Montaña",
+      "state": "Provincia",
+      "zipcode": "1234"
+    },
+    "area_sqm": 1200,
+    "price": 45000,
+    "topography": "Plano",
+    "services": ["Agua corriente", "Electricidad subterránea", "Fibra óptica"],
+    "amenities": ["Seguridad 24hs", "Club House", "Caminos Enripiados"],
+    "images": ["/assets/card-map.png"],
+    "status": "Disponible",
+    "is_featured": true,
+    "orientation": "Norte",
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "2",
+    "name": "Lote 2 - Sector Bosque",
+    "type": "Lote",
+    "description": "Lote rodeado de árboles autóctonos, excelente privacidad y acceso rápido al ingreso principal.",
+    "location": {
+      "street": "Camino del Bosque 50",
+      "city": "La Montaña",
+      "state": "Provincia",
+      "zipcode": "1234"
+    },
+    "area_sqm": 1500,
+    "price": 50000,
+    "topography": "Pendiente leve",
+    "services": ["Agua corriente", "Electricidad subterránea", "Fibra óptica"],
+    "amenities": ["Seguridad 24hs", "Caminos Enripiados"],
+    "images": ["/assets/card-map.png"],
+    "status": "Disponible",
+    "is_featured": true,
+    "orientation": "Noreste",
+    "createdAt": "2024-01-02T00:00:00.000Z",
+    "updatedAt": "2024-01-02T00:00:00.000Z"
+  },
+  {
+    "_id": "3",
+    "name": "Lote 3 - Sector Valle",
+    "type": "Lote",
+    "description": "Lote amplio en zona baja con excelente suelo para parquizado. Muy cerca del Club House.",
+    "location": {
+      "street": "Avenida del Valle 200",
+      "city": "La Montaña",
+      "state": "Provincia",
+      "zipcode": "1234"
+    },
+    "area_sqm": 1000,
+    "price": 40000,
+    "topography": "Plano",
+    "services": ["Agua corriente", "Electricidad subterránea"],
+    "amenities": ["Seguridad 24hs", "Caminos Enripiados", "Cercanía a Club House"],
+    "images": ["/assets/card-map.png"],
+    "status": "Reservado",
+    "is_featured": false,
+    "orientation": "Este",
+    "createdAt": "2024-01-03T00:00:00.000Z",
+    "updatedAt": "2024-01-03T00:00:00.000Z"
+  }
+]

@@ -57,8 +57,8 @@ const Footer = ({
             <div className="flex flex-col gap-1">
               <Link href="/" className="inline-block mb-10">
                 <Image
-                  src="/images/LOGO R&R 2023.png"
-                  alt="Roggero & Roma"
+                  src="/logolamontaña.png"
+                  alt="La Montaña"
                   width={200}
                   height={100}
                   style={{ height: '100px', width: 'auto' }}
@@ -200,7 +200,7 @@ const Footer = ({
           {/* Bottom — Border top + Copyright + Social + Wolfim */}
           <div className="flex items-center justify-between mt-[35px] pt-[35px] md:mt-[50px] md:pt-[50px] border-t-2 border-white/[0.1]">
             <p className="text-white text-[14px] uppercase font-bold">
-              &copy; {currentYear} Silvia Roggero de Roma <sup>TM</sup>
+              &copy; {currentYear} La Montaña <sup>TM</sup>
             </p>
             <ul className="flex items-center gap-[25px]">
               <li>
@@ -248,8 +248,8 @@ const Footer = ({
           <div className="flex flex-col gap-2 mb-8">
             <Link href="/" className="inline-block">
               <Image
-                src="/images/LOGO R&R 2023.png"
-                alt="Roggero & Roma"
+                src="/logolamontaña.png"
+                alt="La Montaña"
                 width={200}
                 height={100}
                 style={{ height: '55px', width: 'auto' }}
@@ -362,7 +362,7 @@ const Footer = ({
           {/* Copyright + Social + Powered by */}
           <div className="border-t border-white/[0.08] pt-6 flex flex-col items-center gap-4">
             <p className="text-[14px] text-white uppercase font-bold mb-2">
-              &copy; {currentYear} Silvia Roggero de Roma <sup>TM</sup>
+              &copy; {currentYear} La Montaña <sup>TM</sup>
             </p>
             <ul className="flex items-center gap-[25px]">
               <li>

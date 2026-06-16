@@ -1,6 +1,5 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
-import getPropertyCount from '@/app/actions/getPropertyCount';
 
 const StatItem = ({ stat }) => {
   const [count, setCount] = useState(0);
@@ -61,16 +60,10 @@ const StatItem = ({ stat }) => {
 };
 
 const StatsBar = () => {
-  const [propertyCount, setPropertyCount] = useState(500);
-
-  useEffect(() => {
-    getPropertyCount().then(setPropertyCount);
-  }, []);
-
   const STATS = [
-    { value: propertyCount, suffix: '+', label: 'Propiedades' },
-    { value: 20, suffix: '+', label: 'Años de experiencia' },
-    { value: 4.8, suffix: '', label: 'Reseñas', decimals: 1 },
+    { value: 1743, suffix: ' mts', label: 'Altura' },
+    { value: 230, suffix: '', label: 'Hectáreas' },
+    { value: 97, suffix: ' km', label: 'Distancia a Córdoba' },
   ];
 
   return (

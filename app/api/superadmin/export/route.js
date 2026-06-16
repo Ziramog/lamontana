@@ -6,6 +6,8 @@ import BusinessInfo from '@/models/BusinessInfo';
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/utils/authOptions';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET(request) {
   try {
     await connectDB();

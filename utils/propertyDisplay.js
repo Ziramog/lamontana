@@ -15,13 +15,14 @@ export function getAreaDisplay(property) {
     return `${property.covered_area.toLocaleString()} m²`;
   }
 
-  // Fallback to square_feet (which is really total/lot area)
-  if (property.square_feet != null) {
-    if (property.square_feet >= 10000) {
-      const has = property.square_feet / 10000;
-      return has >= 1 ? `${has.toFixed(has % 1 === 0 ? 0 : 1)} has` : `${property.square_feet.toLocaleString()} m²`;
+  // Fallback to square_feet or area_sqm (which is really total/lot area)
+  const lotArea = property.area_sqm || property.square_feet;
+  if (lotArea != null) {
+    if (lotArea >= 10000) {
+      const has = lotArea / 10000;
+      return has >= 1 ? `${has.toFixed(has % 1 === 0 ? 0 : 1)} has` : `${lotArea.toLocaleString()} m²`;
     }
-    return `${property.square_feet.toLocaleString()} m²`;
+    return `${lotArea.toLocaleString()} m²`;
   }
 
   return null;

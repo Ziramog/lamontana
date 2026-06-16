@@ -13,11 +13,11 @@ const LoadingOverlay = () => {
         {/* Brand Name / Loading Text */}
         <div className="flex flex-col items-center gap-3">
           <Image
-            src="/images/LOGO R&R 2023.png"
-            alt="Roggero & Roma"
-            width={200}
-            height={80}
-            style={{ height: '50px', width: 'auto' }}
+            src="/logolamontaña.png"
+            alt="La Montaña"
+            width={120}
+            height={40}
+            className="w-auto h-8 animate-pulse brightness-0 invert opacity-50"
             priority
           />
           <span className="text-black/50 text-[12px] uppercase tracking-[0.25em] font-bold mt-2">

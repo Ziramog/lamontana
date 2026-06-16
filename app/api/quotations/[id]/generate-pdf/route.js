@@ -11,7 +11,7 @@ export const dynamic = 'force-dynamic';
 
 function getDefaultLogoBase64() {
   try {
-    const filePath = path.join(process.cwd(), 'public', 'images', 'LOGO R&R 2023.png');
+    const filePath = path.join(process.cwd(), 'public', 'logolamontaña.png');
     const buffer = fs.readFileSync(filePath);
     return `data:image/png;base64,${buffer.toString('base64')}`;
   } catch (e) {

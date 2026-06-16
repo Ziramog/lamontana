@@ -88,12 +88,12 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
           {/* Logo */}
           <Link className="flex items-center flex-shrink-0 group" href="/">
             <Image
-              className="brightness-0 invert transition-all duration-300 group-hover:opacity-70"
-              src={!showIso ? '/images/LOGO R&R 2023.png' : '/images/ISOTIPO R&R-Photoroom.png'}
-              alt="Roggero & Roma"
-              width={!showIso ? 277 : 120}
-              height={!showIso ? 92 : 40}
-              style={{ height: !showIso ? '92px' : '40px', width: 'auto' }}
+              className="brightness-0 invert transition-all duration-500 group-hover:opacity-70"
+              src='/logolamontaña.png'
+              alt='La Montaña'
+              width={400}
+              height={120}
+              style={{ height: (!isScrolled && !isAdminPage) ? '180px' : '60px', width: 'auto' }}
             />
           </Link>
 
@@ -201,12 +201,12 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
           {/* Logo — isotipo */}
           <Link className="flex items-center flex-shrink-0" href="/">
             <Image
-              className="brightness-0 invert"
-              src="/images/ISOTIPO R&R-Photoroom.png"
-              alt="Roggero & Roma"
-              width={120}
-              height={40}
-              style={{ height: '40px', width: 'auto' }}
+              className="brightness-0 invert transition-all duration-500 origin-left"
+              src="/logolamontaña.png"
+              alt="La Montaña"
+              width={280}
+              height={80}
+              style={{ height: (!isScrolled && !isAdminPage) ? '80px' : '40px', width: 'auto' }}
             />
           </Link>
 

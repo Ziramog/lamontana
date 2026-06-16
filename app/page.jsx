@@ -7,9 +7,8 @@ import ReviewsSection from '@/components/ReviewsSection';
 import Clients from '@/components/Clients';
 import ScrollReveal from '@/components/shared/ScrollReveal';
 import JsonLd from '@/components/JsonLd';
-import connectDB from '@/config/database';
-import Property from '@/models/Property';
 import { getSiteConfig } from '@/utils/getSiteConfig';
+import { getLots } from '@/utils/getLots';
 
 export const dynamic = 'force-dynamic';
 
@@ -19,18 +18,11 @@ export const metadata = {
 };
 
 const HomePage = async () => {
-  await connectDB();
-
-  const properties = await Property.find({ is_published: { $ne: false } }).lean();
+  const properties = await getLots();
   const siteConfig = await getSiteConfig();
 
-  const serializedProperties = properties.map((p) => ({
-    ...p,
-    _id: p._id.toString(),
-    owner: p.owner?.toString(),
-    createdAt: p.createdAt?.toISOString(),
-    updatedAt: p.updatedAt?.toISOString(),
-  }));
+  // Filter out any unpublished if we had that flag, and format
+  const serializedProperties = properties.filter(p => p.status !== 'Oculto');
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -40,7 +32,7 @@ const HomePage = async () => {
         '@id': 'https://properties-srs5.vercel.app/#organization',
         name: 'Roggero & Roma',
         url: 'https://properties-srs5.vercel.app',
-        logo: 'https://properties-srs5.vercel.app/images/ISOTIPO%20R&R-Photoroom.png',
+        logo: 'https://properties-srs5.vercel.app/logolamontaña.png',
         sameAs: [
           'https://www.facebook.com/roggeroyroma',
           'https://www.instagram.com/roggeroyroma',
@@ -57,7 +49,7 @@ const HomePage = async () => {
         '@type': 'RealEstateAgent',
         '@id': 'https://properties-srs5.vercel.app/#realestateagent',
         name: 'Roggero & Roma',
-        image: 'https://properties-srs5.vercel.app/images/ISOTIPO%20R&R-Photoroom.png',
+        image: 'https://properties-srs5.vercel.app/logolamontaña.png',
         url: 'https://properties-srs5.vercel.app',
         telephone: siteConfig.contactPhone || '+54 9 9354 7563911',
         email: siteConfig.contactEmail || 'info@roggeroyroma.com.ar',
@@ -104,7 +96,7 @@ const HomePage = async () => {
     <div>
       <JsonLd data={jsonLd} />
       {/* 1. Hero — emotional hook + search + trust strip */}
-      <Hero title={siteConfig.heroTitle} subtitle={siteConfig.heroSubtitle} />
+      <Hero title="Naturaleza, altura y privacidad." subtitle="a 7 km del Durazno de Yacanto" />
 
       {/* 2. Stats Bar — social proof metrics (flush with hero) */}
       <StatsBar />
@@ -120,9 +112,15 @@ const HomePage = async () => {
       {/* 5. Agents — Roggero & Roma Historia */}
       <div id="nuestra-historia">
         <Agents 
-          title={siteConfig.aboutTitle} 
-          subtitle={siteConfig.aboutSubtitle} 
-          text={siteConfig.aboutText} 
+          title="La Montaña" 
+          subtitle="Loteo de montaña"
+          text="Aprendimos que vender tierra no es solamente ofrecer metros cuadrados. Es acompañar una decisión importante: elegir un lugar donde proyectar, invertir, descansar o construir una nueva etapa de vida.
+
+La Montaña nace con esa mirada.
+
+Ubicado 7 km arriba de El Durazno, en un entorno natural privilegiado, este loteo fue pensado para quienes buscan algo distinto: tranquilidad, paisaje serrano, aire puro y privacidad, sin resignar seguridad en la operación ni información clara sobre lo que están comprando.
+
+Cada lote representa una oportunidad de conectar con la naturaleza y, al mismo tiempo, resguardar valor en una zona con identidad propia y alta proyección. No se trata de un loteo masivo, sino de una propuesta más reservada, para quienes entienden que ciertos lugares no se eligen solo por ubicación, sino por lo que transmiten." 
         />
       </div>
 
@@ -131,8 +129,9 @@ const HomePage = async () => {
         <ReviewsSection />
       </ScrollReveal>
 
-      {/* 7. Clients — Empresas y Proyectos */}
+      {/* 7. Clients — Empresas y Proyectos (Oculto por ahora) 
       <Clients />
+      */}
     </div>
   );
 };

@@ -48,9 +48,9 @@ const Agents = ({
         <div className={`max-w-2xl mx-auto text-justify transition-all duration-500 ${
           visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`} style={{ transitionDelay: '100ms' }}>
-          <p className="text-[16px] md:text-[18px] font-light text-[#475569] leading-[1.8]" style={{ fontFamily: 'var(--font-body)' }}>
+          <div className="text-[16px] md:text-[18px] font-light text-[#475569] leading-[1.8] whitespace-pre-wrap" style={{ fontFamily: 'var(--font-body)' }}>
             {text}
-          </p>
+          </div>
         </div>
       </SectionBox>
     </section>

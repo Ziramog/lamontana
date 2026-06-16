@@ -26,7 +26,7 @@ const FeaturedProperties = ({ properties = [] }) => {
         <div className="text-center mb-10 md:mb-14">
           <ScrollReveal variant="fadeLeft">
             <h2 className="text-[28px] md:text-[40px] font-normal text-[#0F172A] leading-tight mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
-              Propiedades Destacadas
+              Lotes Destacados
             </h2>
           </ScrollReveal>
           <div className="flex items-center justify-center gap-3">
@@ -66,7 +66,7 @@ const FeaturedProperties = ({ properties = [] }) => {
             href="/properties"
             className="inline-block text-[var(--color-brand)] text-[13px] font-bold uppercase tracking-wider transition-all duration-200 hover:underline underline-offset-4 decoration-[var(--color-brand)]"
           >
-            Ver todas las propiedades
+            VER TODOS LOS LOTES
           </a>
         </div>
       </SectionBox>

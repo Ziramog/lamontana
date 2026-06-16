@@ -37,13 +37,12 @@ const PropertyDetails = ({ property }) => {
 
   const featureItems = [
     { label: 'Precio', value: numericPrice ? `U$D ${numericPrice.toLocaleString('es-AR')}` : 'Consultar' },
-    { label: 'Área Total', value: coveredArea ? `${coveredArea.toLocaleString('es-AR')} m²` : null },
-    { label: 'Dormitorios', value: property.beds },
-    { label: 'Baños', value: property.baths },
-    { label: 'Cochera', value: property.garage != null ? property.garage : null },
-    { label: 'Tipo', value: property.type },
+    { label: 'Superficie', value: (property.area_sqm || property.square_feet) ? `${(property.area_sqm || property.square_feet).toLocaleString('es-AR')} m²` : null },
+    { label: 'Topografía', value: property.topography },
+    { label: 'Orientación', value: property.orientation },
+    { label: 'Servicios', value: property.services ? `${property.services.length}` : null },
     { label: 'Operación', value: operationLabel || null },
-    { label: 'Títulos', value: property.titles_status || null },
+    { label: 'Estado', value: property.status || null },
   ].filter(f => f.value != null);
 
   return (
@@ -124,7 +123,7 @@ const PropertyDetails = ({ property }) => {
         {/* Right: Sidebar — 30% */}
         <div className="w-full md:w-[30%] flex flex-col gap-[20px]">
           {/* Additional Info */}
-          {(property.square_feet || property.operation || coveredArea || property.garage != null || property.titles_status) && (
+          {(property.area_sqm || property.square_feet || property.operation || property.topography || property.services) && (
             <div className="bg-white rounded-none overflow-hidden">
               <div className="px-4 md:px-[50px] pt-[40px] pb-[40px]">
                 <div>
@@ -132,22 +131,28 @@ const PropertyDetails = ({ property }) => {
                 </div>
                 <ScrollReveal>
                   <ul>
-                  {property.square_feet && (
+                  {(property.area_sqm || property.square_feet) && (
                     <li className="flex justify-between items-center px-5 py-[10px] mb-[5px] text-[16px] gap-[10px] rounded-none odd:bg-[#f6f6f6]">
-                      <span className="text-[14px] text-[#888]">Sup. Cubierta</span>
-                      <span className="text-[14px] font-normal text-[#0F172A]">{property.square_feet.toLocaleString('es-AR')} m²</span>
+                      <span className="text-[14px] text-[#888]">Superficie</span>
+                      <span className="text-[14px] font-normal text-[#0F172A]">{(property.area_sqm || property.square_feet).toLocaleString('es-AR')} m²</span>
                     </li>
                   )}
-                  {coveredArea && (
+                  {property.topography && (
                     <li className="flex justify-between items-center px-5 py-[10px] mb-[5px] text-[16px] gap-[10px] rounded-none odd:bg-[#f6f6f6]">
-                      <span className="text-[14px] text-[#888]">Sup. Total</span>
-                      <span className="text-[14px] font-normal text-[#0F172A]">{coveredArea.toLocaleString('es-AR')} m²</span>
+                      <span className="text-[14px] text-[#888]">Topografía</span>
+                      <span className="text-[14px] font-normal text-[#0F172A]">{property.topography}</span>
                     </li>
                   )}
-                  {property.garage != null && (
+                  {property.orientation && (
                     <li className="flex justify-between items-center px-5 py-[10px] mb-[5px] text-[16px] gap-[10px] rounded-none odd:bg-[#f6f6f6]">
-                      <span className="text-[14px] text-[#888]">Cochera</span>
-                      <span className="text-[14px] font-normal text-[#0F172A]">{property.garage} {property.garage === 1 ? 'lugar' : 'lugares'}</span>
+                      <span className="text-[14px] text-[#888]">Orientación</span>
+                      <span className="text-[14px] font-normal text-[#0F172A]">{property.orientation}</span>
+                    </li>
+                  )}
+                  {property.services && property.services.length > 0 && (
+                    <li className="flex justify-between items-center px-5 py-[10px] mb-[5px] text-[16px] gap-[10px] rounded-none odd:bg-[#f6f6f6]">
+                      <span className="text-[14px] text-[#888]">Servicios</span>
+                      <span className="text-[14px] font-normal text-[#0F172A] text-right">{property.services.join(', ')}</span>
                     </li>
                   )}
                   {property.operation && (
@@ -156,15 +161,9 @@ const PropertyDetails = ({ property }) => {
                       <span className="text-[14px] font-normal text-[#0F172A]">{operationLabel}</span>
                     </li>
                   )}
-                  {property.titles_status && (
-                    <li className="flex justify-between items-center px-5 py-[10px] mb-[5px] text-[16px] gap-[10px] rounded-none odd:bg-[#f6f6f6]">
-                      <span className="text-[14px] text-[#888]">Estado de Títulos</span>
-                      <span className="text-[14px] font-normal text-[#0F172A] text-right">{property.titles_status}</span>
-                    </li>
-                  )}
                   {property.amenities && property.amenities.length > 0 && (
                     <li className="flex justify-between items-center px-5 py-[10px] mb-[5px] text-[16px] gap-[10px] rounded-none odd:bg-[#f6f6f6]">
-                      <span className="text-[14px] text-[#888]">Comodidades</span>
+                      <span className="text-[14px] text-[#888]">Comodidades / Espacios Comunes</span>
                       <span className="text-[14px] font-normal text-[#0F172A] text-right">{property.amenities.join(', ')}</span>
                     </li>
                   )}

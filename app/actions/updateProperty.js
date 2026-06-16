@@ -78,7 +78,7 @@ async function updateProperty(prevState, formData) {
 
       const result = await new Promise((resolve, reject) => {
         const stream = cloudinary.uploader.upload_stream(
-          { folder: 'roggero-roma/properties', fetch_format: 'auto', quality: 'auto', width: 1200, crop: 'limit' },
+          { folder: 'lamontana/properties', fetch_format: 'auto', quality: 'auto', width: 1200, crop: 'limit' },
           (error, result) => (error ? reject(error) : resolve(result))
         );
         stream.end(imageData);
