@@ -35,8 +35,34 @@ const Hero = ({ title = 'Vendemos Inmuebles, Construimos Confianza', subtitle = 
 
   const filtersRef = useRef(null);
   const measuredRef = useRef(false);
+  const videoRefs = useRef([]);
+  const [currentVideo, setCurrentVideo] = useState(0);
 
-  useEffect(() => { getTopSearches().then(setTopSearches); }, []);
+  useEffect(() => {
+    getTopSearches().then(setTopSearches);
+  }, []);
+
+  // Control video playback for crossfading
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
+    videoRefs.current.forEach((vid, idx) => {
+      if (vid) {
+        if (idx === currentVideo) {
+          vid.currentTime = 0;
+          const playPromise = vid.play();
+          if (playPromise !== undefined) {
+            playPromise.catch(e => console.log('Autoplay prevented:', e));
+          }
+        } else {
+          // Pause the inactive video after the crossfade transition finishes
+          setTimeout(() => {
+            if (vid) vid.pause();
+          }, 1000);
+        }
+      }
+    });
+  }, [currentVideo]);
 
   // Typewriter effect for search labels
   useEffect(() => {
@@ -158,16 +184,18 @@ const Hero = ({ title = 'Vendemos Inmuebles, Construimos Confianza', subtitle = 
   return (
     <section className='relative h-[100dvh] min-h-[100dvh]'>
       {/* Background Video */}
-      <div className='absolute inset-0 z-0'>
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className='w-full h-full object-cover block'
-        >
-          <source src="/videohero.mp4" type="video/mp4" />
-        </video>
+      <div className='absolute inset-0 z-0 bg-black'>
+        {['/videohero.mp4', '/video_hero2.mp4'].map((src, idx) => (
+          <video
+            key={src}
+            ref={el => videoRefs.current[idx] = el}
+            src={src}
+            muted
+            playsInline
+            onEnded={() => setCurrentVideo((prev) => (prev + 1) % 2)}
+            className={`absolute w-full h-full object-cover block transition-opacity duration-1000 ${currentVideo === idx ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+          />
+        ))}
         <div
           className='absolute inset-0'
           style={{
