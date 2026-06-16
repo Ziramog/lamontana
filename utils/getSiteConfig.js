@@ -2,43 +2,20 @@ import connectDB from '@/config/database';
 import SiteConfig from '@/models/SiteConfig';
 
 export const getSiteConfig = async () => {
-  try {
-    await connectDB();
-    const config = await SiteConfig.findOne({}).lean();
-    
-    // Default values if nothing in DB yet
-    return {
-      heroTitle: config?.heroTitle || 'Vendemos Inmuebles, Construimos Confianza',
-      heroSubtitle: config?.heroSubtitle || 'Alta Gracia, Córdoba, Argentina',
-      aboutTitle: config?.aboutTitle || 'Silvia Roggero de Roma',
-      aboutSubtitle: config?.aboutSubtitle || 'NEGOCIOS INMOBILIARIOS',
-      aboutText: config?.aboutText || 'Contamos con 20 años de experiencia propia en el rubro inmobiliario. Trabajamos con el objetivo de brindar confianza y seriedad en el rubro, dar información real y adecuada sobre el mercado y ofrecer la mejor variedad de alternativas a nuestros clientes.',
-      footerDescription: config?.footerDescription || 'En Roggero & Roma te acompañamos en cada paso. Nuestra experiencia asegura las mejores oportunidades del mercado inmobiliario.',
-      contactEmail: config?.contactEmail || 'info@roggeroyroma.com.ar',
-      contactPhone: config?.contactPhone || '+54 9 3547 563911',
-      contactAddress: config?.contactAddress || 'Blvd. Carlos Pellegrini 710',
-      whatsappGroupLink: config?.whatsappGroupLink || '',
-      whatsappDefaultMessage: config?.whatsappDefaultMessage || 'Hola, vengo desde la web y me gustaría recibir más información.',
-      analyticsId: config?.analyticsId || 'G-PW4FH9WHQB',
-      facebookPixelId: config?.facebookPixelId || '',
-    };
-  } catch (error) {
-    console.error('Error fetching site config:', error);
-    // Fallback defaults
-    return {
-      heroTitle: 'Vendemos Inmuebles, Construimos Confianza',
-      heroSubtitle: 'Alta Gracia, Córdoba, Argentina',
-      aboutTitle: 'Silvia Roggero de Roma',
-      aboutSubtitle: 'NEGOCIOS INMOBILIARIOS',
-      aboutText: 'Contamos con 20 años de experiencia propia en el rubro inmobiliario. Trabajamos con el objetivo de brindar confianza y seriedad en el rubro, dar información real y adecuada sobre el mercado y ofrecer la mejor variedad de alternativas a nuestros clientes.',
-      footerDescription: 'En Roggero & Roma te acompañamos en cada paso.',
-      contactEmail: 'info@roggeroyroma.com.ar',
-      contactPhone: '+54 9 3547 563911',
-      contactAddress: 'Blvd. Carlos Pellegrini 710',
-      whatsappGroupLink: '',
-      whatsappDefaultMessage: 'Hola, vengo desde la web...',
-      analyticsId: 'G-PW4FH9WHQB',
-      facebookPixelId: '',
-    };
-  }
+  // Always return static default config directly to avoid MongoDB dependency on Vercel
+  return {
+    heroTitle: 'Naturaleza, altura y privacidad.',
+    heroSubtitle: 'a 7 km del Durazno de Yacanto',
+    aboutTitle: 'La Montaña',
+    aboutSubtitle: 'Loteo de montaña',
+    aboutText: 'Aprendimos que vender tierra no es solamente ofrecer metros cuadrados. Es acompañar una decisión importante: elegir un lugar donde proyectar, invertir, descansar o construir una nueva etapa de vida.\n\nLa Montaña nace con esa mirada.\n\nUbicado 7 km arriba de El Durazno, en un entorno natural privilegiado, este loteo fue pensado para quienes buscan algo distinto: tranquilidad, paisaje serrano, aire puro y privacidad, sin resignar seguridad en la operación ni información clara sobre lo que están comprando.\n\nCada lote representa una oportunidad de conectar con la naturaleza y, al mismo tiempo, resguardar valor en una zona con identidad propia y alta proyección. No se trata de un loteo masivo, sino de una propuesta más reservada, para quienes entienden que ciertos lugares no se eligen solo por ubicación, sino por lo que transmiten.',
+    footerDescription: 'En La Montaña te acompañamos en cada paso.',
+    contactEmail: 'info@lamontana.com.ar',
+    contactPhone: '+54 9 3547 563911',
+    contactAddress: 'El Durazno, Córdoba',
+    whatsappGroupLink: '',
+    whatsappDefaultMessage: 'Hola, vengo desde la web...',
+    analyticsId: 'G-PW4FH9WHQB',
+    facebookPixelId: '',
+  };
 };

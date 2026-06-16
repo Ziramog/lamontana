@@ -1,14 +1,11 @@
-import connectDB from '@/config/database';
-import Property from '@/models/Property';
+import { getLots } from '@/utils/getLots';
 
 export default async function sitemap() {
-  await connectDB();
-
-  const properties = await Property.find({}).select('_id updatedAt').lean();
+  const properties = getLots();
 
   const propertyUrls = properties.map((p) => ({
-    url: `https://properties-srs5.vercel.app/properties/${p._id.toString()}`,
-    lastModified: p.updatedAt ? new Date(p.updatedAt).toISOString() : new Date().toISOString(),
+    url: `https://lamontana-seven.vercel.app/properties/${p.id}`,
+    lastModified: new Date().toISOString(),
     changeFrequency: 'weekly',
     priority: 0.8,
   }));
