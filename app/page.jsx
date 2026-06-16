@@ -120,7 +120,18 @@ Cada lote representa una oportunidad de conectar con la naturaleza y, al mismo t
 
       {/* 4. Lotes destacados */}
       <div id="propiedades-destacadas">
-        <FeaturedPropertiesCarousel properties={serializedProperties.filter(p => p.is_featured && (p.images || []).length > 0).slice(0, 6)} />
+        <FeaturedPropertiesCarousel 
+          properties={serializedProperties
+            .filter(p => p.is_featured)
+            .slice(0, 6)
+            .map((p, index) => {
+              if (index === 0) return { ...p, images: [{ id: 'test1', file_name: 'Lote 1', file_path: '/Lote 1.jpeg', type: 'image' }] };
+              if (index === 1) return { ...p, images: [{ id: 'test2', file_name: 'lote 2', file_path: '/lote 2.jpeg', type: 'image' }] };
+              return p;
+            })
+            .filter(p => (p.images || []).length > 0)
+          } 
+        />
       </div>
 
       {/* SECCIONES OCULTAS 

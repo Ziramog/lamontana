@@ -100,10 +100,10 @@ const InteractiveMasterplan = ({ polygonsData }) => {
       let nameLower = item.name.toLowerCase();
       
       let fillColor = '#ffffff'; 
-      let fillOpacity = 0.2;
+      let fillOpacity = 0.1;
       let strokeColor = '#db7340'; 
       let strokeOpacity = 0.8;
-      let strokeWeight = 2;
+      let strokeWeight = 1;
       
       let label = null;
       let center = null;
@@ -111,9 +111,9 @@ const InteractiveMasterplan = ({ polygonsData }) => {
       // "lote" -> orange
       if (nameLower.includes('lote')) {
         fillColor = '#db7340';
-        fillOpacity = 0.3;
+        fillOpacity = 0.15;
         strokeColor = '#db7340';
-        strokeWeight = 3;
+        strokeWeight = 1.5;
         
         // Extract lot number for the label
         const match = nameLower.match(/lote\s*(\d+)/i);
@@ -129,23 +129,23 @@ const InteractiveMasterplan = ({ polygonsData }) => {
       // "durazno", "campo arriba" or "montaña arriba" -> yellow
       if (nameLower.includes('durazno') || nameLower.includes('campo arriba') || nameLower.includes('montaña arriba')) {
         fillColor = '#eab308'; // yellow-500
-        fillOpacity = 0.3;
+        fillOpacity = 0.15;
         strokeColor = '#eab308';
-        strokeWeight = 4;
+        strokeWeight = 2;
       }
       
       // "river" or "ruta sin título" -> light blue
       if (nameLower.includes('ruta sin t') || nameLower.includes('river') || nameLower.includes('rio')) {
         fillColor = '#38bdf8'; // sky-400
-        fillOpacity = 0.3;
+        fillOpacity = 0.15;
         strokeColor = '#38bdf8';
-        strokeWeight = 4;
+        strokeWeight = 2;
       }
 
       if (isHovered || isSelected) {
-        fillOpacity = 0.6;
+        fillOpacity = 0.5;
         strokeOpacity = 1;
-        strokeWeight = 5;
+        strokeWeight = 3;
       }
 
       return {
@@ -211,7 +211,7 @@ const InteractiveMasterplan = ({ polygonsData }) => {
 
         <ScrollReveal>
           <div className="w-full relative rounded-2xl overflow-hidden shadow-2xl" style={{ height: '70vh', minHeight: '500px' }}>
-            <APIProvider apiKey={API_KEY}>
+            <APIProvider apiKey={API_KEY} language="es" region="AR">
               <Map
                 defaultZoom={16}
                 defaultCenter={defaultCenter}
