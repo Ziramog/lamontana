@@ -54,25 +54,42 @@ const InteractiveMasterplan = ({ polygonsData }) => {
       const isHovered = hoveredPoly === index;
       const isSelected = selectedPoly === index;
       
-      let fillColor = '#ffffff'; // Default whiteish fill
+      let nameLower = item.name.toLowerCase();
+      
+      let fillColor = '#ffffff'; 
       let fillOpacity = 0.2;
-      let strokeColor = '#db7340'; // Brand color
+      let strokeColor = '#db7340'; 
       let strokeOpacity = 0.8;
       let strokeWeight = 2;
 
-      if (isHovered || isSelected) {
+      // "lote" -> orange
+      if (nameLower.includes('lote')) {
         fillColor = '#db7340';
-        fillOpacity = 0.5;
+        fillOpacity = 0.3;
+        strokeColor = '#db7340';
+        strokeWeight = 3;
+      }
+      
+      // "durazno" or "campo arriba" -> yellow
+      if (nameLower.includes('durazno') || nameLower.includes('campo arriba')) {
+        fillColor = '#eab308'; // yellow-500
+        fillOpacity = 0.3;
+        strokeColor = '#eab308';
         strokeWeight = 4;
-        strokeOpacity = 1;
+      }
+      
+      // "river" or "ruta sin título" -> light blue
+      if (nameLower.includes('ruta sin t') || nameLower.includes('river') || nameLower.includes('rio')) {
+        fillColor = '#38bdf8'; // sky-400
+        fillOpacity = 0.3;
+        strokeColor = '#38bdf8';
+        strokeWeight = 4;
       }
 
-      // If it's the "Campo" master boundary, we might want to style it differently
-      if (item.name.toLowerCase().includes('campo')) {
-        fillOpacity = 0;
-        strokeColor = '#ffffff';
-        strokeWeight = 3;
-        if (isHovered) fillOpacity = 0.1;
+      if (isHovered || isSelected) {
+        fillOpacity = 0.6;
+        strokeOpacity = 1;
+        strokeWeight = 5;
       }
 
       return {
