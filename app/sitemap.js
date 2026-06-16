@@ -1,7 +1,7 @@
 import { getLots } from '@/utils/getLots';
 
 export default async function sitemap() {
-  const properties = getLots();
+  const properties = await getLots();
 
   const propertyUrls = properties.map((p) => ({
     url: `https://lamontana-seven.vercel.app/properties/${p.id}`,
