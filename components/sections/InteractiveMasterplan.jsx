@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState, useMemo, useRef } from 'react';
-import { APIProvider, Map, useMap } from '@vis.gl/react-google-maps';
+import { APIProvider, Map, useMap, Marker } from '@vis.gl/react-google-maps';
 import SectionBox from '@/components/sections/SectionBox';
 import ScrollReveal from '@/components/shared/ScrollReveal';
 
@@ -104,6 +104,9 @@ const InteractiveMasterplan = ({ polygonsData }) => {
       let strokeColor = '#db7340'; 
       let strokeOpacity = 0.8;
       let strokeWeight = 2;
+      
+      let label = null;
+      let center = null;
 
       // "lote" -> orange
       if (nameLower.includes('lote')) {
@@ -111,6 +114,16 @@ const InteractiveMasterplan = ({ polygonsData }) => {
         fillOpacity = 0.3;
         strokeColor = '#db7340';
         strokeWeight = 3;
+        
+        // Extract lot number for the label
+        const match = nameLower.match(/lote\s*(\d+)/i);
+        if (match && item.type === 'Polygon') {
+          label = match[1];
+          let latSum = 0;
+          let lngSum = 0;
+          item.coords.forEach(c => { latSum += c.lat; lngSum += c.lng; });
+          center = { lat: latSum / item.coords.length, lng: lngSum / item.coords.length };
+        }
       }
       
       // "durazno", "campo arriba" or "montaña arriba" -> yellow
@@ -138,6 +151,8 @@ const InteractiveMasterplan = ({ polygonsData }) => {
       return {
         ...item,
         index,
+        label,
+        center,
         options: {
           fillColor,
           fillOpacity,
@@ -200,7 +215,7 @@ const InteractiveMasterplan = ({ polygonsData }) => {
               <Map
                 defaultZoom={16}
                 defaultCenter={defaultCenter}
-                mapTypeId="satellite"
+                mapTypeId="hybrid"
                 mapId="masterplan_map"
                 disableDefaultUI={true}
                 zoomControl={true}
@@ -219,6 +234,30 @@ const InteractiveMasterplan = ({ polygonsData }) => {
                     onClick={(e, geom) => handlePolyClick(e, geom, p)}
                   />
                 ))}
+                
+                {mapPolygons.map((p) => {
+                  if (p.label && p.center) {
+                    return (
+                      <Marker 
+                        key={`marker-${p.name}`}
+                        position={p.center}
+                        label={{
+                          text: p.label,
+                          color: 'white',
+                          fontWeight: 'bold',
+                          fontSize: '14px'
+                        }}
+                        icon={{
+                          path: (typeof window !== 'undefined' && window.google?.maps?.SymbolPath?.CIRCLE) ? window.google.maps.SymbolPath.CIRCLE : 0,
+                          scale: 0,
+                        }}
+                        zIndex={10}
+                        onClick={(e) => handlePolyClick(e, null, p)}
+                      />
+                    );
+                  }
+                  return null;
+                })}
               </Map>
             </APIProvider>
 
