@@ -4,9 +4,12 @@ import User from '@/models/User';
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/utils/authOptions';
 
+import { headers } from 'next/headers';
+
 export const dynamic = 'force-dynamic';
 
 export async function GET() {
+  headers(); // Opt-out of static rendering
   try {
     await connectDB();
     const session = await getServerSession(authOptions);
