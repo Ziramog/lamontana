@@ -80,8 +80,8 @@ const InteractiveMasterplan = ({ polygonsData }) => {
         strokeWeight = 3;
       }
       
-      // "durazno" or "campo arriba" -> yellow
-      if (nameLower.includes('durazno') || nameLower.includes('campo arriba')) {
+      // "durazno", "campo arriba" or "montaña arriba" -> yellow
+      if (nameLower.includes('durazno') || nameLower.includes('campo arriba') || nameLower.includes('montaña arriba')) {
         fillColor = '#eab308'; // yellow-500
         fillOpacity = 0.3;
         strokeColor = '#eab308';
