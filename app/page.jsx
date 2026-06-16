@@ -9,6 +9,8 @@ import ScrollReveal from '@/components/shared/ScrollReveal';
 import JsonLd from '@/components/JsonLd';
 import { getSiteConfig } from '@/utils/getSiteConfig';
 import { getLots } from '@/utils/getLots';
+import InteractiveMasterplan from '@/components/sections/InteractiveMasterplan';
+import polygonsData from '@/data/lotes_geo.json';
 
 export const dynamic = 'force-dynamic';
 
@@ -123,6 +125,9 @@ Ubicado 7 km arriba de El Durazno, en un entorno natural privilegiado, este lote
 Cada lote representa una oportunidad de conectar con la naturaleza y, al mismo tiempo, resguardar valor en una zona con identidad propia y alta proyección. No se trata de un loteo masivo, sino de una propuesta más reservada, para quienes entienden que ciertos lugares no se eligen solo por ubicación, sino por lo que transmiten." 
         />
       </div>
+
+      {/* NUEVA SECCIÓN: Masterplan Interactivo */}
+      <InteractiveMasterplan polygonsData={polygonsData} />
 
       {/* 6. Reviews — Nuestros Clientes */}
       <ScrollReveal variant="fadeScale">

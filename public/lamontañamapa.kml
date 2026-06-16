@@ -1,0 +1,2168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="1r_OHiORs-GBbxRg6yaRCpBNdiLtG6PL6">
+	<name>Proyecto de mapa sin título</name>
+	<gx:CascadingStyle kml:id="__managed_style_018A73978E40062E7BFC_highlight">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_018A73978E40062E7BFC_normal">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_018A73978E40062E7BFC">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_018A73978E40062E7BFC_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_018A73978E40062E7BFC_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_08594685CE40061F7A29_highlight">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff00aaff</color>
+				<width>4.5</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>3300aaff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_08594685CE40061F7A29_normal">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff00aaff</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>3300aaff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_08594685CE40061F7A29">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_08594685CE40061F7A29_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_08594685CE40061F7A29_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_0E9CC278C440061F7A24_highlight">
+		<Style>
+			<IconStyle>
+				<scale>1.08</scale>
+				<Icon>
+					<href>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABaElEQVRYhe2VrXKDQBRGDzWoGIhvHCTxiKpg0tWr+ypVtelb9CVamCGqOyE6v6oRRMXxAFtRaCnTNCFDBsOZwVy+5X5793IXWlpaWhrGqKgfA/fAHdDPYivgHXgF3uqz9pseMAFSQB950kzTq/LhcyrQA56ABwDHceLhcJiORqOuYRhEUXRYLped9XrtZfoX4BH4qGLkPyaANk1zJ6UMkyRJdYkkSVIpZWia5o6vakzqSj4mK7uUMiwnLiOlDPk5jnEdBp4B7bruLN+5UmovhAgsy9ratr0VQgRKqX1eCcdxZpmJ5zoMKEq7F0IElBpQCBH8UQV1ToKbE+/7AL7vd/NAHMe3ZdF8Pv+OFbT9su4SA2ehtb547SkDK4Aoig55wPO8XVlUjBW0q4tdFTjahLZtby3LunoTNv4bwpUHUeVR7LpuPBgMUt/3u1prptPpYbFYdDabzdVGcW6iscuoSGPXcUtLy9X4BIG5PkyXUsc/AAAAAElFTkSuQmCC</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.8</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_03218EC1C640061F7A1E_normal">
+		<Style>
+			<IconStyle>
+				<scale>0.9</scale>
+				<Icon>
+					<href>data:image/png;base64,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</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.8</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0E9585036740061F7A26">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_0E9585036740061F7A26_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_0E9585036740061F7A26_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_0E9CC278C440061F7A24_normal">
+		<Style>
+			<IconStyle>
+				<scale>0.9</scale>
+				<Icon>
+					<href>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABaElEQVRYhe2VrXKDQBRGDzWoGIhvHCTxiKpg0tWr+ypVtelb9CVamCGqOyE6v6oRRMXxAFtRaCnTNCFDBsOZwVy+5X5793IXWlpaWhrGqKgfA/fAHdDPYivgHXgF3uqz9pseMAFSQB950kzTq/LhcyrQA56ABwDHceLhcJiORqOuYRhEUXRYLped9XrtZfoX4BH4qGLkPyaANk1zJ6UMkyRJdYkkSVIpZWia5o6vakzqSj4mK7uUMiwnLiOlDPk5jnEdBp4B7bruLN+5UmovhAgsy9ratr0VQgRKqX1eCcdxZpmJ5zoMKEq7F0IElBpQCBH8UQV1ToKbE+/7AL7vd/NAHMe3ZdF8Pv+OFbT9su4SA2ehtb547SkDK4Aoig55wPO8XVlUjBW0q4tdFTjahLZtby3LunoTNv4bwpUHUeVR7LpuPBgMUt/3u1prptPpYbFYdDabzdVGcW6iscuoSGPXcUtLy9X4BIG5PkyXUsc/AAAAAElFTkSuQmCC</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.8</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_06FF42599440061F7A21_normal">
+		<Style>
+			<IconStyle>
+				<scale>0.85</scale>
+				<Icon>
+					<href>data:image/png;base64,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</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.75</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_0CBBA2B3D140061F7A23_normal">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_133F9FFC2640061F7A24_highlight">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2f2fd3</color>
+				<width>4.5</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>332f2fd3</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_133F9FFC2640061F7A24_normal">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2f2fd3</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>332f2fd3</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_0E9585036740061F7A26_normal">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff0000ff</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>330000ff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_03218EC1C640061F7A1E_highlight">
+		<Style>
+			<IconStyle>
+				<scale>1.08</scale>
+				<Icon>
+					<href>data:image/png;base64,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</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.8</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_03218EC1C640061F7A1E">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="__managed_style_0E9CC278C440061F7A24">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_036BB17F7A40061F7A27_highlight">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff0000ff</color>
+				<width>4.5</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>330000ff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_036BB17F7A40061F7A27_normal">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff0000ff</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>330000ff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_06FF42599440061F7A21_highlight">
+		<Style>
+			<IconStyle>
+				<scale>1.02</scale>
+				<Icon>
+					<href>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAMKElEQVR4nMWbe3RU1b3HP/ucmTwJISFRpERAESUiSEUQERWsWBGoaVXER5ddcrHibdXWVu+yd7VltV3c2lvbK60KeCktUkEwEnmoFEW6MALyRiQBQhCCeT/Ia5KZ2b/+cR6ZDGD1ZGay1zrMzM5+fL/f89u//fvtc1AiQrzLh/N/1mfVRzu+dehkxYRT9Q0jP29surSxrS0zsk2Kz9ecZJplIJ9oYbupKGoMdNTFHZyIxO0qfX5B3mNTb3lhQL/MGkC+ymUodSbJNF9JMc3h8cSo4mUB//PgvfN/vXrt082BQJJTNzCnP5OuH8Z1YwZz8UXpZPYxQYdpaWnjdM0Zdh84zZadJzl6or7bWIZSfwxr/UQ8cMZcgPbWFbl33f3bNzZs3HeDUzft9muY9+hkpt4yAn9qhlUprUAApBMkCEYIJAChJj78qIKXFh3kbysOdQFV7AcKtJayWOKNqQBnGpYPGj/hxzsOl1RfBHDtNUN4/vk5TLxhLBCGUCVIM0gHELSIK1sA6QQVAuUDMx0wOVLyGU89s5WideXOFK3ABBE5ECvMMRPgTOOrg8aPf3Ln4dKaAQBPPzWDBb+dC6RCqBx0wCLYjbhNHucSEAG0NaivLyiDF1/8iHk//MCZqg0YLyIHY4E7NgLowj5XXvn9kkOHqwcCLHn5YR6aOwczdArCdaAElzid1vfITwkC2iKvLBFEBFQYpXyQlMMHmw9w89QiZ8ZWYLiInO4pdKOnAwAUFPz8HYf8S396kO/NnYMZPAa6wZpBwtalQkAYJGT9xvnUWM4fum0GohAdhI7T3DRlBFs33eFMmQ68HwvsPRbgteVzn3yz6MD1AP/56I3MmTcPI1xmmTwC2MRV0CJOMOp32BpI7H8EBNsSlCWKiEBnJZMmj2TJn65zph6ulPrfnuLv0RIIBl7N7p87p7a5JaAuveQCjpYuBhWGYD0obRHVIc429077CuGavn3Xxfmuous1hmGCP5MZM1exbqNr/ZeJyFGvHHpkAQsXrn2muSWgAF55+UG0mW2RB0sIx8yJMHdnGRBl+iryrkvXinCXBGhtOc7Ff54QCeMXPeHg3QJ0oRp++aPVR45W5YwbO5TtOxZCqAF0h0VS7Duvgt3vugRZv7GU9W+XsWt3NXv313L1qByuGZPDtG/mccc38+girW0ttFun0Kjk/sydu4HFS49hD5wrImcSKsCenf99x9fH/WodwGuvPsI99z2A6ijpMn052+vX1DTxyGNvU1h0fostmDmYl16YSG5OsrUbRJB3lobh68uBfeWMGveO0+0/RGSJFx6el8D6jZ98A8DvN5l222hUuMY2YdvL6wjzlxBHj9YyauzSLyQPUFh0gtHjCqmsarOcoVPs5WFtGs1cNepCRua7+dRNXnl4FuDwp5X5AN+Ykk9G9mDQjV3rXsJgBLEECBLWQe598E0qq1q/1NiVVe089kQx3bdEezcwBB0OgZHK9NsHOl1GeOXhWYDyz2qHAYy9Zgiikm1zj3B8EZ8rXz/Irj1VX2n8wqLPWLXmOF0CiB0gCqIBwuSPyHCaX+SVh2cBTp9uzAXIG5SNktC5vT6WM1yx8hNPc/zt72Vdpu/sDnaUjITIG5TqNM049wj/vvi8dgwGwwZAZmaKHdPba5+oS4XYsbPS0xy799RbN1/b5I0IaxBNRh8XvvLKw7MFGIbloUyTqL3d3gGcZSAhamrbPc1R39BhB0N0Iy/asgrDdJt6juY8C6C1GADt7QHc+N698xG/VYjcnNQvGOn8JTsrqSsydMg7CRPQ0RHuMQ/PHbOy01sBKqsabYDdzd6yBivFHXftBZ7m+PqYbFzytgN0cwalqKoKOE0D5x7h3xfPAgy+OLsc4MiRaty4XkIRn3aKC8z6zjBPczwwe4hl+obtCIWuUBmDo2UtTlPPh6eeBbhkSE4JwLv/KIFgFSjTjgAjdwJAhPtmDePqUf2/0vh3zhjEPQUX2+mCdFsKpgkQ4sNi9+zwuFcengWYcN2g3QDlJ+rZu7cUzD525udcTugqmD5YtfxWBlyY9qXGHnBhCgv/MLZrDDcfsvMBM4mm2kbWbXR3lz1eeXgWYMa0/NUpKX4Ali7bA8qIyPHtzToC9LBLM9i389sUzBz8hePeOSOPPcW3MyA32e0rTnqs7ATJTGP1m6foDDpBAa975dGj84BZd43esmrN/pv8foOGyh+S3rcvhGqtP0bk9aKxCNiefHXhcZYtP8KOj2upqQ2Qm5PCtWP789D9Q/l2wSBLP0OfZfqI4PObYBgMy1/PsbJWgE9FJL9XBDi4a96Uq8a+uBlgzvfyWfzKA9Bx6twHHE56G1mvtFWlosga2s6EozJBNL7UbF5c+DHznnQPhu8XkRVeOfT4UHTWXVdsXbWmZBLAtvcKuP6mMZYIKNtzSzdBQEeJ4ph5FFltm75YgogO40/NpKqinrzLNhAMCUCJiFzRE/w9PhNcsmjG7LRUKySdVrCOuqoKSMoBwhHHW5EhLESTj0x03IAnwomK1vhT0kEHmTp9q0Me4O6e4u+xABnZz1W8VfitewGamoLccPMKAq3N4MuyQ2Ei/IFDzC6RR+BOsKPpZiGiNf7kFMBg+p2b2f9Js9P78Vg8IInJsfiU21avXLbk1h8DHC5tZuKNy0EHUb6+WFsinOUP7PUvSrqCHafeao6g8Sf7wUjm3vveZ/3bNc6UC0Tk/2KBPSYCAHz34Xd//8LvJ84H2L2vgel3rgLDj/KlYAVF0WYPoiLWvXbuOJbFKI1pKDD78Oyzxaxc454CLxKR/4oV7pg/HP3Jk1ct+90fDn4X4KnH83nud9MhWIPWUSJEe/3oLY8wvpQs3lp7mJl3f+QMv0VEJscSb1wej0++ccCBLf+sGgmwecNtTJl6JTpQjbUzWHddwuffCUQ0/pQ0mptayR5YRMhyeg3ARSLSEUusMVsCkWVD0cxbMzP9YYCZd20m2NaI4U/HPeaWiHXvJDpOyKsE0zQAH7PuL3bIA8yINXmIkwCp/RZVvrbs5ocBWttCzPn++2CkoAybvO3tz1oKSiAsGEkZbHrnCBs3VTtDviwi2+KBNW5viADcP2voeytWlU8G2Ld9GqPGDCEcsDM4O9qLDoJ8SSZg8LWhRZz+PADQBGRJnIDGxQKcsuSlSbP9fmuKh+YWg4Ss53uGdCfvPhLTYKSzdGmpQx7gkXiRhzgLkJr116rf/HL0HwH27Gvgvc2lqKS+oHX3oMgOlnw+P4Ra+cmz7qsxx0RkZTwxxlUAgKeeuPqnWf2SOgF+9Mxe0B0YhnlWPiAi4Evn9dXl1NV3Ot3j8mJUZIm7AKT+f+fPnr5yIcC+/Y3s3nUClZTeddTtrH2fATrA/AWlTs9TIrIu3vDiLwDw+GNXzE9Ls86wf/NciXtK5BStBeVLZf/eSg4ech/yLkgEtoQIYGasaHpg9pC3ANa8eYrG6loMs+vExzQElMniv3zmdAkCixKBLSECAPzoB8Oec74XFlWALwXnbMD0+Qi2N/HXFSedJmtFJJgIXAkT4PLRb/9zxOV9KwH+svwE6A5MU1nOz0xh24e1nDnjZI78OVG4EiYAwOx78t4A2LqtlurP61BmEqYCULxR9LnTrE5E3k8UpgQL8LXlzvet2+rBTML0GRBu4Y21rgCbEokpoQIMG/lO8SVD0usBNv2j2joD8Pn59HAjFafdyG9NIjElVACASRP7FwNs3lID4VZQKWz/uNH5swbeTSSehAtwy+TcDwCOHW+loqIFlMGWre6jvX1e3/byWhIuwPXjs1wHd+x4G0gn24obnKqdicaTcAGGDk09dEFucgCgqjoA4QBlx92Xpz44f8/4lIQLYKQXteVfkVEKcPJUgIa6FrT7iI/tCceT6AkBhg5NLQMoO97Gjl2uA2wATiQaS68IMDgv9SRAbV0Hu/e4Pu+IiITO3ys+xfNbYj0pwy9LPwlw4kQ7gXbX/st7A0uvCDBwYLK9BNppaHBv+qnewNIrAqSnmnUA1bUdNDS5SV95b2DpFR+Qlma0Od+DXW95JDQAckqvCNCvn6/R7zvr5c6Wc7WNd+kdAfr66rL7+zujqnvFB/TSEjAbs7P89VHV3l4o7mHpFQFI2xjOzvJH7/m9IkCv7AIAOf39BwHnv3wcjseDzy9T/gUh2vplWExaGgAAAABJRU5ErkJggg==</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.75</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_036BB17F7A40061F7A27">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_036BB17F7A40061F7A27_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_036BB17F7A40061F7A27_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_0E9585036740061F7A26_highlight">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff0000ff</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>330000ff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_133F9FFC2640061F7A24">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_133F9FFC2640061F7A24_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_133F9FFC2640061F7A24_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_0CBBA2B3D140061F7A23_highlight">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_06FF42599440061F7A21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_06FF42599440061F7A21_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_06FF42599440061F7A21_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="__managed_style_0CBBA2B3D140061F7A23">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<GroundOverlay id="054877BB024003CB78A7">
+		<name>Superposición sin título</name>
+		<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+		<Icon>
+			<href>data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==</href>
+		</Icon>
+		<LatLonBox>
+			<north>85</north>
+			<south>-85</south>
+			<east>180</east>
+			<west>-180</west>
+		</LatLonBox>
+		<gx:MapTilePyramid>
+			<Link>
+			</Link>
+			<gx:minLevel>0</gx:minLevel>
+			<gx:maxLevel>22</gx:maxLevel>
+		</gx:MapTilePyramid>
+	</GroundOverlay>
+	<Folder id="5CE182E68C000001">
+		<name>Campo POSGAR94 convertido</name>
+		<visibility>0</visibility>
+		<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+		<Placemark id="5CE182E68C000002">
+			<name>Campo - vertices 94, 20, 65</name>
+			<description>Coordenadas convertidas desde Gauss-Kruger POSGAR 94 / Argentina Zona 4 a WGS84. Verificar contra plano original.</description>
+			<styleUrl>#__managed_style_036BB17F7A40061F7A27</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-64.81167092744712,-32.18531370469858,0 -64.80703331411348,-32.17978510438029,0 -64.81002776537669,-32.17920276177539,0 -64.81167092744712,-32.18531370469858,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="5CE182E68C000003">
+			<name>Vértice 94</name>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.81002776537669,-32.17920276177539,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE182E68C000004">
+			<name>Vértice 20</name>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.80703331411348,-32.17978510438029,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE182E68C000005">
+			<name>Vértice 65</name>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.81167092744712,-32.18531370469858,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder id="5CE190CAD0000001">
+		<name>Lote 1 - POSGAR 94 Faja 4</name>
+		<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+		<Placemark id="5CE190CAD0000002">
+			<name>Lote 1</name>
+			<description>Polígono generado desde coordenadas POSGAR 94 / Gauss-Krüger Argentina Faja 4 y convertido a WGS84 para Google Earth.</description>
+			<styleUrl>#__managed_style_036BB17F7A40061F7A27</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-64.807033314113,-32.17978510438,0 -64.809661527047,-32.179274000423,0 -64.80967567352999,-32.179394251582,0 -64.80966544397199,-32.179579135571,0 -64.809615184752,-32.179744757226,0 -64.809551212391,-32.179897772393,0 -64.809463867555,-32.179967904404,0 -64.809275783191,-32.180042002227,0 -64.809183334012,-32.180164950614,0 -64.809181050579,-32.180360359747,0 -64.809329758286,-32.181071667165,0 -64.809249323009,-32.18156617283,0 -64.807167399189,-32.181989221105,0 -64.807146333508,-32.18185130703,0 -64.806978993047,-32.181559055843,0 -64.806973003488,-32.181395411029,0 -64.80703321623299,-32.181304030031,0 -64.807260141545,-32.18124245354,0 -64.807366586938,-32.181114077179,0 -64.807317090124,-32.180288468985,0 -64.807033314113,-32.17978510438,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="5CE190CAD0000003">
+			<name>Vértice 1</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329543.62, Norte 6438689.30</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.807317090124,-32.180288468985,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD0000004">
+			<name>Vértice 2</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329540.49, Norte 6438597.65</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.807366586938,-32.181114077179,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD0000005">
+			<name>Vértice 3</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329550.77, Norte 6438583.58</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.807260141545,-32.18124245354,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD0000006">
+			<name>Vértice 4</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329572.29, Norte 6438577.11</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.80703321623299,-32.181304030031,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD0000007">
+			<name>Vértice 5</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329578.14, Norte 6438567.07</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.806973003488,-32.181395411029,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD0000008">
+			<name>Vértice 6</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329577.88, Norte 6438548.91</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.806978993047,-32.181559055843,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD0000009">
+			<name>Vértice 7</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329562.64, Norte 6438516.23</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.807146333508,-32.18185130703,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD000000A">
+			<name>Vértice 8</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329560.91, Norte 6438500.90</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.807167399189,-32.181989221105,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD000000B">
+			<name>Vértice 9</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329363.74, Norte 6438544.52</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.809249323009,-32.18156617283,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD000000C">
+			<name>Vértice 10</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329355.23, Norte 6438599.24</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.809329758286,-32.181071667165,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD000000D">
+			<name>Vértice 11</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329367.93, Norte 6438678.37</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.809181050579,-32.180360359747,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD000000E">
+			<name>Vértice 12</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329367.35, Norte 6438700.04</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.809183334012,-32.180164950614,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD000000F">
+			<name>Vértice 13</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329358.40, Norte 6438713.53</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.809275783191,-32.180042002227,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD0000010">
+			<name>Vértice 14</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329340.52, Norte 6438721.45</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.809463867555,-32.179967904404,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD0000011">
+			<name>Vértice 15</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329332.15, Norte 6438729.09</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.809551212391,-32.179897772393,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD0000012">
+			<name>Vértice 16</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329325.83, Norte 6438745.96</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.809615184752,-32.179744757226,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD0000013">
+			<name>Vértice 17</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329320.78, Norte 6438764.25</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.80966544397199,-32.179579135571,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD0000014">
+			<name>Vértice 18</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329319.47, Norte 6438784.74</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.80967567352999,-32.179394251582,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD0000015">
+			<name>Vértice 19</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329320.58, Norte 6438798.10</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.809661527047,-32.179274000423,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE190CAD0000016">
+			<name>Vértice 20</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Faja 4: Este 4329569.45, Norte 6438745.58</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.807033314113,-32.17978510438,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder id="5CE189B25A000001">
+		<name>Lote 2 - POSGAR 94 a Google Earth</name>
+		<description>Coordenadas convertidas desde Gauss-Krüger POSGAR 94 / Argentina Faja 4 (EPSG:22184) a WGS84 para Google Earth.</description>
+		<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+		<Placemark id="5CE189B25A000002">
+			<name>Lote 2 - Polígono</name>
+			<styleUrl>#__managed_style_133F9FFC2640061F7A24</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-64.807285002429,-32.182865337062,0 -64.80723428207899,-32.182428516017,0 -64.807167399189,-32.181989221105,0 -64.809249323009,-32.18156617283,0 -64.809271923683,-32.181706498846,0 -64.809390094745,-32.181838695377,0 -64.80946976956,-32.182200629009,0 -64.809643244169,-32.182357729436,0 -64.809817430256,-32.182454322172,0 -64.81000712117,-32.182654015891,0 -64.810059022836,-32.182501714273,0 -64.810139949296,-32.182589273099,0 -64.810121092424,-32.182723881185,0 -64.808092184949,-32.183679301457,0 -64.807710667335,-32.183879591762,0 -64.807285002429,-32.182865337062,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="5CE189B25A000003">
+			<name>Vértice 21</name>
+			<description><![CDATA[Gauss-Krüger POSGAR 94 / Argentina Faja 4<br/>Este: 4329513.19<br/>Norte: 6438290.37<br/>Lat: -32.183879591762<br/>Lon: -64.807710667335]]></description>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24</styleUrl>
+			<Point>
+				<coordinates>-64.807710667335,-32.183879591762,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE189B25A000004">
+			<name>Vértice 22</name>
+			<visibility>0</visibility>
+			<description><![CDATA[Gauss-Krüger POSGAR 94 / Argentina Faja 4<br/>Este: 4329476.83<br/>Norte: 6438311.98<br/>Lat: -32.183679301457<br/>Lon: -64.808092184949]]></description>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24</styleUrl>
+			<Point>
+				<coordinates>-64.808092184949,-32.183679301457,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE189B25A000005">
+			<name>Vértice 23</name>
+			<visibility>0</visibility>
+			<description><![CDATA[Gauss-Krüger POSGAR 94 / Argentina Faja 4<br/>Este: 4329283.67<br/>Norte: 6438414.73<br/>Lat: -32.182723881185<br/>Lon: -64.810121092424]]></description>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24</styleUrl>
+			<Point>
+				<coordinates>-64.810121092424,-32.182723881185,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE189B25A000006">
+			<name>Vértice 24</name>
+			<visibility>0</visibility>
+			<description><![CDATA[Gauss-Krüger POSGAR 94 / Argentina Faja 4<br/>Este: 4329281.64<br/>Norte: 6438429.63<br/>Lat: -32.182589273099<br/>Lon: -64.810139949296]]></description>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24</styleUrl>
+			<Point>
+				<coordinates>-64.810139949296,-32.182589273099,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE189B25A000007">
+			<name>Vértice 25</name>
+			<visibility>0</visibility>
+			<description><![CDATA[Gauss-Krüger POSGAR 94 / Argentina Faja 4<br/>Este: 4329289.11<br/>Norte: 6438439.47<br/>Lat: -32.182501714273<br/>Lon: -64.810059022836]]></description>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24</styleUrl>
+			<Point>
+				<coordinates>-64.810059022836,-32.182501714273,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE189B25A000008">
+			<name>Vértice 26</name>
+			<visibility>0</visibility>
+			<description><![CDATA[Gauss-Krüger POSGAR 94 / Argentina Faja 4<br/>Este: 4329294.29<br/>Norte: 6438422.66<br/>Lat: -32.182654015891<br/>Lon: -64.810007121170]]></description>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24</styleUrl>
+			<Point>
+				<coordinates>-64.81000712117,-32.182654015891,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE189B25A000009">
+			<name>Vértice 27</name>
+			<visibility>0</visibility>
+			<description><![CDATA[Gauss-Krüger POSGAR 94 / Argentina Faja 4<br/>Este: 4329311.81<br/>Norte: 6438445.11<br/>Lat: -32.182454322172<br/>Lon: -64.809817430256]]></description>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24</styleUrl>
+			<Point>
+				<coordinates>-64.809817430256,-32.182454322172,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE189B25A00000A">
+			<name>Vértice 28</name>
+			<visibility>0</visibility>
+			<description><![CDATA[Gauss-Krüger POSGAR 94 / Argentina Faja 4<br/>Este: 4329328.06<br/>Norte: 6438456.10<br/>Lat: -32.182357729436<br/>Lon: -64.809643244169]]></description>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24</styleUrl>
+			<Point>
+				<coordinates>-64.809643244169,-32.182357729436,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE189B25A00000B">
+			<name>Vértice 29</name>
+			<visibility>0</visibility>
+			<description><![CDATA[Gauss-Krüger POSGAR 94 / Argentina Faja 4<br/>Este: 4329344.13<br/>Norte: 6438473.80<br/>Lat: -32.182200629009<br/>Lon: -64.809469769560]]></description>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24</styleUrl>
+			<Point>
+				<coordinates>-64.80946976956,-32.182200629009,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE189B25A00000C">
+			<name>Vértice 30</name>
+			<visibility>0</visibility>
+			<description><![CDATA[Gauss-Krüger POSGAR 94 / Argentina Faja 4<br/>Este: 4329350.97<br/>Norte: 6438514.07<br/>Lat: -32.181838695377<br/>Lon: -64.809390094745]]></description>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24</styleUrl>
+			<Point>
+				<coordinates>-64.809390094745,-32.181838695377,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE189B25A00000D">
+			<name>Vértice 31</name>
+			<visibility>0</visibility>
+			<description><![CDATA[Gauss-Krüger POSGAR 94 / Argentina Faja 4<br/>Este: 4329361.87<br/>Norte: 6438528.92<br/>Lat: -32.181706498846<br/>Lon: -64.809271923683]]></description>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24</styleUrl>
+			<Point>
+				<coordinates>-64.809271923683,-32.181706498846,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE189B25A00000E">
+			<name>Vértice 9</name>
+			<visibility>0</visibility>
+			<description><![CDATA[Gauss-Krüger POSGAR 94 / Argentina Faja 4<br/>Este: 4329363.74<br/>Norte: 6438544.52<br/>Lat: -32.181566172830<br/>Lon: -64.809249323009]]></description>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24</styleUrl>
+			<Point>
+				<coordinates>-64.809249323009,-32.18156617283,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE189B25A00000F">
+			<name>Vértice 8</name>
+			<visibility>0</visibility>
+			<description><![CDATA[Gauss-Krüger POSGAR 94 / Argentina Faja 4<br/>Este: 4329560.91<br/>Norte: 6438500.90<br/>Lat: -32.181989221105<br/>Lon: -64.807167399189]]></description>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24</styleUrl>
+			<Point>
+				<coordinates>-64.807167399189,-32.181989221105,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE189B25A000010">
+			<name>Vértice 34</name>
+			<visibility>0</visibility>
+			<description><![CDATA[Gauss-Krüger POSGAR 94 / Argentina Faja 4<br/>Este: 4329555.42<br/>Norte: 6438452.07<br/>Lat: -32.182428516017<br/>Lon: -64.807234282079]]></description>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24</styleUrl>
+			<Point>
+				<coordinates>-64.80723428207899,-32.182428516017,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE189B25A000011">
+			<name>Vértice 35</name>
+			<visibility>0</visibility>
+			<description><![CDATA[Gauss-Krüger POSGAR 94 / Argentina Faja 4<br/>Este: 4329551.45<br/>Norte: 6438403.54<br/>Lat: -32.182865337062<br/>Lon: -64.807285002429]]></description>
+			<styleUrl>#__managed_style_0E9CC278C440061F7A24</styleUrl>
+			<Point>
+				<coordinates>-64.807285002429,-32.182865337062,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder id="5CE1920083000001">
+		<name>Lote 3 - POSGAR 94 a Google Earth</name>
+		<description>Polígono convertido desde coordenadas POSGAR 94 / Gauss-Krüger Argentina Faja 4 a WGS84 para Google Earth.</description>
+		<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+		<Placemark id="5CE1920083000002">
+			<name>Lote 3</name>
+			<styleUrl>#__managed_style_036BB17F7A40061F7A27</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-64.80771066699999,-32.183879592,0 -64.80809218500001,-32.183679301,0 -64.810121092,-32.182723881,0 -64.81008164000001,-32.183007007,0 -64.810003413,-32.183141563,0 -64.80962189900001,-32.183636411,0 -64.809056179,-32.183983958,0 -64.80875736500001,-32.184372314,0 -64.80868640600001,-32.184483234,0 -64.807945037,-32.184344441,0 -64.80771066699999,-32.183879592,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="5CE1920083000003">
+			<name>Vértice 21</name>
+			<visibility>0</visibility>
+			<description>Este: 4329513.19 | Norte: 6438290.37 | POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.80771066699999,-32.183879592,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1920083000004">
+			<name>Vértice 22</name>
+			<visibility>0</visibility>
+			<description>Este: 4329476.83 | Norte: 6438311.98 | POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.80809218500001,-32.183679301,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1920083000005">
+			<name>Vértice 23</name>
+			<visibility>0</visibility>
+			<description>Este: 4329283.67 | Norte: 6438414.73 | POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.810121092,-32.182723881,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1920083000006">
+			<name>Vértice 39</name>
+			<visibility>0</visibility>
+			<description>Este: 4329287.92 | Norte: 6438383.39 | POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.81008164000001,-32.183007007,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1920083000007">
+			<name>Vértice 40</name>
+			<visibility>0</visibility>
+			<description>Este: 4329295.55 | Norte: 6438368.59 | POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.810003413,-32.183141563,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1920083000008">
+			<name>Vértice 41</name>
+			<visibility>0</visibility>
+			<description>Este: 4329332.46 | Norte: 6438314.31 | POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.80962189900001,-32.183636411,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1920083000009">
+			<name>Vértice 42</name>
+			<visibility>0</visibility>
+			<description>Este: 4329386.47 | Norte: 6438276.66 | POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.809056179,-32.183983958,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE192008300000A">
+			<name>Vértice 43</name>
+			<visibility>0</visibility>
+			<description>Este: 4329415.38 | Norte: 6438234.06 | POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.80875736500001,-32.184372314,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE192008300000B">
+			<name>Vértice 44</name>
+			<visibility>0</visibility>
+			<description>Este: 4329422.28 | Norte: 6438221.87 | POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.80868640600001,-32.184483234,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE192008300000C">
+			<name>Vértice 45</name>
+			<visibility>0</visibility>
+			<description>Este: 4329491.95 | Norte: 6438238.44 | POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.807945037,-32.184344441,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder id="5CE18F6C77000001">
+		<name>Lote 4 - Google Earth</name>
+		<description>Coordenadas convertidas desde POSGAR 94 / Gauss-Krüger Argentina Faja 4 a WGS84 para Google Earth.</description>
+		<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+		<Placemark id="5CE18F6C77000002">
+			<name>Lote 4</name>
+			<description>Polígono del Lote 4. Sistema original: POSGAR 94 / Gauss-Krüger Argentina Faja 4.</description>
+			<styleUrl>#__managed_style_133F9FFC2640061F7A24</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-64.80875736450299,-32.184372313651,0 -64.80898971912799,-32.184070380312,0 -64.80908705198701,-32.184076200576,0 -64.80969980285801,-32.183699760585,0 -64.81009557989501,-32.183186405671,0 -64.810184777995,-32.18303302915,0 -64.810229427127,-32.182712502901,0 -64.81047377542301,-32.18304899728,0 -64.81056217030699,-32.183749355272,0 -64.810372436758,-32.184002896474,0 -64.809767575184,-32.184697581084,0 -64.809637273226,-32.185066937389,0 -64.809451033903,-32.184881168653,0 -64.80921133863301,-32.184629897027,0 -64.809085615493,-32.184485907407,0 -64.808686406238,-32.184483233508,0 -64.80875736450299,-32.184372313651,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="5CE18F6C77000003">
+			<name>Vértice 43</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.80875736450299,-32.184372313651,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18F6C77000004">
+			<name>Vértice 47</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.80898971912799,-32.184070380312,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18F6C77000005">
+			<name>Vértice 48</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.80908705198701,-32.184076200576,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18F6C77000006">
+			<name>Vértice 49</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.80969980285801,-32.183699760585,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18F6C77000007">
+			<name>Vértice 50</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.81009557989501,-32.183186405671,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18F6C77000008">
+			<name>Vértice 51</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.810184777995,-32.18303302915,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18F6C77000009">
+			<name>Vértice 52</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.810229427127,-32.182712502901,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18F6C7700000A">
+			<name>Vértice 53</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.81047377542301,-32.18304899728,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18F6C7800000B">
+			<name>Vértice 54</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.81056217030699,-32.183749355272,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18F6C7800000C">
+			<name>Vértice 55</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.810372436758,-32.184002896474,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18F6C7800000D">
+			<name>Vértice 56</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.809767575184,-32.184697581084,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18F6C7800000E">
+			<name>Vértice 57</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.809637273226,-32.185066937389,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18F6C7800000F">
+			<name>Vértice 58</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.809451033903,-32.184881168653,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18F6C78000010">
+			<name>Vértice 59</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.80921133863301,-32.184629897027,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18F6C78000011">
+			<name>Vértice 60</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.809085615493,-32.184485907407,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18F6C78000012">
+			<name>Vértice 44</name>
+			<visibility>0</visibility>
+			<description>POSGAR 94 / Gauss-Krüger Argentina Faja 4</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.808686406238,-32.184483233508,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder id="5CE194BF5E000001">
+		<name>Lote 5 - Google Earth</name>
+		<description>Coordenadas convertidas desde POSGAR 94 / Gauss-Krüger Argentina Faja 4 a WGS84 para Google Earth.</description>
+		<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+		<Placemark id="5CE194BF5E000002">
+			<name>Lote 5</name>
+			<description>Polígono del Lote 5. Sistema original: POSGAR 94 / Gauss-Krüger Argentina Faja 4.</description>
+			<styleUrl>#__managed_style_036BB17F7A40061F7A27</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-64.810372436753,-32.184002896636,0 -64.81056217030201,-32.183749355434,0 -64.811216106508,-32.183622151319,0 -64.81167092744199,-32.18531370486,0 -64.811437822801,-32.185481135329,0 -64.811111486437,-32.185694710235,0 -64.81089800401899,-32.185691366547,0 -64.810467635729,-32.185528840551,0 -64.81012659766201,-32.185364042497,0 -64.80963727322001,-32.18506693755,0 -64.809767575179,-32.184697581245,0 -64.810372436753,-32.184002896636,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="5CE194BF5E000003">
+			<name>Vértice 55</name>
+			<visibility>0</visibility>
+			<description>Este: 4329262.35 | Norte: 6438272.47 | Sistema original: POSGAR 94 / Gauss-Krüger Argentina Faja 4.</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.810372436753,-32.184002896636,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE194BF5E000004">
+			<name>Vértice 54</name>
+			<visibility>0</visibility>
+			<description>Este: 4329243.98 | Norte: 6438300.29 | Sistema original: POSGAR 94 / Gauss-Krüger Argentina Faja 4.</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.81056217030201,-32.183749355434,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE194BF5E000005">
+			<name>Vértice 64</name>
+			<visibility>0</visibility>
+			<description>Este: 4329182.06 | Norte: 6438313.36 | Sistema original: POSGAR 94 / Gauss-Krüger Argentina Faja 4.</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.811216106508,-32.183622151319,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE194BF5E000006">
+			<name>Vértice 65</name>
+			<visibility>0</visibility>
+			<description>Este: 4329142.32 | Norte: 6438125.02 | Sistema original: POSGAR 94 / Gauss-Krüger Argentina Faja 4.</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.81167092744199,-32.18531370486,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE194BF5E000007">
+			<name>Vértice 66</name>
+			<visibility>0</visibility>
+			<description>Este: 4329164.62 | Norte: 6438106.82 | Sistema original: POSGAR 94 / Gauss-Krüger Argentina Faja 4.</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.811437822801,-32.185481135329,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE194BF5E000008">
+			<name>Vértice 67</name>
+			<visibility>0</visibility>
+			<description>Este: 4329195.80 | Norte: 6438083.65 | Sistema original: POSGAR 94 / Gauss-Krüger Argentina Faja 4.</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.811111486437,-32.185694710235,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE194BF5E000009">
+			<name>Vértice 68</name>
+			<visibility>0</visibility>
+			<description>Este: 4329215.93 | Norte: 6438084.36 | Sistema original: POSGAR 94 / Gauss-Krüger Argentina Faja 4.</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.81089800401899,-32.185691366547,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE194BF5E00000A">
+			<name>Vértice 69</name>
+			<visibility>0</visibility>
+			<description>Este: 4329256.22 | Norte: 6438103.07 | Sistema original: POSGAR 94 / Gauss-Krüger Argentina Faja 4.</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.810467635729,-32.185528840551,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE194BF5E00000B">
+			<name>Vértice 70</name>
+			<visibility>0</visibility>
+			<description>Este: 4329288.08 | Norte: 6438121.89 | Sistema original: POSGAR 94 / Gauss-Krüger Argentina Faja 4.</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.81012659766201,-32.185364042497,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE194BF5E00000C">
+			<name>Vértice 57</name>
+			<visibility>0</visibility>
+			<description>Este: 4329333.68 | Norte: 6438155.62 | Sistema original: POSGAR 94 / Gauss-Krüger Argentina Faja 4.</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.80963727322001,-32.18506693755,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE194BF5E00000D">
+			<name>Vértice 56</name>
+			<visibility>0</visibility>
+			<description>Este: 4329320.70 | Norte: 6438196.38 | Sistema original: POSGAR 94 / Gauss-Krüger Argentina Faja 4.</description>
+			<styleUrl>#__managed_style_03218EC1C640061F7A1E</styleUrl>
+			<Point>
+				<coordinates>-64.809767575179,-32.184697581245,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder id="5CE18E45F4000001">
+		<name>Lote 7 - Pasaje Privado</name>
+		<visibility>0</visibility>
+		<open>1</open>
+		<description>Coordenadas originales Gauss-Kruger / POSGAR 94, transformadas a WGS84 para Google Earth. Sistema asumido: Argentina Faja 4 / EPSG:22184.</description>
+		<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+		<Placemark id="5CE18E45F4000002">
+			<name>Lote 7 - Pasaje Privado</name>
+			<description>Polígono generado desde tabla de vértices. Verificar visualmente contra plano/catastro.</description>
+			<styleUrl>#__managed_style_08594685CE40061F7A29</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-64.809675674,-32.179394252,0 -64.809661527,-32.179274,0 -64.80976576,-32.179253755,0 -64.809781849,-32.17939183,0 -64.80977076800001,-32.179592595,0 -64.809716631,-32.179771165,0 -64.809642536,-32.179948398,0 -64.809524094,-32.180043498,0 -64.809348423,-32.18011273,0 -64.80929080999999,-32.180281793,0 -64.809287126,-32.180352801,0 -64.809437116,-32.181069951,0 -64.809355572,-32.181561948,0 -64.80937309700001,-32.18167079,0 -64.809489641,-32.181801117,0 -64.80956826400001,-32.182158107,0 -64.809711729,-32.182288048,0 -64.809854724,-32.182367415,0 -64.81003850800001,-32.182386513,0 -64.810130066,-32.182432717,0 -64.810226918,-32.182537539,0 -64.810576654,-32.183019034,0 -64.810666196,-32.183729112,0 -64.81056217,-32.183749355,0 -64.81047377500001,-32.183048997,0 -64.810229427,-32.182712503,0 -64.81018477800001,-32.183033029,0 -64.81009558,-32.183186406,0 -64.809699803,-32.183699761,0 -64.809087052,-32.184076201,0 -64.808989719,-32.18407038,0 -64.809056179,-32.183983958,0 -64.80962189900001,-32.183636411,0 -64.810003413,-32.183141563,0 -64.81008164000001,-32.183007007,0 -64.810139949,-32.182589273,0 -64.81005902299999,-32.182501714,0 -64.810003553,-32.182473747,0 -64.80981743,-32.182454322,0 -64.809643244,-32.182357729,0 -64.80946977000001,-32.182200629,0 -64.809390095,-32.181838695,0 -64.809271924,-32.181706499,0 -64.809249323,-32.181566173,0 -64.809329758,-32.181071667,0 -64.809181051,-32.18036036,0 -64.809183334,-32.180164951,0 -64.809275783,-32.180042002,0 -64.80946386799999,-32.179967904,0 -64.809551212,-32.179897772,0 -64.809615185,-32.179744757,0 -64.809665444,-32.179579136,0 -64.809675674,-32.179394252,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="5CE18E45F4000003">
+			<name>Vértice 18</name>
+			<description>Vertice 18
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329319.47
+Norte: 6438784.74
+WGS84: -32.179394252, -64.809675674</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809675674,-32.179394252,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000004">
+			<name>Vértice 19</name>
+			<description>Vertice 19
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329320.58
+Norte: 6438798.10
+WGS84: -32.179274000, -64.809661527</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809661527,-32.179274,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000005">
+			<name>Vértice 93</name>
+			<description>Vertice 93
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329310.71
+Norte: 6438800.18
+WGS84: -32.179253755, -64.809765760</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.80976576,-32.179253755,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000006">
+			<name>Vértice 92</name>
+			<description>Vertice 92
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329309.45
+Norte: 6438784.84
+WGS84: -32.179391830, -64.809781849</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809781849,-32.17939183,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000007">
+			<name>Vértice 91</name>
+			<description>Vertice 91
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329310.87
+Norte: 6438762.59
+WGS84: -32.179592595, -64.809770768</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.80977076800001,-32.179592595,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000008">
+			<name>Vértice 90</name>
+			<description>Vertice 90
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329316.31
+Norte: 6438742.87
+WGS84: -32.179771165, -64.809716631</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809716631,-32.179771165,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000009">
+			<name>Vértice 89</name>
+			<description>Vertice 89
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329323.63
+Norte: 6438723.33
+WGS84: -32.179948398, -64.809642536</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809642536,-32.179948398,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400000A">
+			<name>Vértice 88</name>
+			<description>Vertice 88
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329334.98
+Norte: 6438712.97
+WGS84: -32.180043498, -64.809524094</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809524094,-32.180043498,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400000B">
+			<name>Vértice 87</name>
+			<description>Vertice 87
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329351.68
+Norte: 6438705.57
+WGS84: -32.180112730, -64.809348423</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809348423,-32.18011273,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400000C">
+			<name>Vértice 86</name>
+			<description>Vertice 86
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329357.43
+Norte: 6438686.91
+WGS84: -32.180281793, -64.809290810</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.80929080999999,-32.180281793,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400000D">
+			<name>Vértice 85</name>
+			<description>Vertice 85
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329357.91
+Norte: 6438679.04
+WGS84: -32.180352801, -64.809287126</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809287126,-32.180352801,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400000E">
+			<name>Vértice 84</name>
+			<description>Vertice 84
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329345.10
+Norte: 6438599.26
+WGS84: -32.181069951, -64.809437116</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809437116,-32.181069951,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400000F">
+			<name>Vértice 83</name>
+			<description>Vertice 83
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329353.71
+Norte: 6438544.82
+WGS84: -32.181561948, -64.809355572</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809355572,-32.181561948,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000010">
+			<name>Vértice 82</name>
+			<description>Vertice 82
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329352.26
+Norte: 6438532.72
+WGS84: -32.181670790, -64.809373097</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.80937309700001,-32.18167079,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000011">
+			<name>Vértice 81</name>
+			<description>Vertice 81
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329341.51
+Norte: 6438518.08
+WGS84: -32.181801117, -64.809489641</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809489641,-32.181801117,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000012">
+			<name>Vértice 80</name>
+			<description>Vertice 80
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329334.76
+Norte: 6438478.36
+WGS84: -32.182158107, -64.809568264</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.80956826400001,-32.182158107,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000013">
+			<name>Vértice 79</name>
+			<description>Vertice 79
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329321.47
+Norte: 6438463.72
+WGS84: -32.182288048, -64.809711729</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809711729,-32.182288048,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000014">
+			<name>Vértice 78</name>
+			<description>Vertice 78
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329308.13
+Norte: 6438454.69
+WGS84: -32.182367415, -64.809854724</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809854724,-32.182367415,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000015">
+			<name>Vértice 77</name>
+			<description>Vertice 77
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329290.83
+Norte: 6438452.28
+WGS84: -32.182386513, -64.810038508</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.81003850800001,-32.182386513,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000016">
+			<name>Vértice 76</name>
+			<description>Vertice 76
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329282.28
+Norte: 6438447.01
+WGS84: -32.182432717, -64.810130066</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.810130066,-32.182432717,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000017">
+			<name>Vértice 75</name>
+			<description>Vertice 75
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329273.34
+Norte: 6438435.23
+WGS84: -32.182537539, -64.810226918</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.810226918,-32.182537539,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000018">
+			<name>Vértice 74</name>
+			<description>Vertice 74
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329241.25
+Norte: 6438381.27
+WGS84: -32.183019034, -64.810576654</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.810576654,-32.183019034,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000019">
+			<name>Vértice 73</name>
+			<description>Vertice 73
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329234.13
+Norte: 6438302.37
+WGS84: -32.183729112, -64.810666196</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.810666196,-32.183729112,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400001A">
+			<name>Vértice 54</name>
+			<description>Vertice 54
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329243.98
+Norte: 6438300.29
+WGS84: -32.183749355, -64.810562170</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.81056217,-32.183749355,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400001B">
+			<name>Vértice 53</name>
+			<description>Vertice 53
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329251.01
+Norte: 6438378.11
+WGS84: -32.183048997, -64.810473775</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.81047377500001,-32.183048997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400001C">
+			<name>Vértice 52</name>
+			<description>Vertice 52
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329273.43
+Norte: 6438415.82
+WGS84: -32.182712503, -64.810229427</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.810229427,-32.182712503,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400001D">
+			<name>Vértice 51</name>
+			<description>Vertice 51
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329278.24
+Norte: 6438380.34
+WGS84: -32.183033029, -64.810184778</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.81018477800001,-32.183033029,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400001E">
+			<name>Vértice 50</name>
+			<description>Vertice 50
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329286.94
+Norte: 6438363.47
+WGS84: -32.183186406, -64.810095580</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.81009558,-32.183186406,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400001F">
+			<name>Vértice 49</name>
+			<description>Vertice 49
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329325.23
+Norte: 6438307.16
+WGS84: -32.183699761, -64.809699803</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809699803,-32.183699761,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000020">
+			<name>Vértice 48</name>
+			<description>Vertice 48
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329383.73
+Norte: 6438266.38
+WGS84: -32.184076201, -64.809087052</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809087052,-32.184076201,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000021">
+			<name>Vértice 47</name>
+			<description>Vertice 47
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329392.90
+Norte: 6438267.18
+WGS84: -32.184070380, -64.808989719</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.808989719,-32.18407038,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000022">
+			<name>Vértice 42</name>
+			<description>Vertice 42
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329386.47
+Norte: 6438276.66
+WGS84: -32.183983958, -64.809056179</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809056179,-32.183983958,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000023">
+			<name>Vértice 41</name>
+			<description>Vertice 41
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329332.46
+Norte: 6438314.31
+WGS84: -32.183636411, -64.809621899</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.80962189900001,-32.183636411,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000024">
+			<name>Vértice 40</name>
+			<description>Vertice 40
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329295.55
+Norte: 6438368.59
+WGS84: -32.183141563, -64.810003413</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.810003413,-32.183141563,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000025">
+			<name>Vértice 39</name>
+			<description>Vertice 39
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329287.92
+Norte: 6438383.39
+WGS84: -32.183007007, -64.810081640</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.81008164000001,-32.183007007,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000026">
+			<name>Vértice 24</name>
+			<description>Vertice 24
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329281.64
+Norte: 6438429.63
+WGS84: -32.182589273, -64.810139949</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.810139949,-32.182589273,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000027">
+			<name>Vértice 25</name>
+			<description>Vertice 25
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329289.11
+Norte: 6438439.47
+WGS84: -32.182501714, -64.810059023</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.81005902299999,-32.182501714,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000028">
+			<name>Vértice 26</name>
+			<description>Vertice 26
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329294.29
+Norte: 6438442.66
+WGS84: -32.182473747, -64.810003553</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.810003553,-32.182473747,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000029">
+			<name>Vértice 27</name>
+			<description>Vertice 27
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329311.81
+Norte: 6438445.11
+WGS84: -32.182454322, -64.809817430</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.80981743,-32.182454322,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400002A">
+			<name>Vértice 28</name>
+			<description>Vertice 28
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329328.06
+Norte: 6438456.10
+WGS84: -32.182357729, -64.809643244</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809643244,-32.182357729,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400002B">
+			<name>Vértice 29</name>
+			<description>Vertice 29
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329344.13
+Norte: 6438473.80
+WGS84: -32.182200629, -64.809469770</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.80946977000001,-32.182200629,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400002C">
+			<name>Vértice 30</name>
+			<description>Vertice 30
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329350.97
+Norte: 6438514.07
+WGS84: -32.181838695, -64.809390095</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809390095,-32.181838695,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400002D">
+			<name>Vértice 31</name>
+			<description>Vertice 31
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329361.87
+Norte: 6438528.92
+WGS84: -32.181706499, -64.809271924</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809271924,-32.181706499,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400002E">
+			<name>Vértice 9</name>
+			<description>Vertice 9
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329363.74
+Norte: 6438544.52
+WGS84: -32.181566173, -64.809249323</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809249323,-32.181566173,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F400002F">
+			<name>Vértice 10</name>
+			<description>Vertice 10
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329355.23
+Norte: 6438599.24
+WGS84: -32.181071667, -64.809329758</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809329758,-32.181071667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000030">
+			<name>Vértice 11</name>
+			<description>Vertice 11
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329367.93
+Norte: 6438678.37
+WGS84: -32.180360360, -64.809181051</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809181051,-32.18036036,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000031">
+			<name>Vértice 12</name>
+			<description>Vertice 12
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329367.35
+Norte: 6438700.04
+WGS84: -32.180164951, -64.809183334</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809183334,-32.180164951,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000032">
+			<name>Vértice 13</name>
+			<description>Vertice 13
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329358.40
+Norte: 6438713.53
+WGS84: -32.180042002, -64.809275783</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809275783,-32.180042002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000033">
+			<name>Vértice 14</name>
+			<description>Vertice 14
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329340.52
+Norte: 6438721.45
+WGS84: -32.179967904, -64.809463868</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.80946386799999,-32.179967904,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000034">
+			<name>Vértice 15</name>
+			<description>Vertice 15
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329332.15
+Norte: 6438729.09
+WGS84: -32.179897772, -64.809551212</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809551212,-32.179897772,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000035">
+			<name>Vértice 16</name>
+			<description>Vertice 16
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329325.83
+Norte: 6438745.96
+WGS84: -32.179744757, -64.809615185</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809615185,-32.179744757,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE18E45F4000036">
+			<name>Vértice 17</name>
+			<description>Vertice 17
+POSGAR 94 / Gauss-Kruger Faja 4
+Este: 4329320.78
+Norte: 6438764.25
+WGS84: -32.179579136, -64.809665444</description>
+			<styleUrl>#__managed_style_06FF42599440061F7A21</styleUrl>
+			<Point>
+				<coordinates>-64.809665444,-32.179579136,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder id="5CE1950CDE000001">
+		<name>Lote 6 - POSGAR 94 GK Faja 4</name>
+		<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+		<Placemark id="5CE1950CDE000002">
+			<name>Lote 6</name>
+			<styleUrl>#__managed_style_0E9585036740061F7A26</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-64.810666196,-32.183729112,0 -64.810576654,-32.183019034,0 -64.810226918,-32.182537539,0 -64.810130066,-32.182432717,0 -64.81003850800001,-32.182386513,0 -64.809854724,-32.182367415,0 -64.809711729,-32.182288048,0 -64.80956826400001,-32.182158107,0 -64.809489641,-32.181801117,0 -64.80937309700001,-32.18167079,0 -64.809355572,-32.181561948,0 -64.809437116,-32.181069951,0 -64.809287126,-32.180352801,0 -64.80928902700001,-32.180191658,0 -64.809348423,-32.18011273,0 -64.809524094,-32.180043498,0 -64.809642536,-32.179948398,0 -64.809716631,-32.179771165,0 -64.80977076800001,-32.179592595,0 -64.809781849,-32.17939183,0 -64.80976576,-32.179253755,0 -64.810027765,-32.179202762,0 -64.81121610700001,-32.183622151,0 -64.810666196,-32.183729112,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="5CE1950CDE000003">
+			<name>Vértice 73</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.810666196,-32.183729112,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE000004">
+			<name>Vértice 74</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.810576654,-32.183019034,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE000005">
+			<name>Vértice 75</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.810226918,-32.182537539,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE000006">
+			<name>Vértice 76</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.810130066,-32.182432717,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE000007">
+			<name>Vértice 77</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.81003850800001,-32.182386513,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE000008">
+			<name>Vértice 78</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.809854724,-32.182367415,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE000009">
+			<name>Vértice 79</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.809711729,-32.182288048,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE00000A">
+			<name>Vértice 80</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.80956826400001,-32.182158107,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE00000B">
+			<name>Vértice 81</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.809489641,-32.181801117,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE00000C">
+			<name>Vértice 82</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.80937309700001,-32.18167079,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE00000D">
+			<name>Vértice 83</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.809355572,-32.181561948,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE00000E">
+			<name>Vértice 84</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.809437116,-32.181069951,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE00000F">
+			<name>Vértice 85</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.809287126,-32.180352801,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE000010">
+			<name>Vértice 86</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.80928902700001,-32.180191658,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE000011">
+			<name>Vértice 87</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.809348423,-32.18011273,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE000012">
+			<name>Vértice 88</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.809524094,-32.180043498,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE000013">
+			<name>Vértice 89</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.809642536,-32.179948398,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE000014">
+			<name>Vértice 90</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.809716631,-32.179771165,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE000015">
+			<name>Vértice 91</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.80977076800001,-32.179592595,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE000016">
+			<name>Vértice 92</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.809781849,-32.17939183,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE000017">
+			<name>Vértice 93</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.80976576,-32.179253755,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE000018">
+			<name>Vértice 94</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.810027765,-32.179202762,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5CE1950CDE000019">
+			<name>Vértice 64</name>
+			<visibility>0</visibility>
+			<styleUrl>#__managed_style_0CBBA2B3D140061F7A23</styleUrl>
+			<Point>
+				<coordinates>-64.81121610700001,-32.183622151,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark id="065368CC6240062E7BDE">
+		<name>campo arriba</name>
+		<LookAt>
+			<longitude>-64.82098210455706</longitude>
+			<latitude>-32.16943357280314</latitude>
+			<altitude>1250.961625379749</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>30</gx:fovy>
+			<range>2348.576686664892</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_018A73978E40062E7BFC</styleUrl>
+		<LineString>
+			<coordinates>
+				-64.82061640429407,-32.16714160349546,0 -64.82003074225398,-32.17715163860485,0 -64.82194948152673,-32.17679222743931,0 -64.82253915739958,-32.16712660142739,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="05E36171A0400657B783">
+		<name>Ruta sin título</name>
+		<LookAt>
+			<longitude>-64.82165232014778</longitude>
+			<latitude>-32.168240340645</latitude>
+			<altitude>1271.191555882701</altitude>
+			<heading>-36.53780301269645</heading>
+			<tilt>59.97683890716065</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1569.96435996116</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_018A73978E40062E7BFC</styleUrl>
+		<LineString>
+			<coordinates>
+				-64.82254322181585,-32.1671243650453,0 -64.82063795728202,-32.16717012023631,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>
