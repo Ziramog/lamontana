@@ -93,19 +93,19 @@ const MainLayout = async ({ children }) => {
   const siteConfig = await getSiteConfig();
 
   return (
-    <AuthProvider>
-      <GlobalProvider>
         <html lang='es' className={`${lato.variable} ${ptSerif.variable} ${cormorantGaramond.variable}`}>
           <body className='font-sans antialiased text-body'>
-            <Navbar contactEmail={siteConfig.contactEmail} contactPhone={siteConfig.contactPhone} />
-            <main className="relative pb-[12px]">{children}</main>
-            <Footer footerDescription={siteConfig.footerDescription} contactEmail={siteConfig.contactEmail} contactPhone={siteConfig.contactPhone} contactAddress={siteConfig.contactAddress} />
-            <ToastContainer />
-            <GoogleAnalytics analyticsId={siteConfig.analyticsId} facebookPixelId={siteConfig.facebookPixelId} />
+            <AuthProvider>
+              <GlobalProvider>
+                <Navbar contactEmail={siteConfig.contactEmail} contactPhone={siteConfig.contactPhone} />
+                <main className="relative pb-[12px]">{children}</main>
+                <Footer footerDescription={siteConfig.footerDescription} contactEmail={siteConfig.contactEmail} contactPhone={siteConfig.contactPhone} contactAddress={siteConfig.contactAddress} />
+                <ToastContainer />
+                <GoogleAnalytics analyticsId={siteConfig.analyticsId} facebookPixelId={siteConfig.facebookPixelId} />
+              </GlobalProvider>
+            </AuthProvider>
           </body>
         </html>
-      </GlobalProvider>
-    </AuthProvider>
   );
 };
 
