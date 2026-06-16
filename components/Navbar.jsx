@@ -206,7 +206,11 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
               alt="La Montaña"
               width={280}
               height={80}
-              style={{ height: (!isScrolled && !isAdminPage) ? '80px' : '40px', width: 'auto' }}
+              style={{ 
+                height: (!isScrolled && !isAdminPage) ? '80px' : '40px', 
+                width: 'auto',
+                paddingTop: (!isScrolled && !isAdminPage) ? '25px' : '0px'
+              }}
             />
           </Link>
 

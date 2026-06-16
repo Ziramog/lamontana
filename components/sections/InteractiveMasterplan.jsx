@@ -47,6 +47,36 @@ const Geometry = ({ type = 'Polygon', paths, options, onClick, onMouseOver, onMo
   return null;
 };
 
+// Animator to perform a Google Earth like fly-in on mount
+const MapAnimator = ({ targetCenter, targetZoom }) => {
+  const map = useMap();
+  
+  useEffect(() => {
+    if (!map) return;
+    
+    // We start zoomed out
+    map.setZoom(targetZoom - 6);
+    
+    // Animate to target
+    setTimeout(() => {
+      map.panTo(targetCenter);
+      
+      let currentZoom = targetZoom - 6;
+      const zoomInterval = setInterval(() => {
+        if (currentZoom >= targetZoom) {
+          clearInterval(zoomInterval);
+          map.setZoom(targetZoom);
+        } else {
+          currentZoom += 0.2;
+          map.setZoom(currentZoom);
+        }
+      }, 50);
+    }, 1000);
+  }, [map, targetCenter, targetZoom]);
+  
+  return null;
+};
+
 const InteractiveMasterplan = ({ polygonsData }) => {
   const [hoveredPoly, setHoveredPoly] = useState(null);
   const [selectedPoly, setSelectedPoly] = useState(null);
@@ -172,8 +202,9 @@ const InteractiveMasterplan = ({ polygonsData }) => {
                 disableDefaultUI={true}
                 zoomControl={true}
                 fullscreenControl={true}
-                gestureHandling="greedy"
+                gestureHandling="cooperative"
               >
+                <MapAnimator targetCenter={defaultCenter} targetZoom={16} />
                 {mapPolygons.map((p) => (
                   <Geometry
                     key={p.name}

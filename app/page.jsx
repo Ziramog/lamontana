@@ -100,18 +100,7 @@ const HomePage = async () => {
       {/* 1. Hero — emotional hook + search + trust strip */}
       <Hero title="Naturaleza, altura y privacidad." subtitle="a 7 km del Durazno de Yacanto" />
 
-      {/* 2. Stats Bar — social proof metrics (flush with hero) */}
-      <StatsBar />
-
-      {/* 3. Featured — best inventory showcase */}
-      <div id="propiedades-destacadas">
-        <FeaturedPropertiesCarousel properties={serializedProperties.filter(p => p.is_featured && (p.images || []).length > 0).slice(0, 6)} />
-      </div>
-
-      {/* 4. CTA — seller + investor */}
-      <SellerCTA />
-
-      {/* 5. Agents — Roggero & Roma Historia */}
+      {/* 2. Nuestra Historia */}
       <div id="nuestra-historia">
         <Agents 
           title="La Montaña" 
@@ -126,15 +115,20 @@ Cada lote representa una oportunidad de conectar con la naturaleza y, al mismo t
         />
       </div>
 
-      {/* NUEVA SECCIÓN: Masterplan Interactivo */}
+      {/* 3. Mapa Interactivo */}
       <InteractiveMasterplan polygonsData={polygonsData} />
 
-      {/* 6. Reviews — Nuestros Clientes */}
+      {/* 4. Lotes destacados */}
+      <div id="propiedades-destacadas">
+        <FeaturedPropertiesCarousel properties={serializedProperties.filter(p => p.is_featured && (p.images || []).length > 0).slice(0, 6)} />
+      </div>
+
+      {/* SECCIONES OCULTAS 
+      <StatsBar />
+      <SellerCTA />
       <ScrollReveal variant="fadeScale">
         <ReviewsSection />
       </ScrollReveal>
-
-      {/* 7. Clients — Empresas y Proyectos (Oculto por ahora) 
       <Clients />
       */}
     </div>
