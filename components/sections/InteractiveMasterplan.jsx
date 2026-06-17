@@ -108,11 +108,11 @@ const InteractiveMasterplan = ({ polygonsData }) => {
       let label = null;
       let center = null;
 
-      // "lote" -> orange
+      // "lote" -> dorado serrano
       if (nameLower.includes('lote')) {
-        fillColor = '#db7340';
+        fillColor = '#C49A4A';
         fillOpacity = 0.15;
-        strokeColor = '#db7340';
+        strokeColor = '#C49A4A';
         strokeWeight = 1.5;
         
         // Extract lot number for the label
@@ -126,11 +126,11 @@ const InteractiveMasterplan = ({ polygonsData }) => {
         }
       }
       
-      // "durazno", "campo arriba" or "montaña arriba" -> yellow
+      // "durazno", "campo arriba" or "montaña arriba" -> dorado serrano (muted)
       if (nameLower.includes('durazno') || nameLower.includes('campo arriba') || nameLower.includes('montaña arriba')) {
-        fillColor = '#eab308'; // yellow-500
+        fillColor = '#C49A4A'; 
         fillOpacity = 0.15;
-        strokeColor = '#eab308';
+        strokeColor = '#C49A4A';
         strokeWeight = 2;
       }
       
@@ -179,7 +179,7 @@ const InteractiveMasterplan = ({ polygonsData }) => {
     return (
       <section className="pt-[12px] pb-[12px]" id="masterplan">
         <SectionBox className="px-4 md:px-[50px] py-16 md:py-24">
-          <div className="w-full relative rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center bg-gray-100" style={{ height: '70vh', minHeight: '500px' }}>
+          <div className="w-full relative overflow-hidden shadow-2xl flex items-center justify-center bg-gray-100" style={{ height: '70vh', minHeight: '500px' }}>
             <div className="text-center p-8">
               <h3 className="text-xl font-bold text-red-600 mb-2">Error de Configuración</h3>
               <p className="text-gray-700">Falta la variable de entorno <code className="bg-gray-200 px-2 py-1 rounded">NEXT_PUBLIC_GOOGLE_MAPS_API_KEY</code> en Vercel.</p>
@@ -210,7 +210,7 @@ const InteractiveMasterplan = ({ polygonsData }) => {
         </div>
 
         <ScrollReveal>
-          <div className="w-full relative rounded-2xl overflow-hidden shadow-2xl" style={{ height: '70vh', minHeight: '500px' }}>
+          <div className="w-full relative overflow-hidden shadow-2xl" style={{ height: '70vh', minHeight: '500px' }}>
             <APIProvider apiKey={API_KEY} language="es" region="AR">
               <Map
                 defaultZoom={16}
@@ -263,7 +263,7 @@ const InteractiveMasterplan = ({ polygonsData }) => {
 
             {/* Custom Info Window UI overlaid on the map */}
             {infoWindowPos && (
-              <div className="absolute z-10 bottom-8 left-1/2 -translate-x-1/2 bg-white/95 backdrop-blur-md rounded-xl p-5 shadow-2xl min-w-[280px] border border-gray-100">
+              <div className="absolute z-10 bottom-8 left-1/2 -translate-x-1/2 bg-white/95 backdrop-blur-md p-5 shadow-2xl min-w-[280px] border border-gray-100">
                 <button 
                   onClick={() => { setInfoWindowPos(null); setSelectedPoly(null); }}
                   className="absolute top-3 right-3 text-gray-400 hover:text-black transition"
@@ -276,19 +276,19 @@ const InteractiveMasterplan = ({ polygonsData }) => {
                 <p className="text-sm text-[var(--color-brand)] font-medium mb-4">
                   Estado: Consultar Disponibilidad
                 </p>
-                <a href="/contacto" className="block w-full text-center bg-black text-white text-sm font-semibold py-3 rounded-lg hover:bg-gray-800 transition">
+                <a href="/contacto" className="block w-full text-center bg-black text-white text-sm font-semibold py-3 hover:bg-gray-800 transition">
                   Consultar Precio
                 </a>
               </div>
             )}
             
-            <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white px-4 py-2 rounded-lg text-sm flex gap-4 pointer-events-none">
+            <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white px-4 py-2 text-sm flex gap-4 pointer-events-none">
               <div className="flex items-center gap-2">
                 <span className="w-3 h-3 rounded-full bg-white opacity-40 border border-white"></span>
                 <span>Disponible</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="w-3 h-3 rounded-full bg-[#db7340]"></span>
+                <span className="w-3 h-3 bg-[#C49A4A]"></span>
                 <span>Seleccionado</span>
               </div>
             </div>

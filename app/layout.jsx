@@ -4,38 +4,23 @@ import AuthProvider from '@/components/AuthProvider';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { GlobalProvider } from '@/context/GlobalContext';
 import { ToastContainer } from 'react-toastify';
-import { Cormorant_Garamond } from 'next/font/google';
-import localFont from 'next/font/local';
 import 'react-toastify/dist/ReactToastify.css';
 import '@/assets/styles/globals.css';
 import 'photoswipe/dist/photoswipe.css';
 
-const lato = localFont({
-  src: [
-    { path: '../assets/fonts/lato/Lato-Light.woff2', weight: '300', style: 'normal' },
-    { path: '../assets/fonts/lato/Lato-LightItalic.woff2', weight: '300', style: 'italic' },
-    { path: '../assets/fonts/lato/Lato-Regular.woff2', weight: '400', style: 'normal' },
-    { path: '../assets/fonts/lato/Lato-Italic.woff2', weight: '400', style: 'italic' },
-    { path: '../assets/fonts/lato/Lato-Bold.woff2', weight: '700', style: 'normal' },
-  ],
+import { Cinzel, Montserrat } from 'next/font/google';
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
   variable: '--font-body',
   display: 'swap',
 });
 
-const ptSerif = localFont({
-  src: [
-    { path: '../assets/fonts/pt-serif/PTSerif-Regular.woff2', weight: '400', style: 'normal' },
-    { path: '../assets/fonts/pt-serif/PTSerif-Bold.woff2', weight: '700', style: 'normal' },
-  ],
-  variable: '--font-heading',
-  display: 'swap',
-});
-
-const cormorantGaramond = Cormorant_Garamond({
+const cinzel = Cinzel({
   subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  style: ['normal', 'italic'],
-  variable: '--font-display',
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-heading',
   display: 'swap',
 });
 
@@ -93,7 +78,7 @@ const MainLayout = async ({ children }) => {
   const siteConfig = await getSiteConfig();
 
   return (
-        <html lang='es' className={`${lato.variable} ${ptSerif.variable} ${cormorantGaramond.variable}`}>
+        <html lang='es' className={`${montserrat.variable} ${cinzel.variable}`}>
           <body className='font-sans antialiased text-body'>
             <AuthProvider>
               <GlobalProvider>
