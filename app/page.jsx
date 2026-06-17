@@ -99,10 +99,7 @@ const HomePage = async () => {
     <div>
       <JsonLd data={jsonLd} />
       {/* 1. Hero — emotional hook + search + trust strip */}
-      <Hero 
-        title="Lotes de campo en entorno serrano." 
-        subtitle="Agua de vertiente, costa de arroyo, forestación añosa y acceso interno a cada sector." 
-      />
+      <Hero />
 
       {/* 2. Nuestra Historia */}
       <div id="nuestra-historia">

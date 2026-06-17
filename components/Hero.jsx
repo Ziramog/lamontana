@@ -9,7 +9,7 @@ import getTopSearches from '@/app/actions/getTopSearches';
 const fullDesktopLabel = 'Ciudad, Localidad, Tipo de Inmueble y Palabra Clave';
 const fullMobileLabel = 'Ciudad, Localidad, Tipo de Inmueble y Palabra Clave';
 
-const Hero = ({ title = 'Vendemos Inmuebles, Construimos Confianza', subtitle = '' }) => {
+const Hero = () => {
   const router = useRouter();
   const [filters, setFilters] = useState({
     operation: 'Venta',
@@ -199,7 +199,7 @@ const Hero = ({ title = 'Vendemos Inmuebles, Construimos Confianza', subtitle = 
         <div
           className='absolute inset-0'
           style={{
-            background: 'linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.10) 40%, rgba(0,0,0,0.55) 100%)',
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.25) 30%, rgba(0,0,0,0.75) 100%)',
           }}
         />
         <div className='absolute inset-0 z-10 pointer-events-none' style={{ backgroundImage: 'url(/senada/images/overlay-pattern.png)', backgroundRepeat: 'repeat', backgroundSize: '4px' }} />
@@ -216,23 +216,54 @@ const Hero = ({ title = 'Vendemos Inmuebles, Construimos Confianza', subtitle = 
             aria-hidden='true'
           />
         )}
-          {/* Title Area */}
-          <div className='w-full px-6 text-center flex flex-col items-center transition-all duration-500 shrink-0 translate-y-[12vh] md:translate-y-[20vh] relative z-[30]'>
+          {/* Commercial Funnel Area */}
+          <div className='w-full px-4 md:px-8 text-center flex flex-col items-center transition-all duration-500 shrink-0 translate-y-[8vh] md:translate-y-[15vh] relative z-[30] max-w-5xl mx-auto'>
             <motion.div
-              initial={{ opacity: 0, y: -80 }}
+              initial={{ opacity: 0, y: -40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+              className="flex flex-col items-center w-full"
             >
-              <h1 className='font-display font-normal text-white leading-tight' style={{ fontSize: 'clamp(28px, 2.4vw, 38px)', lineHeight: 1.0 }}>
-                {title}
+              {/* Microcopy Context */}
+              <span className="text-white/80 text-[10px] md:text-xs font-semibold uppercase tracking-[0.3em] mb-4 md:mb-6 flex items-center gap-3">
+                <span className="w-8 h-px bg-white/30" />
+                A 7 km de El Durazno
+                <span className="w-8 h-px bg-white/30" />
+              </span>
+
+              {/* H1 Principal */}
+              <h1 className='font-display font-medium text-white leading-[1.15] mb-5 md:mb-6' style={{ fontSize: 'clamp(32px, 5vw, 64px)' }}>
+                Lotes de campo en entorno serrano
               </h1>
-              {subtitle && (
-                <div className='flex items-center justify-center gap-3 mt-6'>
-                  <span className='w-7 h-px bg-white/40 flex-shrink-0' />
-                  <span className='text-white/70 text-[11px] font-semibold uppercase tracking-[0.18em]'>{subtitle}</span>
-                  <span className='w-7 h-px bg-white/40 flex-shrink-0' />
-                </div>
-              )}
+
+              {/* Subtítulo Diferenciales */}
+              <p className="text-white/90 font-light text-[15px] md:text-xl max-w-3xl leading-relaxed mb-8 md:mb-10">
+                Agua de vertiente, costa de arroyo, forestación añosa y acceso interno a cada sector.
+              </p>
+
+              {/* Bloque Comercial (Badges) */}
+              <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-10 md:mb-12">
+                <span className="bg-[#141412]/60 backdrop-blur-md border border-white/10 text-white text-[11px] md:text-sm px-4 md:px-6 py-2 md:py-2.5 rounded-full font-medium tracking-wide">
+                  Aptos para vivienda
+                </span>
+                <span className="bg-[#141412]/60 backdrop-blur-md border border-white/10 text-white text-[11px] md:text-sm px-4 md:px-6 py-2 md:py-2.5 rounded-full font-medium tracking-wide">
+                  Títulos perfectos
+                </span>
+                <span className="bg-[#141412]/60 backdrop-blur-md border border-white/10 text-[var(--color-brand)] text-[11px] md:text-sm px-4 md:px-6 py-2 md:py-2.5 rounded-full font-bold tracking-wide">
+                  Escrituración inmediata
+                </span>
+              </div>
+
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <a href="#masterplan" className="bg-[var(--color-brand)] hover:bg-[#a37d36] text-white font-bold text-[13px] md:text-sm uppercase tracking-[0.15em] px-8 py-4 rounded-[4px] transition-all flex items-center justify-center w-full sm:w-auto shadow-lg shadow-black/20">
+                  Ver lotes disponibles
+                </a>
+                <a href="https://wa.me/5493547563911" target="_blank" rel="noopener noreferrer" className="bg-black/40 backdrop-blur-md border border-white/20 hover:bg-white/10 text-white font-bold text-[13px] md:text-sm uppercase tracking-[0.15em] px-8 py-4 rounded-[4px] transition-all flex items-center justify-center gap-3 w-full sm:w-auto">
+                  <FaWhatsapp className="text-xl text-[#25D366]" />
+                  Consultar por WhatsApp
+                </a>
+              </div>
             </motion.div>
           </div>
           {/* Search Bar - Oculto por pedido del usuario */}
