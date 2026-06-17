@@ -1,7 +1,9 @@
-const SectionBox = ({ children, className = '' }) => (
-  <div className={`bg-white w-full ${className}`}>
-    {children}
-  </div>
-);
+const SectionBox = ({ children, className = '', id }) => {
+  return (
+    <div className={`bg-transparent w-full ${className}`} id={id}>
+      {children}
+    </div>
+  );
+};
 
 export default SectionBox;

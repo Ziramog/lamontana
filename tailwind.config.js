@@ -18,9 +18,9 @@ module.exports = {
         marfil: '#F7F4EF',
         surface: { DEFAULT: '#F7F4EF', alt: '#FFFFFF', muted: '#D8C9B2' },
         site: '#F7F4EF',
-        heading: '#2A2A2A',
-        body: '#2A2A2A',
-        muted: '#7A7A7A',
+        heading: '#F7F4EF',
+        body: '#D8C9B2',
+        muted: '#8C8C88',
         success: '#25D366',
       },
       fontFamily: {

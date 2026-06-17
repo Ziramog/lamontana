@@ -13,17 +13,17 @@
   --color-brand-muted: #EBE5D9;
 
   /* Neutrals */
-  --color-ink: #2A2A2A;
-  --color-ink-secondary: #4B4B48;
+  --color-ink: #F7F4EF;
+  --color-ink-secondary: #D8C9B2;
   --color-ink-tertiary: #8C8C88;
   --color-border: #D8C9B2;
   --color-border-strong: #C49A4A;
 
   /* Surfaces */
-  --color-surface: #F7F4EF;
-  --color-surface-soft: #FFFFFF;
-  --color-surface-dark: #2A2A2A;
-  --color-surface-darker: #1C1C1A;
+  --color-surface: #2A2A2A;
+  --color-surface-soft: #1C1C1A;
+  --color-surface-dark: #F7F4EF;
+  --color-surface-darker: #000000;
 
   /* Functional */
   --color-success: #16A34A;
@@ -77,8 +77,8 @@
     overflow-x: hidden;
   }
   body {
-    background-color: #F6F6F6;
-    @apply text-body;
+    background-color: var(--color-surface);
+    color: var(--color-ink);
     overflow-x: hidden;
   }
   *, *::before, *::after {
@@ -97,7 +97,7 @@
   }
 
   .card {
-    @apply bg-white rounded-xl shadow-card hover:shadow-card-hover transition-shadow duration-300;
+    @apply bg-[#1C1C1A] shadow-card hover:shadow-card-hover transition-shadow duration-300 border border-[#3B3B3B];
   }
 
   .btn-primary {
@@ -113,7 +113,7 @@
   }
 
   .pill-inactive {
-    @apply bg-white text-body border-gray-200 hover:border-primary hover:text-primary;
+    @apply bg-[#1C1C1A] text-marfil border-[#3B3B3B] hover:border-primary hover:text-primary;
   }
 
   .price-marker {
