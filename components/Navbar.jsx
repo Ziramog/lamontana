@@ -88,7 +88,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
           {/* Logo */}
           <Link className="flex items-center flex-shrink-0 group" href="/">
             <Image
-              className="brightness-0 invert transition-all duration-500 group-hover:opacity-70"
+              className="transition-all duration-500 group-hover:opacity-70"
               src='/logolamontaña.png'
               alt='La Montaña'
               width={400}
@@ -210,7 +210,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
             href="/"
           >
             <Image
-              className={`brightness-0 invert transition-all duration-500 ${(!isScrolled && !isAdminPage) ? 'origin-top' : 'origin-left'}`}
+              className={`transition-all duration-500 ${(!isScrolled && !isAdminPage) ? 'origin-top' : 'origin-left'}`}
               src="/logolamontaña.png"
               alt="La Montaña"
               width={600}
