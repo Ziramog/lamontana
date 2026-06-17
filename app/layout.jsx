@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import AuthProvider from '@/components/AuthProvider';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
+import Preloader from '@/components/Preloader';
 import { GlobalProvider } from '@/context/GlobalContext';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -82,6 +83,7 @@ const MainLayout = async ({ children }) => {
           <body className='font-sans antialiased text-body'>
             <AuthProvider>
               <GlobalProvider>
+                <Preloader />
                 <Navbar contactEmail={siteConfig.contactEmail} contactPhone={siteConfig.contactPhone} />
                 <main className="relative pb-[12px]">{children}</main>
                 <Footer footerDescription={siteConfig.footerDescription} contactEmail={siteConfig.contactEmail} contactPhone={siteConfig.contactPhone} contactAddress={siteConfig.contactAddress} />
