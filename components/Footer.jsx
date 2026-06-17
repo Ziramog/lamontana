@@ -62,7 +62,7 @@ const Footer = ({
                   width={200}
                   height={100}
                   style={{ height: '100px', width: 'auto' }}
-                  className="transition-opacity hover:opacity-80"
+                  className="brightness-0 invert transition-opacity hover:opacity-80"
                 />
               </Link>
                   <ul>
@@ -252,7 +252,7 @@ const Footer = ({
                 width={200}
                 height={100}
                 style={{ height: '55px', width: 'auto' }}
-                className="transition-opacity hover:opacity-80"
+                className="brightness-0 invert transition-opacity hover:opacity-80"
               />
             </Link>
             <a href={`https://maps.google.com/?q=${encodeURIComponent(contactAddress + ', Alta Gracia, Córdoba')}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-[13px] text-white/60 font-light mt-3 hover:text-white transition-colors">
