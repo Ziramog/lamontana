@@ -26,12 +26,12 @@ const Agents = ({
         {/* Section Header — same pattern as Featured Properties */}
         <div className="text-center mb-10 md:mb-14 flex flex-col items-center">
           <ScrollReveal variant="fadeLeft">
-            <h2 className="text-[28px] md:text-[40px] font-normal text-[var(--color-ink)] leading-tight mb-1" style={{ fontFamily: 'var(--font-heading)' }}>
+            <h2 className="text-[28px] md:text-[40px] font-normal text-heading leading-tight mb-1" style={{ fontFamily: 'var(--font-heading)' }}>
               {title}
             </h2>
           </ScrollReveal>
           {subtitle && (
-            <p className="text-[12px] md:text-[14px] text-[var(--color-ink-secondary)] tracking-[0.2em] uppercase font-light mb-6">
+            <p className="text-[12px] md:text-[14px] text-body tracking-[0.2em] uppercase font-light mb-6">
               {subtitle}
             </p>
           )}
@@ -48,7 +48,7 @@ const Agents = ({
         <div className={`max-w-2xl mx-auto text-justify transition-all duration-500 ${
           visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`} style={{ transitionDelay: '100ms' }}>
-          <div className="text-[16px] md:text-[18px] font-light text-[var(--color-ink-secondary)] leading-[1.8] whitespace-pre-wrap" style={{ fontFamily: 'var(--font-body)' }}>
+          <div className="text-[16px] md:text-[18px] font-light text-body leading-[1.8] whitespace-pre-wrap" style={{ fontFamily: 'var(--font-body)' }}>
             {text}
           </div>
         </div>

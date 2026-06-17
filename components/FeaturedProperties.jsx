@@ -25,7 +25,7 @@ const FeaturedProperties = ({ properties = [] }) => {
         {/* Section Header */}
         <div className="text-center mb-10 md:mb-14">
           <ScrollReveal variant="fadeLeft">
-            <h2 className="text-[28px] md:text-[40px] font-normal text-[#0F172A] leading-tight mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
+            <h2 className="text-[28px] md:text-[40px] font-normal text-heading leading-tight mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
               Lotes Destacados
             </h2>
           </ScrollReveal>
@@ -75,3 +75,4 @@ const FeaturedProperties = ({ properties = [] }) => {
 };
 
 export default FeaturedProperties;
+

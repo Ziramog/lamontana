@@ -47,7 +47,7 @@ const Footer = ({
   };
 
   return (
-    <footer className="text-white" style={{ background: '#110b11' }}>
+    <footer className="text-white" style={{ background: '#141412' }}>
       {/* Desktop */}
       <div className="hidden md:block">
         <div className="max-w-[1430px] mx-auto px-4 py-[35px]">
