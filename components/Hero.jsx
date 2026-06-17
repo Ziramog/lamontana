@@ -237,22 +237,9 @@ const Hero = () => {
               </h1>
 
               {/* Subtítulo Diferenciales */}
-              <p className="text-white/90 font-light text-[15px] md:text-xl max-w-3xl leading-relaxed mb-8 md:mb-10">
+              <p className="text-white/90 font-light text-[15px] md:text-xl max-w-3xl leading-relaxed mb-10 md:mb-12">
                 Agua de vertiente, costa de arroyo, forestación añosa y acceso interno a cada sector.
               </p>
-
-              {/* Bloque Comercial (Badges) */}
-              <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-10 md:mb-12">
-                <span className="bg-[#141412]/60 backdrop-blur-md border border-white/10 text-white text-[11px] md:text-sm px-4 md:px-6 py-2 md:py-2.5 rounded-full font-medium tracking-wide">
-                  Aptos para vivienda
-                </span>
-                <span className="bg-[#141412]/60 backdrop-blur-md border border-white/10 text-white text-[11px] md:text-sm px-4 md:px-6 py-2 md:py-2.5 rounded-full font-medium tracking-wide">
-                  Títulos perfectos
-                </span>
-                <span className="bg-[#141412]/60 backdrop-blur-md border border-white/10 text-[var(--color-brand)] text-[11px] md:text-sm px-4 md:px-6 py-2 md:py-2.5 rounded-full font-bold tracking-wide">
-                  Escrituración inmediata
-                </span>
-              </div>
 
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">

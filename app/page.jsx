@@ -3,6 +3,7 @@ import FeaturedPropertiesCarousel from '@/components/FeaturedPropertiesCarousel'
 import SellerCTA from '@/components/sections/SellerCTA';
 import StatsBar from '@/components/sections/StatsBar';
 import Agents from '@/components/sections/Agents';
+import TrustStrip from '@/components/sections/TrustStrip';
 import CommunicationPillars from '@/components/sections/CommunicationPillars';
 import ReviewsSection from '@/components/ReviewsSection';
 import Clients from '@/components/Clients';
@@ -100,6 +101,7 @@ const HomePage = async () => {
       <JsonLd data={jsonLd} />
       {/* 1. Hero — emotional hook + search + trust strip */}
       <Hero />
+      <TrustStrip />
 
       {/* 2. Nuestra Historia */}
       <div id="nuestra-historia">
