@@ -208,7 +208,7 @@ const Hero = () => {
             background: 'radial-gradient(circle at center, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 60%)',
           }}
         />
-        <div className='absolute inset-0 z-10 pointer-events-none' style={{ backgroundImage: 'url(/senada/images/overlay-pattern.png)', backgroundRepeat: 'repeat', backgroundSize: '4px' }} />
+        <div className='absolute inset-0 z-10 pointer-events-none opacity-50' style={{ backgroundImage: 'url(/senada/images/overlay-pattern.png)', backgroundRepeat: 'repeat', backgroundSize: '4px' }} />
       </div>
 
       {/* Content structured with Flexbox */}
@@ -231,7 +231,7 @@ const Hero = () => {
               className="flex flex-col items-center w-full"
             >
               {/* Microcopy Context */}
-              <span className="text-white/80 text-[10px] md:text-xs font-semibold uppercase tracking-[0.3em] mb-4 md:mb-6 flex items-center gap-3">
+              <span className="hidden md:flex text-white/80 text-[10px] md:text-xs font-semibold uppercase tracking-[0.3em] mb-4 md:mb-6 items-center gap-3">
                 <span className="w-8 h-px bg-white/30" />
                 A 7 km de El Durazno
                 <span className="w-8 h-px bg-white/30" />
@@ -239,21 +239,21 @@ const Hero = () => {
 
               {/* H1 Principal */}
               <h1 className='font-display font-normal text-white leading-[1.1] mb-5 md:mb-6 tracking-tight' style={{ fontSize: 'clamp(32px, 5vw, 64px)' }}>
-                Lotes de campo en entorno serrano
+                Lotes de campo <br className="block md:hidden"/> en entorno serrano
               </h1>
 
               {/* Subtítulo Diferenciales */}
-              <p className="text-white/90 font-light text-[15px] md:text-xl max-w-3xl leading-relaxed mb-10 md:mb-12">
-                Agua de vertiente, costa de arroyo, forestación añosa y acceso interno a cada sector.
+              <p className="text-white/90 font-light text-[15px] md:text-xl max-w-3xl leading-relaxed mb-10 md:mb-12 px-4 md:px-0">
+                Agua de vertiente, costa de arroyo y forestación añosa<span className="hidden md:inline">, acceso interno a cada sector</span>.
               </p>
 
               {/* CTAs */}
-              <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-6 w-full sm:w-auto">
+              <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-6 w-full sm:w-auto mt-2 md:mt-0">
                 <a href="#masterplan" className="bg-[var(--color-brand)] hover:bg-[#a37d36] text-white font-medium text-[13px] md:text-sm uppercase tracking-[0.15em] px-8 py-4 rounded-[2px] transition-all flex items-center justify-center w-full sm:w-auto shadow-lg shadow-black/20">
                   Ver lotes disponibles
                 </a>
-                <a href="https://wa.me/5493547563911" target="_blank" rel="noopener noreferrer" className="border border-white/20 hover:border-white/50 text-white/90 font-light text-[12px] md:text-[13px] uppercase tracking-[0.15em] px-8 py-4 rounded-[2px] transition-all flex items-center justify-center gap-3 w-full sm:w-auto">
-                  <FaWhatsapp className="text-[18px] text-white/70" />
+                <a href="https://wa.me/5493547563911" target="_blank" rel="noopener noreferrer" className="md:border border-white/20 hover:border-white/50 text-white/80 hover:text-white font-light text-[12px] md:text-[13px] uppercase tracking-[0.15em] px-4 md:px-8 py-3 md:py-4 rounded-[2px] transition-all flex items-center justify-center gap-3 w-full sm:w-auto mt-2 md:mt-0">
+                  <FaWhatsapp className="text-[18px] text-white/60 md:text-white/70" />
                   Consultar por WhatsApp
                 </a>
               </div>
@@ -268,7 +268,7 @@ const Hero = () => {
           {!scrolled && (
             <div className='absolute left-0 right-0 z-[50] bottom-[40px] flex justify-center scroll-indicator-container cursor-pointer' onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
               <div className="flex flex-col items-center gap-3">
-                <span className="text-white/70 text-[11px] font-semibold uppercase tracking-[0.18em]">Descubrí La Montaña</span>
+                <span className="hidden md:block text-white/70 text-[11px] font-semibold uppercase tracking-[0.18em]">Descubrí La Montaña</span>
                 <img
                   src='/senada/images/icons/ico_arrow-down.svg'
                   alt='scroll'

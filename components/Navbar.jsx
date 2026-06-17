@@ -216,7 +216,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
               width={600}
               height={200}
               style={{ 
-                height: (!isScrolled && !isAdminPage) ? '200px' : '40px', 
+                height: (!isScrolled && !isAdminPage) ? '140px' : '40px', 
                 width: 'auto',
                 maxWidth: (!isScrolled && !isAdminPage) ? '85vw' : 'none',
                 objectFit: 'contain'
@@ -224,11 +224,8 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
             />
           </Link>
 
-          {/* Search icon — 20px left of hamburger */}
+          {/* Hamburger / Close — senada style */}
           <div className="flex items-center gap-5">
-            <Link href="/properties" className="w-8 h-8 flex items-center justify-center">
-              <img src="/senada/images/icons/ico_search.svg" alt="Buscar" className="w-6 h-6" style={{ filter: 'brightness(0) invert(1)' }} />
-            </Link>
 
             {/* Hamburger / Close — senada style */}
             <button
