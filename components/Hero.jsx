@@ -197,9 +197,15 @@ const Hero = () => {
           />
         ))}
         <div
-          className='absolute inset-0'
+          className='absolute inset-0 z-10'
           style={{
-            background: 'linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.25) 30%, rgba(0,0,0,0.75) 100%)',
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 30%, rgba(0,0,0,0.7) 100%)',
+          }}
+        />
+        <div 
+          className="absolute inset-0 z-10 pointer-events-none"
+          style={{
+            background: 'radial-gradient(circle at center, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 60%)',
           }}
         />
         <div className='absolute inset-0 z-10 pointer-events-none' style={{ backgroundImage: 'url(/senada/images/overlay-pattern.png)', backgroundRepeat: 'repeat', backgroundSize: '4px' }} />
@@ -232,7 +238,7 @@ const Hero = () => {
               </span>
 
               {/* H1 Principal */}
-              <h1 className='font-display font-medium text-white leading-[1.15] mb-5 md:mb-6' style={{ fontSize: 'clamp(32px, 5vw, 64px)' }}>
+              <h1 className='font-display font-normal text-white leading-[1.1] mb-5 md:mb-6 tracking-tight' style={{ fontSize: 'clamp(32px, 5vw, 64px)' }}>
                 Lotes de campo en entorno serrano
               </h1>
 
@@ -242,12 +248,12 @@ const Hero = () => {
               </p>
 
               {/* CTAs */}
-              <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                <a href="#masterplan" className="bg-[var(--color-brand)] hover:bg-[#a37d36] text-white font-bold text-[13px] md:text-sm uppercase tracking-[0.15em] px-8 py-4 rounded-[4px] transition-all flex items-center justify-center w-full sm:w-auto shadow-lg shadow-black/20">
+              <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-6 w-full sm:w-auto">
+                <a href="#masterplan" className="bg-[var(--color-brand)] hover:bg-[#a37d36] text-white font-medium text-[13px] md:text-sm uppercase tracking-[0.15em] px-8 py-4 rounded-[2px] transition-all flex items-center justify-center w-full sm:w-auto shadow-lg shadow-black/20">
                   Ver lotes disponibles
                 </a>
-                <a href="https://wa.me/5493547563911" target="_blank" rel="noopener noreferrer" className="bg-black/40 backdrop-blur-md border border-white/20 hover:bg-white/10 text-white font-bold text-[13px] md:text-sm uppercase tracking-[0.15em] px-8 py-4 rounded-[4px] transition-all flex items-center justify-center gap-3 w-full sm:w-auto">
-                  <FaWhatsapp className="text-xl text-[#25D366]" />
+                <a href="https://wa.me/5493547563911" target="_blank" rel="noopener noreferrer" className="border border-white/20 hover:border-white/50 text-white/90 font-light text-[12px] md:text-[13px] uppercase tracking-[0.15em] px-8 py-4 rounded-[2px] transition-all flex items-center justify-center gap-3 w-full sm:w-auto">
+                  <FaWhatsapp className="text-[18px] text-white/70" />
                   Consultar por WhatsApp
                 </a>
               </div>
