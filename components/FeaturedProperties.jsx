@@ -62,12 +62,11 @@ const FeaturedProperties = ({ properties = [] }) => {
 
         {/* CTA */}
         <div className="text-center">
-          <a
-            href="/properties"
-            className="inline-block text-[var(--color-brand)] text-[13px] font-bold uppercase tracking-wider transition-all duration-200 hover:underline underline-offset-4 decoration-[var(--color-brand)]"
+          <span
+            className="inline-block text-[var(--color-brand)] text-[13px] font-bold uppercase tracking-wider transition-all duration-200 cursor-default"
           >
-            VER TODOS LOS LOTES
-          </a>
+            MÁS LOTES PRÓXIMAMENTE
+          </span>
         </div>
       </SectionBox>
     </section>
