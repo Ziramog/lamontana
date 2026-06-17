@@ -90,7 +90,7 @@
     ]
   },
   {
-    "name": "Lote1frente",
+    "name": "Lote 7",
     "type": "Polygon",
     "coords": [
       {
@@ -120,7 +120,7 @@
     ]
   },
   {
-    "name": "Lote2frente",
+    "name": "Lote 8",
     "type": "Polygon",
     "coords": [
       {
@@ -146,7 +146,7 @@
     ]
   },
   {
-    "name": "Lote3frente",
+    "name": "Lote 9",
     "type": "Polygon",
     "coords": [
       {
@@ -486,7 +486,7 @@
     ]
   },
   {
-    "name": "Lote 7 - Pasaje Privado",
+    "name": "Camino Interno",
     "type": "Polygon",
     "coords": [
       {
