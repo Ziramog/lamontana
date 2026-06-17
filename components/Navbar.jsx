@@ -211,36 +211,37 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
           </div>
         </div>
 
-        {/* Mobile fullscreen overlay — Senada style */}
+        {/* Mobile fullscreen overlay — Wolfim style */}
         <div
-          className="md:hidden fixed inset-x-0 z-[110] bg-[#141412] flex flex-col overflow-x-hidden"
+          className="md:hidden fixed inset-x-0 z-[110] flex flex-col overflow-x-hidden"
           style={{
+            background: 'var(--color-brand)',
             top: 'calc(env(safe-area-inset-top, 8px) + 60px)',
             height: 'calc(100dvh - env(safe-area-inset-top, 8px) - 60px)',
-            padding: '40px 12px calc(20px + env(safe-area-inset-bottom, 0px))',
+            padding: '40px 24px calc(20px + env(safe-area-inset-bottom, 0px))',
             overflowY: 'auto',
-            transformOrigin: 'top',
-            transform: isMobileMenuOpen ? 'scaleY(1)' : 'scaleY(0)',
-            opacity: isMobileMenuOpen ? 1 : 0,
-            transition: 'transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s ease',
+            clipPath: isMobileMenuOpen ? 'inset(0px 0px 0px 0px)' : 'inset(0px 0px 100% 100%)',
+            transition: isMobileMenuOpen 
+              ? 'clip-path 0.6s cubic-bezier(0.77, 0, 0.175, 1)' 
+              : 'clip-path 0.65s cubic-bezier(0.77, 0, 0.175, 1)',
             pointerEvents: isMobileMenuOpen ? 'auto' : 'none',
           }}
         >
-          <nav className="flex-1 flex flex-col px-0">
+          <nav className="flex-1 flex flex-col px-0 mt-4">
             {/* Destacadas */}
-            <Link href="/#propiedades-destacadas" className={`block text-white text-[22px] py-[15px] border-b border-white/[.08] hover:text-[var(--color-brand)] transition-colors ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: "'Lato', sans-serif", fontWeight: 400, animationDelay: '0.4s' }} onClick={() => setIsMobileMenuOpen(false)}>
-              Lotes Destacados
+            <Link href="/#propiedades-destacadas" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.2s' }} onClick={() => setIsMobileMenuOpen(false)}>
+              <span className="opacity-50 mr-3 text-[22px]">/</span>Lotes Destacados
             </Link>
 
             {/* Propiedades — expandable */}
-            <div className={`border-b border-white/[.08] ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ animationDelay: '0.45s' }}>
+            <div className={`border-b border-black/[.08] ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ animationDelay: '0.25s' }}>
               <button
                   onClick={() => setMobileSubOpen(!mobileSubOpen)}
-                  className="flex items-center justify-between w-full text-white text-[22px] py-[15px] hover:text-[var(--color-brand)] transition-colors"
-                  style={{ fontFamily: "'Lato', sans-serif", fontWeight: 400 }}
+                  className="flex items-center justify-between w-full text-black text-[28px] uppercase tracking-wider py-[15px] hover:opacity-70 transition-opacity"
+                  style={{ fontFamily: 'var(--font-heading)' }}
                 >
-                  Ver Lotes
-                <svg className={`w-5 h-5 text-white/40 transition-transform duration-300 ${mobileSubOpen ? 'rotate-90' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <span><span className="opacity-50 mr-3 text-[22px]">/</span>Ver Lotes</span>
+                <svg className={`w-6 h-6 text-black/60 transition-transform duration-300 ${mobileSubOpen ? 'rotate-90' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M9 18l6-6-6-6"/>
                 </svg>
               </button>
@@ -251,7 +252,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
                   { href: '/#masterplan', label: 'Sector Arroyo' },
                   { href: '/#masterplan', label: 'Ver Masterplan Completo' },
                 ].map(l => (
-                    <Link key={l.label} href={l.href} className="block text-white/70 text-[16px] py-2 pl-4 hover:text-white transition-colors" style={{ fontFamily: "'Lato', sans-serif", fontWeight: 400 }} onClick={() => setIsMobileMenuOpen(false)}>
+                    <Link key={l.label} href={l.href} className="block text-black/70 text-[18px] py-3 pl-8 hover:text-black transition-colors" style={{ fontFamily: 'var(--font-body)', fontWeight: 500 }} onClick={() => setIsMobileMenuOpen(false)}>
                     {l.label}
                   </Link>
                 ))}
@@ -259,56 +260,50 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
             </div>
 
             {/* SOBRE NOSOTROS */}
-            <Link href="/#nuestra-historia" className={`block text-white text-[22px] py-[15px] border-b border-white/[.08] hover:text-[var(--color-brand)] transition-colors ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: "'Lato', sans-serif", fontWeight: 400, animationDelay: '0.5s' }} onClick={() => setIsMobileMenuOpen(false)}>
-              Nuestra Historia
+            <Link href="/#nuestra-historia" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.3s' }} onClick={() => setIsMobileMenuOpen(false)}>
+              <span className="opacity-50 mr-3 text-[22px]">/</span>Nuestra Historia
             </Link>
 
             {/* PANEL DE CONTROL */}
             {session && (
-              <Link href="/admin" className={`block text-white text-[22px] py-[15px] border-b border-white/[.08] hover:text-[var(--color-brand)] transition-colors ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: "'Lato', sans-serif", fontWeight: 400, animationDelay: '0.55s' }} onClick={() => setIsMobileMenuOpen(false)}>
-                Panel de control
+              <Link href="/admin" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.35s' }} onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="opacity-50 mr-3 text-[22px]">/</span>Panel de control
               </Link>
             )}
 
-            {session ? (
-              <button onClick={() => { signOut(); setIsMobileMenuOpen(false); }} className={`block w-full text-left text-white text-[22px] py-[15px] border-b border-white/[.08] hover:text-[var(--color-brand)] transition-colors ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: "'Lato', sans-serif", fontWeight: 400, animationDelay: '0.6s' }}>
-                Salir
+            {session && (
+              <button onClick={() => { signOut(); setIsMobileMenuOpen(false); }} className={`block w-full text-left text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.4s' }}>
+                <span className="opacity-50 mr-3 text-[22px]">/</span>Salir
               </button>
-            ) : (
-              providers && Object.values(providers).map((provider, i) => (
-                <button key={provider.id} onClick={() => { signIn(provider.id, { callbackUrl: '/admin' }); setIsMobileMenuOpen(false); }} className={`block w-full text-left text-white text-[22px] py-[15px] border-b border-white/[.08] hover:text-[var(--color-brand)] transition-colors ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: "'Lato', sans-serif", fontWeight: 400, animationDelay: `${0.55 + (i*0.05)}s` }}>
-                  Ingresar
-                </button>
-              ))
             )}
           </nav>
 
           {/* Social icons at bottom */}
-          <div className={`flex-shrink-0 pt-8 pb-4 ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ animationDelay: '0.7s' }}>
+          <div className={`flex-shrink-0 pt-8 pb-4 ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ animationDelay: '0.5s' }}>
             <ul className="flex items-center justify-center gap-3 flex-wrap max-w-full mx-auto px-2">
               <li>
-                <a href={`tel:${contactPhone.replace(/\D/g, '')}`} className="flex items-center justify-center w-10 h-10 rounded-xl bg-black/50 hover:bg-[var(--color-brand)] transition-colors duration-300" aria-label="Llamar">
-                  <img src="/senada/images/icons/ico_phone.svg" alt="phone" className="w-5 h-5" style={{ filter: 'brightness(0) invert(1)' }} />
+                <a href={`tel:${contactPhone.replace(/\D/g, '')}`} className="flex items-center justify-center w-12 h-12 rounded-xl bg-black/10 hover:bg-black/20 transition-colors duration-300" aria-label="Llamar">
+                  <img src="/senada/images/icons/ico_phone.svg" alt="phone" className="w-5 h-5" style={{ filter: 'brightness(0)' }} />
                 </a>
               </li>
               <li>
-                <a href={`mailto:${contactEmail}`} className="flex items-center justify-center w-10 h-10 rounded-xl bg-black/50 hover:bg-[var(--color-brand)] transition-colors duration-300" aria-label="Email">
-                  <img src="/senada/images/icons/ico_mail.svg" alt="email" className="w-5 h-5" style={{ filter: 'brightness(0) invert(1)' }} />
+                <a href={`mailto:${contactEmail}`} className="flex items-center justify-center w-12 h-12 rounded-xl bg-black/10 hover:bg-black/20 transition-colors duration-300" aria-label="Email">
+                  <img src="/senada/images/icons/ico_mail.svg" alt="email" className="w-5 h-5" style={{ filter: 'brightness(0)' }} />
                 </a>
               </li>
               <li>
-                <a href={`https://wa.me/${contactPhone.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 rounded-xl bg-black/50 hover:bg-[var(--color-brand)] transition-colors duration-300" aria-label="WhatsApp">
-                  <FaWhatsapp className="text-white text-xl" />
+                <a href={`https://wa.me/${contactPhone.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-12 h-12 rounded-xl bg-black/10 hover:bg-black/20 transition-colors duration-300" aria-label="WhatsApp">
+                  <FaWhatsapp className="text-black text-[22px]" />
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/roggeroyroma" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/[0.15] hover:bg-[var(--color-brand)] transition-colors duration-300" aria-label="Instagram">
-                  <img src="/senada/images/icons/ico_instagram.svg" alt="instagram" className="w-5 h-5" />
+                <a href="https://www.instagram.com/roggeroyroma" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-12 h-12 rounded-xl bg-black/10 hover:bg-black/20 transition-colors duration-300" aria-label="Instagram">
+                  <img src="/senada/images/icons/ico_instagram.svg" alt="instagram" className="w-5 h-5" style={{ filter: 'brightness(0)' }} />
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/roggeroyroma" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/[0.15] hover:bg-[var(--color-brand)] transition-colors duration-300" aria-label="Facebook">
-                  <img src="/senada/images/icons/ico_facebook.svg" alt="facebook" className="w-5 h-5" />
+                <a href="https://www.facebook.com/roggeroyroma" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-12 h-12 rounded-xl bg-black/10 hover:bg-black/20 transition-colors duration-300" aria-label="Facebook">
+                  <img src="/senada/images/icons/ico_facebook.svg" alt="facebook" className="w-5 h-5" style={{ filter: 'brightness(0)' }} />
                 </a>
               </li>
             </ul>
@@ -343,8 +338,8 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
         }
         .mobile-item {
           opacity: 0;
-          transform: translateY(15px);
-          animation: mobileFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+          transform: translateY(20px);
+          animation: mobileFadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
         }
         @keyframes mobileFadeIn {
           to { opacity: 1; transform: translateY(0); }
