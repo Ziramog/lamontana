@@ -7,7 +7,8 @@
     "river_coast_m": 212,
     "price": 245000,
     "status": "Disponible",
-    "extras": "Sin extras informados"
+    "extras": "Sin extras informados",
+    "is_featured": true
   },
   {
     "_id": "2",
@@ -37,7 +38,8 @@
     "river_coast_m": 100,
     "price": 115000,
     "status": "Disponible",
-    "extras": "Sin extras informados"
+    "extras": "Sin extras informados",
+    "is_featured": true
   },
   {
     "_id": "5",
@@ -98,6 +100,7 @@
     "river_coast_m": 0,
     "price": 240000,
     "status": "Disponible",
-    "extras": "Vivienda de construcción en piedra de 58 m², con cocina-comedor y dormitorio"
+    "extras": "Vivienda de construcción en piedra de 58 m², con cocina-comedor y dormitorio",
+    "is_featured": true
   }
 ]

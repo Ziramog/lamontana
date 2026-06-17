@@ -13,7 +13,7 @@ const PILLARS = [
   { 
     id: 'privacidad',
     icon: Shield, 
-    title: 'Privacidad Absoluta', 
+    title: 'Privacidad y Seguridad', 
     description: 'Lotes en entorno natural, con acceso controlado y casero permanente.' 
   },
   { 
