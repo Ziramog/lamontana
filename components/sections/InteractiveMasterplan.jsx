@@ -129,13 +129,22 @@ const InteractiveMasterplan = ({ polygonsData }) => {
         }
       }
       
-      // Caminos -> gris intercalado, mas cuerpo
-      if (nameLower.includes('durazno') || nameLower.includes('campo arriba') || nameLower.includes('montaña arriba') || nameLower.includes('camino')) {
-        fillColor = '#9ca3af'; 
+      // Caminos exteriores -> amarillo intercalado, mas cuerpo
+      if (nameLower.includes('durazno') || nameLower.includes('campo arriba') || nameLower.includes('montaña arriba')) {
+        fillColor = '#eab308'; 
         fillOpacity = 0.15;
-        strokeColor = '#9ca3af';
+        strokeColor = '#eab308';
         strokeWeight = 4;
         isDashed = true;
+      }
+      
+      // Caminos internos -> amarillo simple continuo
+      if (nameLower.includes('camino interno') || nameLower === 'camino') {
+        fillColor = '#eab308'; 
+        fillOpacity = 0.15;
+        strokeColor = '#eab308';
+        strokeWeight = 3;
+        isDashed = false;
       }
       
       // Arroyo -> celeste intercalado, mas cuerpo
