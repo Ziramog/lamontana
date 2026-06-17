@@ -105,6 +105,8 @@ const InteractiveMasterplan = ({ polygonsData }) => {
       let strokeColor = '#db7340'; 
       let strokeOpacity = 0.8;
       let strokeWeight = 1;
+      let isDashed = false;
+      let icons = undefined;
       
       let label = null;
       let center = null;
@@ -127,26 +129,43 @@ const InteractiveMasterplan = ({ polygonsData }) => {
         }
       }
       
-      // "durazno", "campo arriba" or "montaña arriba" -> dorado serrano (muted)
-      if (nameLower.includes('durazno') || nameLower.includes('campo arriba') || nameLower.includes('montaña arriba')) {
-        fillColor = '#C49A4A'; 
+      // Caminos -> gris intercalado, mas cuerpo
+      if (nameLower.includes('durazno') || nameLower.includes('campo arriba') || nameLower.includes('montaña arriba') || nameLower.includes('camino')) {
+        fillColor = '#9ca3af'; 
         fillOpacity = 0.15;
-        strokeColor = '#C49A4A';
-        strokeWeight = 2;
+        strokeColor = '#9ca3af';
+        strokeWeight = 4;
+        isDashed = true;
       }
       
-      // "river" or "ruta sin título" -> light blue
+      // Arroyo -> celeste intercalado, mas cuerpo
       if (nameLower.includes('ruta sin t') || nameLower.includes('river') || nameLower.includes('rio')) {
-        fillColor = '#38bdf8'; // sky-400
+        fillColor = '#38bdf8'; 
         fillOpacity = 0.15;
         strokeColor = '#38bdf8';
-        strokeWeight = 2;
+        strokeWeight = 4;
+        isDashed = true;
       }
 
       if (isHovered || isSelected) {
         fillOpacity = 0.5;
         strokeOpacity = 1;
-        strokeWeight = 3;
+        strokeWeight = isDashed ? 6 : 3;
+      }
+
+      if (isDashed && item.type === 'LineString') {
+        strokeOpacity = 0;
+        icons = [{
+          icon: {
+            path: 'M 0,-1 0,1',
+            strokeOpacity: isHovered || isSelected ? 1 : 0.8,
+            strokeWeight: strokeWeight,
+            strokeColor: strokeColor,
+            scale: 2
+          },
+          offset: '0',
+          repeat: '20px'
+        }];
       }
 
       return {
@@ -162,6 +181,7 @@ const InteractiveMasterplan = ({ polygonsData }) => {
           strokeWeight,
           clickable: true,
           zIndex: isHovered ? 2 : 1,
+          ...(icons ? { icons } : {})
         }
       };
     });

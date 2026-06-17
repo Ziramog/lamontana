@@ -18,7 +18,7 @@ export const dynamic = 'force-dynamic';
 
 export const metadata = {
   title: 'Inicio',
-  description: 'Roggero & Roma — Agencia inmobiliaria en Alta Gracia, Córdoba. Compra, venta y alquiler de propiedades con más de 10 años de experiencia.',
+  description: 'La Montaña — Loteo de campo en entorno serrano, El Durazno, Córdoba. Naturaleza, privacidad y lotes aptos para vivienda.',
 };
 
 const HomePage = async () => {
