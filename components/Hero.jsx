@@ -185,14 +185,14 @@ const Hero = () => {
     <section className='relative h-[100dvh] min-h-[100dvh]'>
       {/* Background Video */}
       <div className='absolute inset-0 z-0 bg-black'>
-        {['/videohero.mp4', '/video_hero2.mp4'].map((src, idx) => (
+        {['/hero0.mp4', '/videohero.mp4', '/video_hero2.mp4'].map((src, idx) => (
           <video
             key={src}
             ref={el => videoRefs.current[idx] = el}
             src={src}
             muted
             playsInline
-            onEnded={() => setCurrentVideo((prev) => (prev + 1) % 2)}
+            onEnded={() => setCurrentVideo((prev) => (prev === 2 ? 1 : prev + 1))}
             className={`absolute w-full h-full object-cover block transition-opacity duration-1000 ${currentVideo === idx ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
           />
         ))}
