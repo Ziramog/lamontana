@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { FaSearch } from 'react-icons/fa';
+import { FaSearch, FaWhatsapp } from 'react-icons/fa';
 import logSearch from '@/app/actions/logSearch';
 import getTopSearches from '@/app/actions/getTopSearches';
 
