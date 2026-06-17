@@ -3,6 +3,7 @@ import { useEffect, useState, useMemo, useRef } from 'react';
 import { APIProvider, Map, useMap, Marker } from '@vis.gl/react-google-maps';
 import SectionBox from '@/components/sections/SectionBox';
 import ScrollReveal from '@/components/shared/ScrollReveal';
+import lotsData from '@/data/lots.json';
 
 // Reusable Geometry component for @vis.gl/react-google-maps (supports Polygon and Polyline)
 const Geometry = ({ type = 'Polygon', paths, options, onClick, onMouseOver, onMouseOut }) => {
@@ -168,10 +169,12 @@ const InteractiveMasterplan = ({ polygonsData }) => {
 
   const handlePolyClick = (e, poly, item) => {
     setSelectedPoly(item.index);
+    const lotInfo = lotsData.find(l => l.name.toLowerCase() === item.name.toLowerCase());
     setInfoWindowPos({
       lat: e.latLng.lat(),
       lng: e.latLng.lng(),
-      name: item.name
+      name: item.name,
+      ...lotInfo
     });
   };
 
@@ -263,21 +266,47 @@ const InteractiveMasterplan = ({ polygonsData }) => {
 
             {/* Custom Info Window UI overlaid on the map */}
             {infoWindowPos && (
-              <div className="absolute z-10 bottom-8 left-1/2 -translate-x-1/2 bg-white/95 backdrop-blur-md p-5 shadow-2xl min-w-[280px] border border-gray-100">
+              <div className="absolute z-10 bottom-8 left-1/2 -translate-x-1/2 bg-[#141412]/85 backdrop-blur-md p-6 shadow-[0_8px_32px_rgba(0,0,0,0.5)] min-w-[320px] border border-white/10 rounded-[2px] text-white">
                 <button 
                   onClick={() => { setInfoWindowPos(null); setSelectedPoly(null); }}
-                  className="absolute top-3 right-3 text-gray-400 hover:text-black transition"
+                  className="absolute top-4 right-4 text-white/50 hover:text-white transition-colors"
                 >
-                  <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"></path></svg>
+                  <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"></path></svg>
                 </button>
-                <h3 className="text-lg font-bold text-gray-900 mb-1" style={{ fontFamily: 'var(--font-heading)' }}>
+                <h3 className="text-xl font-medium text-white mb-1" style={{ fontFamily: 'var(--font-heading)' }}>
                   {infoWindowPos.name}
                 </h3>
-                <p className="text-sm text-[var(--color-brand)] font-medium mb-4">
-                  Estado: Consultar Disponibilidad
-                </p>
-                <a href="/contacto" className="block w-full text-center bg-black text-white text-sm font-semibold py-3 hover:bg-gray-800 transition">
-                  Consultar Precio
+                <div className="mb-4">
+                  <span className={`text-[11px] font-bold uppercase tracking-[0.15em] px-2 py-1 rounded-[2px] ${infoWindowPos.status === 'Vendido' ? 'bg-red-500/20 text-red-400' : 'bg-[#C49A4A]/20 text-[#C49A4A]'}`}>
+                    {infoWindowPos.status || 'Consultar Disponibilidad'}
+                  </span>
+                </div>
+
+                <div className="space-y-2 mb-5">
+                  <div className="flex justify-between items-center text-sm border-b border-white/5 pb-2">
+                    <span className="text-white/60 font-light">Superficie</span>
+                    <span className="font-medium">{infoWindowPos.area_display || (infoWindowPos.area_sqm ? `${infoWindowPos.area_sqm.toLocaleString('es-AR')} m²` : 'N/D')}</span>
+                  </div>
+                  <div className="flex justify-between items-center text-sm border-b border-white/5 pb-2">
+                    <span className="text-white/60 font-light">Costa al arroyo</span>
+                    <span className="font-medium">{infoWindowPos.river_coast_m ? `${infoWindowPos.river_coast_m} m` : 'No dispone'}</span>
+                  </div>
+                  {infoWindowPos.extras && infoWindowPos.extras !== 'Sin extras informados' && (
+                    <div className="flex justify-between items-start text-sm border-b border-white/5 pb-2 gap-4">
+                      <span className="text-white/60 font-light whitespace-nowrap">Extras</span>
+                      <span className="font-medium text-right text-[12px]">{infoWindowPos.extras}</span>
+                    </div>
+                  )}
+                  <div className="flex justify-between items-center pt-1">
+                    <span className="text-white/60 font-light text-sm">Precio</span>
+                    <span className="font-medium text-lg text-[#C49A4A]">
+                      {infoWindowPos.price === 'Consultar' || infoWindowPos.price === 'Vendido' ? infoWindowPos.price : `USD ${Number(infoWindowPos.price).toLocaleString('es-AR')}`}
+                    </span>
+                  </div>
+                </div>
+
+                <a href={`https://wa.me/5493547563911?text=Hola, quiero consultar por el ${infoWindowPos.name} de La Montaña.`} target="_blank" rel="noopener noreferrer" className="block w-full text-center bg-[#C49A4A] text-white text-[13px] font-medium uppercase tracking-[0.1em] py-3 rounded-[2px] hover:bg-white hover:text-black transition-colors">
+                  Consultar por este lote
                 </a>
               </div>
             )}
