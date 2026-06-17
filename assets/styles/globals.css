@@ -77,7 +77,7 @@
     overflow-x: hidden;
   }
   body {
-    background-color: var(--color-surface);
+    background-color: #141412;
     color: var(--color-ink);
     overflow-x: hidden;
   }

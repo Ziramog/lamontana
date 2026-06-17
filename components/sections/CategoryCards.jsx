@@ -36,11 +36,11 @@ const CategoryCards = () => {
             CATEGORÍAS
           </span>
           <ScrollReveal variant="fadeLeft">
-            <h2 className="text-2xl md:text-[32px] font-medium text-[#0F172A] leading-tight tracking-[-0.01em] mb-3" style={{ fontFamily: 'var(--font-heading)' }}>
+            <h2 className="text-2xl md:text-[32px] font-medium text-[var(--color-ink)] leading-tight tracking-[-0.01em] mb-3" style={{ fontFamily: 'var(--font-heading)' }}>
               Explorá por categoría
             </h2>
           </ScrollReveal>
-          <p className="text-[14px] md:text-[17px] font-light text-[#475569] leading-[1.7]">
+          <p className="text-[14px] md:text-[17px] font-light text-[var(--color-ink-secondary)] leading-[1.7]">
             Encontrá el tipo de propiedad que mejor se adapta a vos
           </p>
         </div>
@@ -102,3 +102,4 @@ const CategoryCards = () => {
 };
 
 export default CategoryCards;
+
