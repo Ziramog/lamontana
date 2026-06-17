@@ -12,7 +12,7 @@ export default function Error({ error, reset }) {
             <line x1="12" y1="16" x2="12.01" y2="16"/>
           </svg>
         </div>
-        <h2 className="text-xl font-semibold text-[#0F172A] mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
+        <h2 className="text-xl font-semibold text-heading mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
           Algo salió mal
         </h2>
         <p className="text-sm text-[#666] mb-2">
@@ -39,3 +39,4 @@ export default function Error({ error, reset }) {
     </div>
   );
 }
+

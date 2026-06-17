@@ -177,7 +177,7 @@ const PropertyPage = async ({ params }) => {
                       <SectionTitle size="normal">Vista en Mapa</SectionTitle>
                       <Link
                         href="/properties/map-all"
-                        className="hidden md:inline-flex items-center gap-2 text-[var(--color-brand)] text-[13px] font-bold uppercase tracking-wider transition-colors hover:text-[#0F172A]"
+                        className="hidden md:inline-flex items-center gap-2 text-[var(--color-brand)] text-[13px] font-bold uppercase tracking-wider transition-colors hover:text-heading"
                       >
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
                           <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
@@ -224,7 +224,7 @@ const PropertyPage = async ({ params }) => {
               <line x1="12" y1="16" x2="12.01" y2="16"/>
             </svg>
           </div>
-          <h2 className="text-xl font-semibold text-[#0F172A] mb-2">Error al cargar la propiedad</h2>
+          <h2 className="text-xl font-semibold text-heading mb-2">Error al cargar la propiedad</h2>
           <p className="text-sm text-[#666] mb-2">{err.message}</p>
           <p className="text-[11px] text-[#bbb] mb-6 font-mono">Digest: {err.digest}</p>
           <Link href="/admin" className="text-[var(--color-brand)] font-medium text-sm hover:underline">

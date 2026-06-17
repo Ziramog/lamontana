@@ -50,7 +50,7 @@ const PropertyContactForm = ({ property }) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             <div>
               <input
-                className="w-full border border-[#ddd] rounded-[6px] py-3 px-4 text-sm text-[#0F172A] bg-white focus:outline-none focus:ring-2 focus:ring-[var(--color-brand)]/20 focus:border-[var(--color-brand)] transition-all placeholder:text-[#999]"
+                className="w-full border border-[#ddd] rounded-[6px] py-3 px-4 text-sm text-heading bg-white focus:outline-none focus:ring-2 focus:ring-[var(--color-brand)]/20 focus:border-[var(--color-brand)] transition-all placeholder:text-[#999]"
                 id="name"
                 name="name"
                 type="text"
@@ -60,7 +60,7 @@ const PropertyContactForm = ({ property }) => {
             </div>
             <div>
               <input
-                className="w-full border border-[#ddd] rounded-[6px] py-3 px-4 text-sm text-[#0F172A] bg-white focus:outline-none focus:ring-2 focus:ring-[var(--color-brand)]/20 focus:border-[var(--color-brand)] transition-all placeholder:text-[#999]"
+                className="w-full border border-[#ddd] rounded-[6px] py-3 px-4 text-sm text-heading bg-white focus:outline-none focus:ring-2 focus:ring-[var(--color-brand)]/20 focus:border-[var(--color-brand)] transition-all placeholder:text-[#999]"
                 id="email"
                 name="email"
                 type="email"
@@ -70,7 +70,7 @@ const PropertyContactForm = ({ property }) => {
             </div>
             <div>
               <input
-                className="w-full border border-[#ddd] rounded-[6px] py-3 px-4 text-sm text-[#0F172A] bg-white focus:outline-none focus:ring-2 focus:ring-[var(--color-brand)]/20 focus:border-[var(--color-brand)] transition-all placeholder:text-[#999]"
+                className="w-full border border-[#ddd] rounded-[6px] py-3 px-4 text-sm text-heading bg-white focus:outline-none focus:ring-2 focus:ring-[var(--color-brand)]/20 focus:border-[var(--color-brand)] transition-all placeholder:text-[#999]"
                 id="phone"
                 name="phone"
                 type="text"
@@ -80,7 +80,7 @@ const PropertyContactForm = ({ property }) => {
           </div>
           <div className="mb-5">
             <textarea
-              className="w-full border border-[#ddd] rounded-[6px] py-3 px-4 text-sm text-[#0F172A] bg-white h-32 resize-none focus:outline-none focus:ring-2 focus:ring-[var(--color-brand)]/20 focus:border-[var(--color-brand)] transition-all placeholder:text-[#999]"
+              className="w-full border border-[#ddd] rounded-[6px] py-3 px-4 text-sm text-heading bg-white h-32 resize-none focus:outline-none focus:ring-2 focus:ring-[var(--color-brand)]/20 focus:border-[var(--color-brand)] transition-all placeholder:text-[#999]"
               id="message"
               name="message"
               placeholder="Tu mensaje..."
@@ -93,3 +93,4 @@ const PropertyContactForm = ({ property }) => {
   );
 };
 export default PropertyContactForm;
+

@@ -58,7 +58,7 @@ const PropertyFilters = ({ variant = 'hero' }) => {
           <div className="flex flex-col gap-1.5">
             <label className="text-[11px] font-bold uppercase tracking-widest text-[var(--color-ink-tertiary)]">Tipo</label>
             <select name="type" value={filters.type} onChange={handleChange}
-              className="w-full border border-[var(--color-border)] rounded-xl py-3 px-4 text-sm bg-white text-[var(--color-ink)] focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all appearance-none cursor-pointer">
+              className="w-full border border-[var(--color-border)] rounded-xl py-3 px-4 text-sm bg-white text-heading focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all appearance-none cursor-pointer">
               {propertyTypes.map((type) => (<option key={type} value={type}>{type}</option>))}
             </select>
           </div>
@@ -66,7 +66,7 @@ const PropertyFilters = ({ variant = 'hero' }) => {
           <div className="flex flex-col gap-1.5">
             <label className="text-[11px] font-bold uppercase tracking-widest text-[var(--color-ink-tertiary)]">Ubicación</label>
             <select name="city" value={filters.city} onChange={handleChange}
-              className="w-full border border-[var(--color-border)] rounded-xl py-3 px-4 text-sm bg-white text-[var(--color-ink)] focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all appearance-none cursor-pointer">
+              className="w-full border border-[var(--color-border)] rounded-xl py-3 px-4 text-sm bg-white text-heading focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all appearance-none cursor-pointer">
               {cities.map((city) => (<option key={city} value={city}>{city}</option>))}
             </select>
           </div>
@@ -75,13 +75,13 @@ const PropertyFilters = ({ variant = 'hero' }) => {
             <label className="text-[11px] font-bold uppercase tracking-widest text-[var(--color-ink-tertiary)]">Precio Máx (USD)</label>
             <input type="number" name="maxPrice" value={filters.maxPrice} onChange={handleChange}
               placeholder="Sin límite"
-              className="w-full border border-[var(--color-border)] rounded-xl py-3 px-4 text-sm bg-white text-[var(--color-ink)] placeholder:text-[var(--color-ink-tertiary)] focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all" />
+              className="w-full border border-[var(--color-border)] rounded-xl py-3 px-4 text-sm bg-white text-heading placeholder:text-[var(--color-ink-tertiary)] focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all" />
           </div>
 
           <div className="flex flex-col gap-1.5">
             <label className="text-[11px] font-bold uppercase tracking-widest text-[var(--color-ink-tertiary)]">Dormitorios</label>
             <select name="bedrooms" value={filters.bedrooms} onChange={handleChange}
-              className="w-full border border-[var(--color-border)] rounded-xl py-3 px-4 text-sm bg-white text-[var(--color-ink)] focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all appearance-none cursor-pointer">
+              className="w-full border border-[var(--color-border)] rounded-xl py-3 px-4 text-sm bg-white text-heading focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all appearance-none cursor-pointer">
               <option value="">Cualquiera</option>
               {bedroomOptions.filter(o => o).map((opt) => (<option key={opt} value={opt}>{opt}+</option>))}
             </select>

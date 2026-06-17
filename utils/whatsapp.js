@@ -1,4 +1,4 @@
-const WA_NUMBER = '5493547563911';
+const WA_NUMBER = '5493571541588';
 
 const MESSAGES = {
 
@@ -45,5 +45,5 @@ export function generateWhatsAppLink({ property, context = 'general', customMess
 
 /** Expose the canonical number for tel: links */
 export const WHATSAPP_NUMBER = WA_NUMBER;
-export const PHONE_NUMBER = '+543547425454';
-export const PHONE_DISPLAY = '(03547) 425454';
+export const PHONE_NUMBER = '+5493571541588';
+export const PHONE_DISPLAY = '+54 9 3571 54-1588';

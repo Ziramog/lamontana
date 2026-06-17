@@ -67,11 +67,9 @@ const Footer = ({
               </Link>
                   <ul>
                     <li className="py-[5px]">
-                      <a href={`https://maps.google.com/?q=${encodeURIComponent(contactAddress + ', Alta Gracia, Córdoba')}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-[5px] text-[13px] text-white/70 font-light hover:text-white transition-colors group">
-                        <MapPin className="w-4 h-4 text-[#F26B2E] mt-0.5 shrink-0 group-hover:scale-110 transition-transform" />
+                      <a href={`https://maps.google.com/?q=${encodeURIComponent(contactAddress)}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-[5px] text-[13px] text-white/70 font-light hover:text-white transition-colors group">
                         <span>
-                          {contactAddress}<br/>
-                          X5186 Alta Gracia, Córdoba
+                          {contactAddress}
                         </span>
                       </a>
                     </li>
@@ -94,7 +92,7 @@ const Footer = ({
                   {/* PROPIEDADES */}
                   <li>
                     <span className="block text-[15px] text-white uppercase font-bold mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
-                      Propiedades
+                      Sectores
                     </span>
                     <ul>
                       {[
@@ -118,7 +116,7 @@ const Footer = ({
                   {/* EMPRESA */}
                   <li>
                     <span className="block text-[15px] text-white uppercase font-bold mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
-                      Empresa
+                      LA MONTAÑA
                     </span>
                     <ul>
                       {[
@@ -135,7 +133,7 @@ const Footer = ({
                   {/* DESTACADAS */}
                   <li>
                     <span className="block text-[15px] text-white uppercase font-bold mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
-                      DESTACADAS
+                      Destacados
                     </span>
                     <ul>
                       <li>
@@ -211,11 +209,9 @@ const Footer = ({
                 className="brightness-0 invert transition-opacity hover:opacity-80"
               />
             </Link>
-            <a href={`https://maps.google.com/?q=${encodeURIComponent(contactAddress + ', Alta Gracia, Córdoba')}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-[13px] text-white/60 font-light mt-3 hover:text-white transition-colors">
-              <MapPin className="w-4 h-4 text-[#F26B2E] mt-0.5 shrink-0" />
+            <a href={`https://maps.google.com/?q=${encodeURIComponent(contactAddress)}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-[13px] text-white/60 font-light mt-3 hover:text-white transition-colors">
               <span>
-                {contactAddress}<br/>
-                X5186 Alta Gracia, Córdoba
+                {contactAddress}
               </span>
             </a>
             <a href={`mailto:${contactEmail}`} className="flex items-center gap-2 text-[13px] text-white font-light">
@@ -232,7 +228,7 @@ const Footer = ({
           <div className="flex flex-col gap-6 mb-8">
             {/* Propiedades */}
             <div>
-              <span className="block text-[15px] text-white uppercase font-bold mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Propiedades</span>
+              <span className="block text-[15px] text-white uppercase font-bold mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Sectores</span>
               <div className="grid grid-cols-2 gap-y-1">
                 {[
                   { href: '/#masterplan', label: 'Sector Bosque' },
@@ -250,7 +246,7 @@ const Footer = ({
             </div>
             {/* Empresa */}
             <div>
-              <span className="block text-[15px] text-white uppercase font-bold mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Empresa</span>
+              <span className="block text-[15px] text-white uppercase font-bold mb-3" style={{ fontFamily: 'var(--font-heading)' }}>LA MONTAÑA</span>
               <div className="grid grid-cols-2 gap-y-1">
                 {[
                   { href: '/#nuestra-historia', label: 'Nuestra Historia' },
@@ -263,7 +259,7 @@ const Footer = ({
             </div>
             {/* DESTACADAS */}
             <div>
-              <span className="block text-[15px] text-white uppercase font-bold mb-3" style={{ fontFamily: 'var(--font-heading)' }}>DESTACADAS</span>
+              <span className="block text-[15px] text-white uppercase font-bold mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Destacados</span>
               <Link href="/#propiedades-destacadas" className="text-[13px] text-white/60 font-light py-[3px] hover:text-white transition-colors">
                 Nuestra Selección
               </Link>

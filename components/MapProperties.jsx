@@ -37,8 +37,8 @@ const EmptyState = () => (
         <line x1="16" y1="6" x2="16" y2="22"/>
       </svg>
     </div>
-    <p className="text-[15px] font-semibold text-[var(--color-ink)] mb-2">Seleccioná una propiedad</p>
-    <p className="text-[13px] text-[var(--color-ink-secondary)] leading-relaxed">
+    <p className="text-[15px] font-semibold text-heading mb-2">Seleccioná una propiedad</p>
+    <p className="text-[13px] text-body leading-relaxed">
       Hacé click en un pin del mapa para ver todos los detalles
     </p>
   </div>
@@ -74,7 +74,7 @@ const PropertyDetail = ({ property, onClose }) => {
           href={`/properties/${property._id}`}
           className="absolute top-3 right-3 w-10 h-10 bg-white/40 backdrop-blur-md border border-white/40 rounded-full flex items-center justify-center hover:bg-white/60 transition-all shadow-sm"
         >
-          <FaExpand className="w-5 h-5 text-[var(--color-ink)]" />
+          <FaExpand className="w-5 h-5 text-heading" />
         </a>
       </div>
 
@@ -83,17 +83,17 @@ const PropertyDetail = ({ property, onClose }) => {
           <p className="text-[24px] font-bold leading-tight" style={{ color: '#C93E15' }}>
             {price}
           </p>
-          <p className="text-[14px] text-[var(--color-ink)] font-medium mt-0.5">
+          <p className="text-[14px] text-heading font-medium mt-0.5">
             {property.name}
           </p>
         </div>
 
-        <div className="flex items-center gap-2 text-[13px] text-[var(--color-ink-secondary)]">
+        <div className="flex items-center gap-2 text-[13px] text-body">
           <MapPin className="w-4 h-4 flex-shrink-0 text-[var(--color-brand)]" />
           {property.location?.city}
         </div>
 
-        <div className="flex items-center gap-4 text-[13px] font-medium text-[var(--color-ink)] border-t-2 border-b-2 border-[var(--color-border-strong)] py-2.5">
+        <div className="flex items-center gap-4 text-[13px] font-medium text-heading border-t-2 border-b-2 border-[var(--color-border-strong)] py-2.5">
           {property.beds != null && (
             <span className="flex items-center gap-1.5">
               <FaBed className="w-4 h-4 text-[var(--color-ink-tertiary)]" />
@@ -120,7 +120,7 @@ const PropertyDetail = ({ property, onClose }) => {
         </div>
 
         {property.description && (
-          <p className="text-[13px] text-[var(--color-ink)] leading-relaxed line-clamp-3">
+          <p className="text-[13px] text-heading leading-relaxed line-clamp-3">
             {property.description}
           </p>
         )}
@@ -250,7 +250,7 @@ const MapProperties = ({ initialProperties = [] }) => {
                   className={`h-8 md:h-9 px-3 md:px-5 border-[1.5px] text-[12px] md:text-[13px] font-medium rounded transition-all duration-150 whitespace-nowrap ${
                     activeType === type && !showGranInversion
                       ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-white shadow-[0_2px_8px_rgba(242,107,46,0.3)]'
-                      : 'bg-white border-[var(--color-border-strong)] text-[var(--color-ink)] hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]'
+                      : 'bg-white border-[var(--color-border-strong)] text-heading hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]'
                   }`}
                 >
                   {type}
@@ -267,7 +267,7 @@ const MapProperties = ({ initialProperties = [] }) => {
                 className={`h-8 md:h-9 px-3 md:px-5 border-[1.5px] text-[12px] md:text-[13px] font-medium rounded transition-all duration-150 flex items-center gap-1.5 whitespace-nowrap ${
                   showGranInversion
                     ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-white shadow-[0_2px_8px_rgba(242,107,46,0.3)]'
-                    : 'bg-white border-[var(--color-border-strong)] text-[var(--color-ink)] hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]'
+                    : 'bg-white border-[var(--color-border-strong)] text-heading hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]'
                 }`}
               >
                 <TrendingUp className="w-3.5 h-3.5" />
@@ -331,7 +331,7 @@ const MapProperties = ({ initialProperties = [] }) => {
                 onClick={handleCloseMobileDetail}
                 className="absolute top-4 right-4 w-10 h-10 bg-white/30 backdrop-blur-md border border-white/30 rounded-full flex items-center justify-center z-20 hover:bg-white/45 transition-all shadow-sm"
               >
-                <FaTimes className="w-5 h-5 text-[var(--color-ink)]" />
+                <FaTimes className="w-5 h-5 text-heading" />
               </button>
               <div className="overflow-y-auto" style={{ height: 'calc(100% - 28px)' }}>
                 <PropertyDetail property={selectedProperty} />

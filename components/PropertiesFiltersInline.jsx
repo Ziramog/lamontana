@@ -65,8 +65,8 @@ const PropertiesFiltersInline = ({ currentFilters }) => {
     router.push(`/properties${query ? `?${query}` : ''}`);
   };
 
-  const selectCls = 'w-full bg-white border border-[var(--color-border)] text-[var(--color-ink)] text-sm py-2.5 px-3.5 rounded-xl focus:ring-2 focus:ring-[var(--color-brand)]/20 focus:border-[var(--color-brand)] outline-none appearance-none cursor-pointer transition-all';
-  const inputCls = 'w-full bg-white border border-[var(--color-border)] text-[var(--color-ink)] text-sm py-2.5 px-3.5 rounded-xl focus:ring-2 focus:ring-[var(--color-brand)]/20 focus:border-[var(--color-brand)] outline-none placeholder:text-[var(--color-ink-tertiary)] transition-all';
+  const selectCls = 'w-full bg-white border border-[var(--color-border)] text-heading text-sm py-2.5 px-3.5 rounded-xl focus:ring-2 focus:ring-[var(--color-brand)]/20 focus:border-[var(--color-brand)] outline-none appearance-none cursor-pointer transition-all';
+  const inputCls = 'w-full bg-white border border-[var(--color-border)] text-heading text-sm py-2.5 px-3.5 rounded-xl focus:ring-2 focus:ring-[var(--color-brand)]/20 focus:border-[var(--color-brand)] outline-none placeholder:text-[var(--color-ink-tertiary)] transition-all';
   const labelCls = 'text-[10px] font-bold uppercase tracking-widest text-[var(--color-ink-tertiary)] mb-1.5 block';
 
   return (
@@ -84,7 +84,7 @@ const PropertiesFiltersInline = ({ currentFilters }) => {
               <line x1="4" y1="18" x2="12" y2="18" />
             </svg>
           </div>
-          <span className="text-sm font-semibold text-[var(--color-ink)]">
+          <span className="text-sm font-semibold text-heading">
             {hasActiveFilters ? 'Filtros activos' : 'Filtrar propiedades'}
           </span>
           {hasActiveFilters && (
@@ -199,7 +199,7 @@ const PropertiesFiltersInline = ({ currentFilters }) => {
               </button>
               {hasActiveFilters && (
                 <button type="button" onClick={handleReset}
-                  className="px-3 py-2.5 border border-[var(--color-border)] text-[var(--color-ink-tertiary)] hover:text-[var(--color-ink)] hover:border-[var(--color-ink-tertiary)] rounded-xl text-sm transition-all">
+                  className="px-3 py-2.5 border border-[var(--color-border)] text-[var(--color-ink-tertiary)] hover:text-heading hover:border-[var(--color-ink-tertiary)] rounded-xl text-sm transition-all">
                   <FaTimes className="w-3.5 h-3.5" />
                 </button>
               )}

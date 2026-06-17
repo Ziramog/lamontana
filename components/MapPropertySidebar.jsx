@@ -147,7 +147,7 @@ export default function MapPropertySidebar({ property, onClose }) {
             {/* Property footer — no extra tags here, badge is on image */}
             <div className="py-4">
               <h3
-                className="text-[28px] font-medium text-[#0F172A] group-hover:text-[var(--color-brand)] leading-snug line-clamp-2 mb-1 transition-colors"
+                className="text-[28px] font-medium text-heading group-hover:text-[var(--color-brand)] leading-snug line-clamp-2 mb-1 transition-colors"
                 style={{ fontFamily: 'var(--font-heading)' }}
               >
                 {property.name}
@@ -163,7 +163,7 @@ export default function MapPropertySidebar({ property, onClose }) {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-6">
               {features.map((feat) => (
                 <div key={feat.label} className="py-2">
-                  <p className="whitespace-nowrap font-medium text-[26px] text-[#0F172A]" style={{ fontFamily: 'var(--font-heading)' }}>
+                  <p className="whitespace-nowrap font-medium text-[26px] text-heading" style={{ fontFamily: 'var(--font-heading)' }}>
                     {feat.value}
                   </p>
                   <p className="text-[16px] text-[#878787] leading-[17px] mt-0.5">
@@ -178,7 +178,7 @@ export default function MapPropertySidebar({ property, onClose }) {
           <div className="flex gap-3 pb-6">
             <button
               onClick={() => router.push(`/properties/${property._id}`)}
-              className="flex-1 py-3.5 border border-[#0F172A] text-[#0F172A] text-[13px] font-bold uppercase tracking-wider transition-colors hover:bg-[#0F172A] hover:text-white"
+              className="flex-1 py-3.5 border border-[var(--color-ink)] text-heading text-[13px] font-bold uppercase tracking-wider transition-colors hover:bg-[var(--color-ink)] hover:text-white"
             >
               Ver detalle
             </button>
@@ -199,3 +199,4 @@ export default function MapPropertySidebar({ property, onClose }) {
     </>
   );
 }
+

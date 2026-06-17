@@ -56,8 +56,8 @@ export const metadata = {
     canonical: '/',
   },
   icons: {
-    icon: '/images/favicon-square.png',
-    apple: '/images/favicon-square.png',
+    icon: '/lamontanafavicom.png',
+    apple: '/lamontanafavicom.png',
   },
   robots: {
     index: true,

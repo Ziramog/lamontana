@@ -62,7 +62,7 @@ const PropertyDetails = ({ property }) => {
                     className={`flex-1 min-w-[50%] md:min-w-0 flex justify-center py-[30px] px-[20px] md:px-[40px] border-r border-b md:border-b-0 border-[#e9e9e9] ${i === featureItems.length - 1 ? 'border-r-0' : ''} md:[&:nth-last-child(-n+2)]:border-b-0`}
                   >
                     <div>
-                      <h5 className="text-[22px] font-semibold text-[#0F172A] mb-[5px]"
+                      <h5 className="text-[22px] font-semibold text-heading mb-[5px]"
                           style={{ fontFamily: 'var(--font-heading)' }}>
                         {typeof value === 'number' ? value.toLocaleString('es-AR') : value}
                       </h5>
@@ -134,37 +134,37 @@ const PropertyDetails = ({ property }) => {
                   {(property.area_sqm || property.square_feet) && (
                     <li className="flex justify-between items-center px-5 py-[10px] mb-[5px] text-[16px] gap-[10px] rounded-none odd:bg-[#f6f6f6]">
                       <span className="text-[14px] text-[#888]">Superficie</span>
-                      <span className="text-[14px] font-normal text-[#0F172A]">{(property.area_sqm || property.square_feet).toLocaleString('es-AR')} m²</span>
+                      <span className="text-[14px] font-normal text-heading">{(property.area_sqm || property.square_feet).toLocaleString('es-AR')} m²</span>
                     </li>
                   )}
                   {property.topography && (
                     <li className="flex justify-between items-center px-5 py-[10px] mb-[5px] text-[16px] gap-[10px] rounded-none odd:bg-[#f6f6f6]">
                       <span className="text-[14px] text-[#888]">Topografía</span>
-                      <span className="text-[14px] font-normal text-[#0F172A]">{property.topography}</span>
+                      <span className="text-[14px] font-normal text-heading">{property.topography}</span>
                     </li>
                   )}
                   {property.orientation && (
                     <li className="flex justify-between items-center px-5 py-[10px] mb-[5px] text-[16px] gap-[10px] rounded-none odd:bg-[#f6f6f6]">
                       <span className="text-[14px] text-[#888]">Orientación</span>
-                      <span className="text-[14px] font-normal text-[#0F172A]">{property.orientation}</span>
+                      <span className="text-[14px] font-normal text-heading">{property.orientation}</span>
                     </li>
                   )}
                   {property.services && property.services.length > 0 && (
                     <li className="flex justify-between items-center px-5 py-[10px] mb-[5px] text-[16px] gap-[10px] rounded-none odd:bg-[#f6f6f6]">
                       <span className="text-[14px] text-[#888]">Servicios</span>
-                      <span className="text-[14px] font-normal text-[#0F172A] text-right">{property.services.join(', ')}</span>
+                      <span className="text-[14px] font-normal text-heading text-right">{property.services.join(', ')}</span>
                     </li>
                   )}
                   {property.operation && (
                     <li className="flex justify-between items-center px-5 py-[10px] mb-[5px] text-[16px] gap-[10px] rounded-none odd:bg-[#f6f6f6]">
                       <span className="text-[14px] text-[#888]">Operación</span>
-                      <span className="text-[14px] font-normal text-[#0F172A]">{operationLabel}</span>
+                      <span className="text-[14px] font-normal text-heading">{operationLabel}</span>
                     </li>
                   )}
                   {property.amenities && property.amenities.length > 0 && (
                     <li className="flex justify-between items-center px-5 py-[10px] mb-[5px] text-[16px] gap-[10px] rounded-none odd:bg-[#f6f6f6]">
                       <span className="text-[14px] text-[#888]">Comodidades / Espacios Comunes</span>
-                      <span className="text-[14px] font-normal text-[#0F172A] text-right">{property.amenities.join(', ')}</span>
+                      <span className="text-[14px] font-normal text-heading text-right">{property.amenities.join(', ')}</span>
                     </li>
                   )}
                   </ul>
@@ -185,19 +185,19 @@ const PropertyDetails = ({ property }) => {
                   {property.location?.state && (
                     <li className="flex justify-between items-center px-5 py-[10px] mb-[5px] text-[16px] gap-[10px] rounded-none odd:bg-[#f6f6f6]">
                       <span className="text-[14px] text-[#888]">Provincia</span>
-                      <span className="text-[14px] font-normal text-[#0F172A]">{property.location.state}</span>
+                      <span className="text-[14px] font-normal text-heading">{property.location.state}</span>
                     </li>
                   )}
                   {property.location?.city && (
                     <li className="flex justify-between items-center px-5 py-[10px] mb-[5px] text-[16px] gap-[10px] rounded-none odd:bg-[#f6f6f6]">
                       <span className="text-[14px] text-[#888]">Ciudad</span>
-                      <span className="text-[14px] font-normal text-[#0F172A]">{property.location.city}</span>
+                      <span className="text-[14px] font-normal text-heading">{property.location.city}</span>
                     </li>
                   )}
                   {property.location?.street && (
                     <li className="flex justify-between items-center px-5 py-[10px] mb-[5px] text-[16px] gap-[10px] rounded-none odd:bg-[#f6f6f6]">
                       <span className="text-[14px] text-[#888]">Dirección</span>
-                      <span className="text-[14px] font-normal text-[#0F172A] text-right max-w-[180px]">{property.location.street}</span>
+                      <span className="text-[14px] font-normal text-heading text-right max-w-[180px]">{property.location.street}</span>
                     </li>
                   )}
                   </ol>
@@ -213,3 +213,4 @@ const PropertyDetails = ({ property }) => {
 };
 
 export default PropertyDetails;
+
