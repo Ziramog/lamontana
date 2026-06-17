@@ -195,19 +195,31 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
         }`}
         style={{ height: 'calc(env(safe-area-inset-top, 8px) + 60px)' }}
       >
-        <div className="flex items-center justify-between px-4 h-full">
+        <div className="flex items-center justify-between px-4 h-full relative">
+          
+          {/* Spacer to maintain flex layout when logo is absolute */}
+          <div className={`transition-all duration-500 ${(!isScrolled && !isAdminPage) ? 'w-[40px]' : 'hidden'}`} />
+
           {/* Logo — isotipo */}
-          <Link className="flex items-center flex-shrink-0" href="/">
+          <Link 
+            className={`flex items-center flex-shrink-0 transition-all duration-500 z-10 ${
+              (!isScrolled && !isAdminPage) 
+                ? 'absolute left-1/2 -translate-x-1/2 top-[40px]' 
+                : 'relative left-0 translate-x-0 top-0'
+            }`} 
+            href="/"
+          >
             <Image
-              className="brightness-0 invert transition-all duration-500 origin-left"
+              className={`brightness-0 invert transition-all duration-500 ${(!isScrolled && !isAdminPage) ? 'origin-top' : 'origin-left'}`}
               src="/logolamontaña.png"
               alt="La Montaña"
-              width={280}
-              height={80}
+              width={600}
+              height={200}
               style={{ 
-                height: (!isScrolled && !isAdminPage) ? '80px' : '40px', 
+                height: (!isScrolled && !isAdminPage) ? '200px' : '40px', 
                 width: 'auto',
-                paddingTop: (!isScrolled && !isAdminPage) ? '25px' : '0px'
+                maxWidth: (!isScrolled && !isAdminPage) ? '85vw' : 'none',
+                objectFit: 'contain'
               }}
             />
           </Link>
