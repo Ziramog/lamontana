@@ -148,51 +148,7 @@ const Footer = ({
                 </ul>
               </nav>
 
-              {/* Newsletter */}
-              <div className="newsletter max-w-[320px]">
-                  <h3 className="text-[15px] text-white uppercase font-bold mb-2 leading-tight" style={{ fontFamily: 'var(--font-heading)' }}>
-                    ENTERATE DE LOS NUEVOS INGRESOS ANTES QUE NADIE
-                  </h3>
-                
-                {!isSubscribed ? (
-                  <form className="pt-[15px]" onSubmit={handleSubscribe}>
-                    <div className="relative mb-3">
-                      <FaWhatsapp className="absolute left-[15px] top-1/2 -translate-y-1/2 text-white/50 text-xl" />
-                      <input
-                        type="tel"
-                        value={whatsappNumber}
-                        onChange={(e) => setWhatsappNumber(e.target.value)}
-                        placeholder="Tu nro. de WhatsApp"
-                        required
-                        className="w-[285px] h-[40px] bg-white/[0.06] border-none rounded-[5px] text-white font-bold text-[14px] pl-[45px] pr-4 outline-none placeholder:text-white/30"
-                      />
-                    </div>
-                    <button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="bg-[var(--color-brand)] hover:bg-[var(--color-brand-dark)] text-white font-bold text-sm uppercase tracking-wider rounded-[5px] h-[40px] px-6 transition-all disabled:opacity-50"
-                    >
-                      {isSubmitting ? 'Guardando...' : 'Suscribir'}
-                    </button>
-                  </form>
-                ) : (
-                  <div className="pt-[15px] animate-fade-in">
-                    <p className="text-[#4ade80] text-[13px] font-bold mb-3 flex items-center gap-2">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                      ¡Número guardado!
-                    </p>
-                    <a
-                      href={groupLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-[13px] rounded-[5px] h-[40px] px-4 transition-all"
-                    >
-                      <FaWhatsapp className="text-lg" />
-                      Unirte al Grupo VIP
-                    </a>
-                  </div>
-                )}
-              </div>
+
             </div>
           </div>
 
@@ -312,49 +268,7 @@ const Footer = ({
                 Nuestra Selección
               </Link>
             </div>
-            {/* Newsletter */}
-            <div>
-              <span className="block text-[15px] text-white uppercase font-bold mb-3 leading-tight" style={{ fontFamily: 'var(--font-heading)' }}>ENTERATE DE LOS NUEVOS INGRESOS ANTES QUE NADIE</span>
-              
-              {!isSubscribed ? (
-                <form onSubmit={handleSubscribe}>
-                  <div className="relative mb-3">
-                    <FaWhatsapp className="absolute left-4 top-1/2 -translate-y-1/2 text-white/50 text-xl" />
-                    <input
-                      type="tel"
-                      value={whatsappNumber}
-                      onChange={(e) => setWhatsappNumber(e.target.value)}
-                      placeholder="Tu nro. de WhatsApp"
-                      required
-                      className="w-full h-10 bg-white/[0.06] border-none rounded-[5px] text-white font-bold text-[14px] pl-[45px] pr-4 outline-none placeholder:text-white/30"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="bg-[var(--color-brand)] hover:bg-[var(--color-brand-dark)] text-white font-bold text-sm uppercase tracking-wider rounded-[5px] h-10 px-6 transition-all w-full disabled:opacity-50"
-                  >
-                    {isSubmitting ? 'Guardando...' : 'Suscribir'}
-                  </button>
-                </form>
-              ) : (
-                <div className="animate-fade-in bg-white/[0.03] rounded-lg p-4 border border-[#25D366]/30">
-                  <p className="text-[#4ade80] text-[13px] font-bold mb-3 flex items-center justify-center gap-2">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                    ¡Número guardado!
-                  </p>
-                  <a
-                    href={groupLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-[13px] rounded-[5px] h-[40px] px-4 transition-all w-full"
-                  >
-                    <FaWhatsapp className="text-lg" />
-                    Unirte al Grupo VIP
-                  </a>
-                </div>
-              )}
-            </div>
+
           </div>
 
           {/* Copyright + Social + Powered by */}

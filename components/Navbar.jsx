@@ -152,38 +152,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
             <a href={`https://wa.me/${contactPhone.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-white/10 transition-colors" aria-label="WhatsApp">
               <img src="/senada/images/icons/ico_phone.svg" alt="Teléfono" className="w-5 h-5" style={{ filter: 'brightness(0) invert(1)' }} />
             </a>
-            {/* Search */}
-            <Link href="/properties" className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-white/10 transition-colors" aria-label="Buscar">
-              <img src="/senada/images/icons/ico_search.svg" alt="Buscar" className="w-5 h-5" style={{ filter: 'brightness(0) invert(1)' }} />
-            </Link>
-            {/* Show More / Hamburger */}
-            <div className="relative" onMouseEnter={() => openDropdown('more')} onMouseLeave={closeDropdown}>
-                <button className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-white/10 transition-colors" aria-label="Más">
-                  <span className="space-y-1 flex flex-col items-center">
-                    <span className="block w-[18px] h-[2px] bg-white rounded-sm"></span>
-                    <span className="block w-[18px] h-[2px] bg-white rounded-sm"></span>
-                    <span className="block w-[18px] h-[2px] bg-white rounded-sm"></span>
-                  </span>
-                </button>
-                <div style={{
-                  maxHeight: desktopDropdown === 'more' ? '500px' : '0',
-                  opacity: desktopDropdown === 'more' ? 1 : 0,
-                  overflow: 'hidden',
-                  transition: 'max-height 500ms cubic-bezier(0.16, 1, 0.3, 1), opacity 300ms ease',
-                  position: 'absolute', top: '100%', right: '0', zIndex: 50,
-                }}>
-                  <ul className="bg-black rounded-[6px] min-w-[180px] text-center shadow-[0_8px_14px_-3px_rgba(255,255,255,0.1)] mt-2">
-                    {!session && providers && Object.values(providers).map((provider) => (
-                      <li key={provider.id} className="border-b border-[#252525] last:border-b-0">
-                          <button onClick={() => signIn(provider.id, { callbackUrl: '/admin' })} className="block w-full text-center text-white text-[13px] px-5 py-[15px] font-normal hover:opacity-40">Ingresar</button>
-                      </li>
-                    ))}
-                    {session && (
-                      <li className="border-b border-[#252525] last:border-b-0"><button onClick={() => signOut()} className="block w-full text-center text-white text-[13px] px-5 py-[15px] font-normal hover:opacity-40">Salir</button></li>
-                    )}
-                  </ul>
-                </div>
-              </div>
+
           </div>
         </div>
       </header>
