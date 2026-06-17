@@ -213,12 +213,10 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
 
         {/* Mobile fullscreen overlay — Wolfim style */}
         <div
-          className="md:hidden fixed inset-x-0 z-[110] flex flex-col overflow-x-hidden"
+          className="md:hidden fixed inset-0 z-[120] flex flex-col overflow-x-hidden"
           style={{
             background: 'var(--color-brand)',
-            top: 'calc(env(safe-area-inset-top, 8px) + 60px)',
-            height: 'calc(100dvh - env(safe-area-inset-top, 8px) - 60px)',
-            padding: '40px 24px calc(20px + env(safe-area-inset-bottom, 0px))',
+            padding: 'calc(env(safe-area-inset-top, 8px) + 80px) 24px calc(20px + env(safe-area-inset-bottom, 0px))',
             overflowY: 'auto',
             clipPath: isMobileMenuOpen ? 'inset(0px 0px 0px 0px)' : 'inset(0px 0px 100% 100%)',
             transition: isMobileMenuOpen 
@@ -227,6 +225,17 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
             pointerEvents: isMobileMenuOpen ? 'auto' : 'none',
           }}
         >
+          {/* Close button inside overlay */}
+          <button
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="absolute top-[calc(env(safe-area-inset-top,8px)+20px)] right-[20px] w-10 h-10 flex items-center justify-center text-black/60 hover:text-black hover:rotate-90 transition-all duration-300 z-10"
+            aria-label="Cerrar menú"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="w-8 h-8">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
           <nav className="flex-1 flex flex-col px-0 mt-4">
             {/* Destacadas */}
             <Link href="/#propiedades-destacadas" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.2s' }} onClick={() => setIsMobileMenuOpen(false)}>
