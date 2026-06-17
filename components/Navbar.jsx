@@ -120,15 +120,13 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
                 }}>
                   <ul className="bg-black rounded-[6px] min-w-[200px] text-center shadow-[0_8px_14px_-3px_rgba(255,255,255,0.1)] mt-2">
                     {[
-                      { label: 'Casas', query: 'type=Casa' },
-                      { label: 'Departamentos', query: 'type=Departamento' },
-                      { label: 'Campos', query: 'type=Campo' },
-                      { label: 'Inmuebles Comerciales', query: 'type=Inmueble+Comercial' },
-                      { label: 'Terrenos', query: 'type=Terreno' },
-                      { label: 'Todas las propiedades', query: '' },
+                      { href: '/#masterplan', label: 'Sector Bosque' },
+                      { href: '/#masterplan', label: 'Sector Altura' },
+                      { href: '/#masterplan', label: 'Sector Arroyo' },
+                      { href: '/#masterplan', label: 'Ver Masterplan Completo' },
                     ].map(item => (
                       <li key={item.label} className="border-b border-[#252525] last:border-b-0">
-                        <Link href={`/properties${item.query ? `?${item.query}` : ''}`} className="block text-white text-[13px] px-5 py-[15px] font-normal uppercase tracking-wider hover:opacity-40">
+                        <Link href={item.href} className="block text-white text-[13px] px-5 py-[15px] font-normal uppercase tracking-wider hover:opacity-40">
                           {item.label}
                         </Link>
                       </li>
@@ -270,14 +268,12 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
               </button>
               <div className={`overflow-hidden transition-all duration-300 ${mobileSubOpen ? 'max-h-[300px] opacity-100 mb-3' : 'max-h-0 opacity-0'}`}>
                 {[
-                  { href: '/properties?type=Casa', label: 'Casas' },
-                  { href: '/properties?type=Departamento', label: 'Departamentos' },
-                  { href: '/properties?type=Campo', label: 'Campos' },
-                  { href: '/properties?type=Inmueble+Comercial', label: 'Inmuebles Comerciales' },
-                  { href: '/properties?type=Terreno', label: 'Terrenos' },
-                  { href: '/properties', label: 'Todas las propiedades' },
+                  { href: '/#masterplan', label: 'Sector Bosque' },
+                  { href: '/#masterplan', label: 'Sector Altura' },
+                  { href: '/#masterplan', label: 'Sector Arroyo' },
+                  { href: '/#masterplan', label: 'Ver Masterplan Completo' },
                 ].map(l => (
-                    <Link key={l.href} href={l.href} className="block text-white/70 text-[16px] py-2 pl-4 hover:text-white transition-colors" style={{ fontFamily: "'Lato', sans-serif", fontWeight: 400 }} onClick={() => setIsMobileMenuOpen(false)}>
+                    <Link key={l.label} href={l.href} className="block text-white/70 text-[16px] py-2 pl-4 hover:text-white transition-colors" style={{ fontFamily: "'Lato', sans-serif", fontWeight: 400 }} onClick={() => setIsMobileMenuOpen(false)}>
                     {l.label}
                   </Link>
                 ))}

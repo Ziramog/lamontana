@@ -3,6 +3,7 @@ import FeaturedPropertiesCarousel from '@/components/FeaturedPropertiesCarousel'
 import SellerCTA from '@/components/sections/SellerCTA';
 import StatsBar from '@/components/sections/StatsBar';
 import Agents from '@/components/sections/Agents';
+import CommunicationPillars from '@/components/sections/CommunicationPillars';
 import ReviewsSection from '@/components/ReviewsSection';
 import Clients from '@/components/Clients';
 import ScrollReveal from '@/components/shared/ScrollReveal';
@@ -98,22 +99,30 @@ const HomePage = async () => {
     <div>
       <JsonLd data={jsonLd} />
       {/* 1. Hero — emotional hook + search + trust strip */}
-      <Hero title="Naturaleza, altura y privacidad." subtitle="a 7 km del Durazno de Yacanto" />
+      <Hero 
+        title="Lotes de campo en entorno serrano." 
+        subtitle="Agua de vertiente, costa de arroyo, forestación añosa y acceso interno a cada sector." 
+      />
 
       {/* 2. Nuestra Historia */}
       <div id="nuestra-historia">
         <Agents 
-          title="La Montaña" 
-          subtitle="Loteo de montaña"
-          text="Aprendimos que vender tierra no es solamente ofrecer metros cuadrados. Es acompañar una decisión importante: elegir un lugar donde proyectar, invertir, descansar o construir una nueva etapa de vida.
+          title="Un Proyecto de Vida" 
+          subtitle="La Montaña"
+          text="Loteo de campo ubicado en zona serrana, con acceso por Yacanto y El Durazno, a aproximadamente 6 km de este último.
 
-La Montaña nace con esa mirada.
+El predio combina naturaleza, privacidad y condiciones ideales para desarrollar una vivienda, casa de descanso o refugio de montaña. Los lotes son aptos para vivienda o construcción, poseen agua de vertiente y, en su mayoría, cuentan con costa directa al arroyo.
 
-Ubicado 7 km arriba de El Durazno, en un entorno natural privilegiado, este loteo fue pensado para quienes buscan algo distinto: tranquilidad, paisaje serrano, aire puro y privacidad, sin resignar seguridad en la operación ni información clara sobre lo que están comprando.
+El campo cuenta con alambrado perimetral, pircas, caminos internos de acceso a cada sector, forestación variada y añosa, además de casero permanente para seguridad y mantenimiento.
 
-Cada lote representa una oportunidad de conectar con la naturaleza y, al mismo tiempo, resguardar valor en una zona con identidad propia y alta proyección. No se trata de un loteo masivo, sino de una propuesta más reservada, para quienes entienden que ciertos lugares no se eligen solo por ubicación, sino por lo que transmiten." 
+Una propuesta para quienes buscan invertir en tierra con valor natural, en un entorno de tranquilidad, agua y paisaje serrano.
+
+Títulos perfectos para escrituración inmediata." 
         />
       </div>
+
+      {/* 2.5 Pilares de Comunicación */}
+      <CommunicationPillars />
 
       {/* 3. Mapa Interactivo */}
       <InteractiveMasterplan polygonsData={polygonsData} />
