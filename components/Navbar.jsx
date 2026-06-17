@@ -100,12 +100,12 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
           {/* Main Nav — Senada .mainMenu */}
           <nav className="desktop-dropdown flex items-center gap-8 lg:gap-10 ml-auto">
             <Link href="/#propiedades-destacadas" className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
-              DESTACADAS
+              LOTES DESTACADOS
             </Link>
 
               <div className="relative" onMouseEnter={() => openDropdown('props')} onMouseLeave={closeDropdown}>
                 <button className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
-                  Propiedades
+                  VER LOTES
                 </button>
                 <svg className={`absolute left-1/2 -translate-x-1/2 w-[14px] h-[12px] transition-transform ${desktopDropdown === 'props' ? 'rotate-180' : ''}`}
                   style={{ top: 'calc(100% + 2px)', color: desktopDropdown === 'props' ? 'var(--color-brand)' : '#fff' }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -138,7 +138,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
               </div>
 
             <Link href="/#nuestra-historia" className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
-              Sobre Nosotros
+              NUESTRA HISTORIA
             </Link>
 
             {session && (
@@ -252,8 +252,8 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
         >
           <nav className="flex-1 flex flex-col px-0">
             {/* Destacadas */}
-            <Link href="/properties" className={`block text-white text-[22px] py-[15px] border-b border-white/[.08] hover:text-[var(--color-brand)] transition-colors ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: "'Lato', sans-serif", fontWeight: 400, animationDelay: '0.4s' }} onClick={() => setIsMobileMenuOpen(false)}>
-              Destacadas
+            <Link href="/#propiedades-destacadas" className={`block text-white text-[22px] py-[15px] border-b border-white/[.08] hover:text-[var(--color-brand)] transition-colors ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: "'Lato', sans-serif", fontWeight: 400, animationDelay: '0.4s' }} onClick={() => setIsMobileMenuOpen(false)}>
+              Lotes Destacados
             </Link>
 
             {/* Propiedades — expandable */}
@@ -263,7 +263,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
                   className="flex items-center justify-between w-full text-white text-[22px] py-[15px] hover:text-[var(--color-brand)] transition-colors"
                   style={{ fontFamily: "'Lato', sans-serif", fontWeight: 400 }}
                 >
-                  Propiedades
+                  Ver Lotes
                 <svg className={`w-5 h-5 text-white/40 transition-transform duration-300 ${mobileSubOpen ? 'rotate-90' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M9 18l6-6-6-6"/>
                 </svg>
@@ -286,7 +286,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
 
             {/* SOBRE NOSOTROS */}
             <Link href="/#nuestra-historia" className={`block text-white text-[22px] py-[15px] border-b border-white/[.08] hover:text-[var(--color-brand)] transition-colors ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: "'Lato', sans-serif", fontWeight: 400, animationDelay: '0.5s' }} onClick={() => setIsMobileMenuOpen(false)}>
-              Sobre nosotros
+              Nuestra Historia
             </Link>
 
             {/* PANEL DE CONTROL */}
