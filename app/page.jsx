@@ -135,6 +135,7 @@ Títulos perfectos para escrituración inmediata."
             .map((p, index) => {
               if (index === 0) return { ...p, images: [{ id: 'test1', file_name: 'Lote 1', url: '/Lote 1.jpeg', type: 'image' }] };
               if (index === 1) return { ...p, images: [{ id: 'test2', file_name: 'lote 2', url: '/lote 2.jpeg', type: 'image' }] };
+              if (index === 2) return { ...p, images: [{ id: 'test3', file_name: 'Lote 10', url: '/Lote 10.jpeg', type: 'image' }] };
               return p;
             })
             .filter(p => (p.images || []).length > 0)
