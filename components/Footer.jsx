@@ -67,9 +67,10 @@ const Footer = ({
               </Link>
                   <ul>
                     <li className="py-[5px]">
-                      <a href={`https://maps.google.com/?q=${encodeURIComponent(contactAddress)}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-[5px] text-[13px] text-white/70 font-light hover:text-white transition-colors group">
+                      <a href={`https://maps.google.com/?q=${encodeURIComponent('32°10\'45.47"S 64°48\'35.01"W')}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-[5px] text-[13px] text-white/70 font-light hover:text-white transition-colors group">
+                        <MapPin className="w-4 h-4 text-[#C49A4A] mt-0.5 shrink-0 group-hover:scale-110 transition-transform" />
                         <span>
-                          {contactAddress}
+                          32°10&apos;45.47&quot;S 64°48&apos;35.01&quot;W
                         </span>
                       </a>
                     </li>
@@ -209,9 +210,10 @@ const Footer = ({
                 className="brightness-0 invert transition-opacity hover:opacity-80"
               />
             </Link>
-            <a href={`https://maps.google.com/?q=${encodeURIComponent(contactAddress)}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-[13px] text-white/60 font-light mt-3 hover:text-white transition-colors">
+            <a href={`https://maps.google.com/?q=${encodeURIComponent('32°10\'45.47"S 64°48\'35.01"W')}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-[13px] text-white/60 font-light mt-3 hover:text-white transition-colors">
+              <MapPin className="w-4 h-4 text-[#C49A4A] mt-0.5 shrink-0" />
               <span>
-                {contactAddress}
+                32°10&apos;45.47&quot;S 64°48&apos;35.01&quot;W
               </span>
             </a>
             <a href={`mailto:${contactEmail}`} className="flex items-center gap-2 text-[13px] text-white font-light">
