@@ -25,32 +25,32 @@ const cinzel = Cinzel({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://properties-srs5.vercel.app'),
+  metadataBase: new URL('https://lamontana-two.vercel.app'),
   title: {
-    template: '%s · Roggero & Roma',
-    default: 'Roggero & Roma | Negocios Inmobiliarios en Alta Gracia, Córdoba',
+    template: '%s · La Montaña',
+    default: 'La Montaña | Lotes de campo en entorno serrano',
   },
   description:
-    'Agencia inmobiliaria en Alta Gracia, Córdoba. Más de 10 años de experiencia en compra, venta y alquiler de casas, departamentos, campos y locales comerciales.',
+    'Loteo de campo ubicado en zona serrana, con acceso por Yacanto y El Durazno. Naturaleza, privacidad y lotes aptos para vivienda con costa de arroyo.',
   keywords:
-    'inmobiliaria, propiedades, casas, departamentos, campos, Alta Gracia, Córdoba, Argentina, venta, alquiler',
-  authors: [{ name: 'Roggero & Roma' }],
+    'loteo, lotes, campo, sierras, El Durazno, Yacanto, Córdoba, Argentina, venta, terrenos, La Montaña',
+  authors: [{ name: 'La Montaña' }],
   openGraph: {
     type: 'website',
     locale: 'es_AR',
-    siteName: 'Roggero & Roma Inmobiliaria',
+    siteName: 'La Montaña',
     images: [
       {
-        url: '/images/og-default.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Roggero & Roma Inmobiliaria — Alta Gracia, Córdoba',
+        url: '/lamontanafavicom.png',
+        width: 1000,
+        height: 1000,
+        alt: 'La Montaña — Córdoba',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@roggeroroma',
+    site: '@lamontana',
   },
   alternates: {
     canonical: '/',
