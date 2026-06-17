@@ -62,7 +62,7 @@ const Footer = ({
                   width={200}
                   height={100}
                   style={{ height: '100px', width: 'auto' }}
-                  className="brightness-0 invert"
+                  className="transition-opacity hover:opacity-80"
                 />
               </Link>
                   <ul>
@@ -98,10 +98,9 @@ const Footer = ({
                     </span>
                     <ul>
                       {[
-                        { href: '/properties?type=Casa', label: 'Casas' },
-                        { href: '/properties?type=Departamento', label: 'Departamentos' },
-                        { href: '/properties?type=Campo', label: 'Campos' },
-                        { href: '/properties?type=Terreno', label: 'Terrenos' },
+                        { href: '/#masterplan', label: 'Sector Bosque' },
+                        { href: '/#masterplan', label: 'Sector Altura' },
+                        { href: '/#masterplan', label: 'Sector Arroyo' },
                       ].map(l => (
                         <li key={l.href}>
                           <Link href={l.href} className="block text-[13px] text-white/70 font-light py-[5px] pr-[10px] hover:text-white transition-colors">
@@ -110,8 +109,8 @@ const Footer = ({
                         </li>
                       ))}
                       <li>
-                        <Link href="/properties" className="block text-[13px] text-white/70 font-light py-[5px] pr-[10px] hover:text-white transition-colors">
-                          Ver todas
+                        <Link href="/#masterplan" className="block text-[13px] text-white/70 font-light py-[5px] pr-[10px] hover:text-white transition-colors">
+                          Ver Masterplan Completo
                         </Link>
                       </li>
                     </ul>
@@ -253,7 +252,7 @@ const Footer = ({
                 width={200}
                 height={100}
                 style={{ height: '55px', width: 'auto' }}
-                className="brightness-0 invert"
+                className="transition-opacity hover:opacity-80"
               />
             </Link>
             <a href={`https://maps.google.com/?q=${encodeURIComponent(contactAddress + ', Alta Gracia, Córdoba')}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-[13px] text-white/60 font-light mt-3 hover:text-white transition-colors">
@@ -280,17 +279,16 @@ const Footer = ({
               <span className="block text-[15px] text-white uppercase font-bold mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Propiedades</span>
               <div className="grid grid-cols-2 gap-y-1">
                 {[
-                  { href: '/properties?type=Casa', label: 'Casas' },
-                  { href: '/properties?type=Departamento', label: 'Departamentos' },
-                  { href: '/properties?type=Campo', label: 'Campos' },
-                  { href: '/properties?type=Terreno', label: 'Terrenos' },
+                  { href: '/#masterplan', label: 'Sector Bosque' },
+                  { href: '/#masterplan', label: 'Sector Altura' },
+                  { href: '/#masterplan', label: 'Sector Arroyo' },
                 ].map(l => (
                   <Link key={l.href} href={l.href} className="text-[13px] text-white/60 font-light py-[3px] hover:text-white transition-colors">
                     {l.label}
                   </Link>
                 ))}
-                <Link href="/properties" className="text-[13px] text-white/60 font-light py-[3px] hover:text-white transition-colors">
-                  Ver todas
+                <Link href="/#masterplan" className="text-[13px] text-white/60 font-light py-[3px] hover:text-white transition-colors">
+                  Ver Masterplan
                 </Link>
               </div>
             </div>
