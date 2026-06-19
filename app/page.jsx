@@ -11,7 +11,9 @@ import ScrollReveal from '@/components/shared/ScrollReveal';
 import JsonLd from '@/components/JsonLd';
 import { getSiteConfig } from '@/utils/getSiteConfig';
 import { getLots } from '@/utils/getLots';
+import { getGalleryMedia } from '@/utils/getGallery';
 import InteractiveMasterplan from '@/components/sections/InteractiveMasterplan';
+import GalleryPreview from '@/components/sections/GalleryPreview';
 import polygonsData from '@/data/lotes_geo.json';
 
 export const dynamic = 'force-dynamic';
@@ -24,6 +26,7 @@ export const metadata = {
 const HomePage = async () => {
   const properties = await getLots();
   const siteConfig = await getSiteConfig();
+  const galleryItems = await getGalleryMedia();
 
   // Filter out any unpublished if we had that flag, and format
   const serializedProperties = properties.filter(p => p.status !== 'Oculto');
@@ -125,6 +128,9 @@ Títulos perfectos para escrituración inmediata."
 
       {/* 3. Mapa Interactivo */}
       <InteractiveMasterplan polygonsData={polygonsData} />
+
+      {/* 3.5 Preview de Galería */}
+      <GalleryPreview items={galleryItems} />
 
       {/* 4. Lotes destacados */}
       <div id="propiedades-destacadas">
