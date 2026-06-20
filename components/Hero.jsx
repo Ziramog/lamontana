@@ -239,13 +239,13 @@ const Hero = () => {
               </span>
 
               {/* H1 Principal */}
-              <h1 className='font-display font-normal text-white leading-[1.1] mb-5 md:mb-6 tracking-tight' style={{ fontSize: 'clamp(32px, 5vw, 64px)' }}>
-                Lotes de campo <br className="block md:hidden"/> en entorno serrano
+              <h1 className='font-display font-normal text-white leading-[1.1] mb-5 md:mb-6 tracking-tight uppercase' style={{ fontSize: 'clamp(32px, 5vw, 64px)' }}>
+                LOTES DE CAMPO <br className="block md:hidden"/> EN LA MONTAÑA
               </h1>
 
               {/* Subtítulo Diferenciales */}
               <p className="text-white/90 font-light text-[15px] md:text-xl max-w-3xl leading-relaxed mb-10 md:mb-12 px-4 md:px-0">
-                Agua de vertiente, costa de arroyo y forestación añosa<span className="hidden md:inline">, acceso interno a cada sector</span>.
+                Agua de vertiente, costa de arroyo y forestación variada y añosa<span className="hidden md:inline">, acceso interno a cada sector</span>.
               </p>
 
               {/* CTAs */}
