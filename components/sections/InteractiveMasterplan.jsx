@@ -242,17 +242,12 @@ const InteractiveMasterplan = ({ polygonsData }) => {
           </div>
 
           <ScrollReveal variant="fadeUp" delay={0.2}>
-            <a 
-              href="https://www.google.com/maps/search/?api=1&query=-32.179297,-64.809725" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-[#141412] border border-white/10 hover:border-[var(--color-brand)] transition-colors group"
-            >
-              <MapPin className="w-4 h-4 text-[var(--color-brand)] group-hover:scale-110 transition-transform" />
-              <span className="text-white/80 group-hover:text-white font-mono text-xs md:text-sm tracking-widest transition-colors">
+            <div className="inline-flex items-center justify-center gap-2 px-2 py-1">
+              <MapPin className="w-3.5 h-3.5 text-white/40" />
+              <span className="text-white/40 font-mono text-xs md:text-[13px] tracking-widest">
                 32°10'45.47"S 64°48'35.01"W
               </span>
-            </a>
+            </div>
           </ScrollReveal>
         </div>
 
