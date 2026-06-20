@@ -20,13 +20,13 @@ const PILLARS = [
     id: 'agua',
     icon: Droplets, 
     title: 'Agua y Arroyo', 
-    description: 'Agua de vertiente y costa al arroyo en la mayoría de los lotes.' 
+    description: 'Agua de vertiente y costa al arroyo en todos los lotes.' 
   },
   { 
     id: 'proyecto',
     icon: Map, 
-    title: 'Proyecto de Vida', 
-    description: 'Ideal para vivienda serrana, casa de descanso o refugio familiar.' 
+    title: 'Acceso Estratégico', 
+    description: 'A minutos de Santa Rosa de Calamuchita y rápido acceso desde Córdoba Capital.' 
   },
   { 
     id: 'seguridad',
