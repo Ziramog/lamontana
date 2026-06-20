@@ -26,7 +26,7 @@ const PILLARS = [
     id: 'proyecto',
     icon: Map, 
     title: 'Acceso Estratégico', 
-    description: 'A minutos de Santa Rosa de Calamuchita y rápido acceso desde Córdoba Capital.' 
+    description: 'A 40 minutos de Santa Rosa de Calamuchita y a 2 horas de Córdoba Capital.' 
   },
   { 
     id: 'seguridad',
