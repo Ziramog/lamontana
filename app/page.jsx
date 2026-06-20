@@ -129,10 +129,7 @@ Títulos perfectos para escrituración inmediata."
       {/* 3. Mapa Interactivo */}
       <InteractiveMasterplan polygonsData={polygonsData} />
 
-      {/* 3.5 Preview de Galería */}
-      <GalleryPreview items={galleryItems} />
-
-      {/* 4. Lotes destacados */}
+      {/* 3.5 Lotes destacados */}
       <div id="propiedades-destacadas">
         <FeaturedPropertiesCarousel 
           properties={serializedProperties
@@ -148,6 +145,9 @@ Títulos perfectos para escrituración inmediata."
           } 
         />
       </div>
+
+      {/* 4. Preview de Galería */}
+      <GalleryPreview items={galleryItems} />
 
       {/* SECCIONES OCULTAS 
       <StatsBar />

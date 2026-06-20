@@ -30,7 +30,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
   const isHomepage = pathname === '/';
   const isAdminPage = pathname.startsWith('/admin');
   const isGlassMode = isHomepage ? (isScrolled || isMobileMenuOpen) : true;
-  const showIso = isScrolled || isAdminPage;
+  const showIso = isScrolled || !isHomepage;
 
   if (pathname.startsWith('/p/')) return null;
 
@@ -93,7 +93,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
               alt='La Montaña'
               width={400}
               height={120}
-              style={{ height: (!isScrolled && !isAdminPage) ? '180px' : '60px', width: 'auto' }}
+              style={{ height: (!isScrolled && isHomepage) ? '180px' : '60px', width: 'auto' }}
             />
           </Link>
 
@@ -167,27 +167,27 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
         <div className="flex items-center justify-between px-4 h-full relative">
           
           {/* Spacer to maintain flex layout when logo is absolute */}
-          <div className={`transition-all duration-500 ${(!isScrolled && !isAdminPage) ? 'w-[40px]' : 'hidden'}`} />
+          <div className={`transition-all duration-500 ${(!isScrolled && isHomepage) ? 'w-[40px]' : 'hidden'}`} />
 
           {/* Logo — isotipo */}
           <Link 
             className={`flex items-center flex-shrink-0 transition-all duration-500 z-10 ${
-              (!isScrolled && !isAdminPage) 
+              (!isScrolled && isHomepage) 
                 ? 'absolute left-1/2 -translate-x-1/2 top-[40px]' 
                 : 'relative left-0 translate-x-0 top-0'
             }`} 
             href="/"
           >
             <Image
-              className={`brightness-0 invert transition-all duration-500 ${(!isScrolled && !isAdminPage) ? 'origin-top' : 'origin-left'}`}
+              className={`brightness-0 invert transition-all duration-500 ${(!isScrolled && isHomepage) ? 'origin-top' : 'origin-left'}`}
               src="/logolamontaña.png"
               alt="La Montaña"
               width={600}
               height={200}
               style={{ 
-                height: (!isScrolled && !isAdminPage) ? '154px' : '44px', 
+                height: (!isScrolled && isHomepage) ? '154px' : '44px', 
                 width: 'auto',
-                maxWidth: (!isScrolled && !isAdminPage) ? '85vw' : 'none',
+                maxWidth: (!isScrolled && isHomepage) ? '85vw' : 'none',
                 objectFit: 'contain'
               }}
             />
