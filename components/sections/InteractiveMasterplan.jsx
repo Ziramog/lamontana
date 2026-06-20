@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState, useMemo, useRef } from 'react';
 import { APIProvider, Map, useMap, Marker } from '@vis.gl/react-google-maps';
+import { MapPin } from 'lucide-react';
 import SectionBox from '@/components/sections/SectionBox';
 import ScrollReveal from '@/components/shared/ScrollReveal';
 import lotsData from '@/data/lots.json';
@@ -232,13 +233,27 @@ const InteractiveMasterplan = ({ polygonsData }) => {
               Masterplan Interactivo
             </h2>
           </ScrollReveal>
-          <div className="flex items-center justify-center gap-3">
+          <div className="flex items-center justify-center gap-3 mb-6">
             <span className="w-7 h-px bg-[var(--color-brand)] flex-shrink-0" />
             <p className="text-[13px] md:text-[15px] font-medium text-[var(--color-brand)] uppercase tracking-[0.15em]">
               Explorá Tu Próximo Lote
             </p>
             <span className="w-7 h-px bg-[var(--color-brand)] flex-shrink-0" />
           </div>
+
+          <ScrollReveal variant="fadeUp" delay={0.2}>
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=-32.179297,-64.809725" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-[#141412] border border-white/10 hover:border-[var(--color-brand)] transition-colors group"
+            >
+              <MapPin className="w-4 h-4 text-[var(--color-brand)] group-hover:scale-110 transition-transform" />
+              <span className="text-white/80 group-hover:text-white font-mono text-xs md:text-sm tracking-widest transition-colors">
+                32°10'45.47"S 64°48'35.01"W
+              </span>
+            </a>
+          </ScrollReveal>
         </div>
 
         <ScrollReveal>
