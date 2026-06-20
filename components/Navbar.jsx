@@ -103,6 +103,10 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
               LOTES DESTACADOS
             </Link>
 
+            <Link href="/galeria" className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
+              GALERÍA
+            </Link>
+
               <div className="relative" onMouseEnter={() => openDropdown('props')} onMouseLeave={closeDropdown}>
                 <button className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
                   VER LOTES
@@ -240,6 +244,11 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
             {/* Destacadas */}
             <Link href="/#propiedades-destacadas" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.2s' }} onClick={() => setIsMobileMenuOpen(false)}>
               <span className="opacity-50 mr-3 text-[22px]">/</span>Lotes Destacados
+            </Link>
+
+            {/* Galería */}
+            <Link href="/galeria" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.22s' }} onClick={() => setIsMobileMenuOpen(false)}>
+              <span className="opacity-50 mr-3 text-[22px]">/</span>Galería
             </Link>
 
             {/* Propiedades — expandable */}
