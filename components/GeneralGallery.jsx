@@ -77,18 +77,18 @@ const GeneralGallery = ({ items = [] }) => {
               <div className="bg-[#141412] border border-white/5 rounded-none md:rounded-[20px] p-10 md:p-16 my-8 mx-[-16px] md:mx-0 flex flex-col items-center justify-center text-center">
                   <span className="w-10 h-px bg-[var(--color-brand)] mb-6" />
                   <h3 className="text-2xl md:text-4xl font-normal text-heading leading-tight mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
-                    {idx === 0 ? "¿Te imaginás construyendo tu futuro acá?" : "Viví la tranquilidad de las sierras todos los días"}
+                    {idx === 0 ? "Lotes con escrituración inmediata" : "Conocé los lotes disponibles"}
                   </h3>
                   <p className="text-white/60 mb-8 max-w-lg">
                     {idx === 0 
-                      ? "Contactanos hoy mismo para conocer los lotes disponibles y coordinar una visita." 
-                      : "Un entorno natural cuidado, con seguridad y acceso rápido a todo lo que necesitás."}
+                      ? "Contactanos para consultar valores, disponibilidad y coordinar una visita al loteo." 
+                      : "Explorá las opciones destacadas con seguridad y acceso rápido."}
                   </p>
                   <Link 
                     href={idx === 0 ? "/#contacto" : "/#propiedades-destacadas"} 
                     className="bg-[var(--color-brand)] text-black px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors"
                   >
-                     {idx === 0 ? "Asesoramiento Personalizado" : "Ver Lotes Destacados"}
+                     {idx === 0 ? "Consultar Disponibilidad" : "Ver Lotes Destacados"}
                   </Link>
               </div>
             )}
