@@ -3,55 +3,59 @@ import { Leaf, Shield, Droplets, Map, FileCheck } from 'lucide-react';
 import SectionBox from '@/components/sections/SectionBox';
 import ScrollReveal from '@/components/shared/ScrollReveal';
 
-const PILLARS = [
-  { 
-    id: 'naturaleza',
-    icon: Leaf, 
-    title: 'Naturaleza Real', 
-    description: 'Campo serrano, vertientes, árboles añosos y paisaje inigualable.' 
-  },
-  { 
-    id: 'privacidad',
-    icon: Shield, 
-    title: 'Privacidad y Seguridad', 
-    description: 'Lotes en entorno natural, con acceso controlado, casero y mantenimiento permanente.' 
-  },
-  { 
-    id: 'agua',
-    icon: Droplets, 
-    title: 'Agua y Arroyo', 
-    description: 'Agua de vertiente y costa al arroyo en todos los lotes.' 
-  },
-  { 
-    id: 'proyecto',
-    icon: Map, 
-    title: 'Acceso Estratégico', 
-    description: 'A 40 minutos de Santa Rosa de Calamuchita y a 2 horas de Córdoba Capital.' 
-  },
-  { 
-    id: 'seguridad',
-    icon: FileCheck, 
-    title: 'Seguridad Jurídica', 
-    description: 'Títulos perfectos y listos para escrituración inmediata.' 
-  },
-];
+import { useTranslations } from 'next-intl';
 
 const CommunicationPillars = () => {
+  const t = useTranslations('Pillars');
+
+  const PILLARS = [
+    { 
+      id: 'naturaleza',
+      icon: Leaf, 
+      title: t('item1Title'), 
+      description: t('item1Text') 
+    },
+    { 
+      id: 'privacidad',
+      icon: Shield, 
+      title: t('item2Title'), 
+      description: t('item2Text') 
+    },
+    { 
+      id: 'agua',
+      icon: Droplets, 
+      title: t('item3Title'), 
+      description: t('item3Text') 
+    },
+    { 
+      id: 'proyecto',
+      icon: Map, 
+      title: t('item4Title'), 
+      description: t('item4Text') 
+    },
+    { 
+      id: 'seguridad',
+      icon: FileCheck, 
+      title: t('item5Title'), 
+      description: t('item5Text') 
+    },
+  ];
+
   return (
     <section className="pb-[30px] pt-[30px]">
       <SectionBox className="w-full px-4 md:px-[5vw] py-16 md:py-24">
         {/* Header */}
         <div className="text-center mb-10 md:mb-14">
           <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-[var(--color-brand)] block mb-3">
-            PILARES DEL DESARROLLO
+            {t('sectionSubtitle')}
           </span>
           <ScrollReveal variant="fadeLeft">
             <h2 className="text-2xl md:text-[32px] font-medium text-heading leading-tight tracking-[-0.01em] mb-3" style={{ fontFamily: 'var(--font-heading)' }}>
-              ¿Por qué elegir La Montaña?
+              {t('sectionTitle')}
             </h2>
           </ScrollReveal>
           <p className="text-[14px] md:text-[17px] font-light text-body leading-[1.7]">
-            Más que un loteo, es una oportunidad de conectar con la naturaleza con total seguridad.
+            {t('sectionText')}
           </p>
         </div>
 

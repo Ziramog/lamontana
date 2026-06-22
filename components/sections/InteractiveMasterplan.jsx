@@ -6,6 +6,8 @@ import SectionBox from '@/components/sections/SectionBox';
 import ScrollReveal from '@/components/shared/ScrollReveal';
 import lotsData from '@/data/lots.json';
 
+import { useTranslations } from 'next-intl';
+
 // Reusable Geometry component for @vis.gl/react-google-maps (supports Polygon and Polyline)
 const Geometry = ({ type = 'Polygon', paths, options, onClick, onMouseOver, onMouseOut }) => {
   const map = useMap();
@@ -86,6 +88,7 @@ const MapAnimator = ({ targetCenter, targetZoom }) => {
 };
 
 const InteractiveMasterplan = ({ polygonsData }) => {
+  const t = useTranslations('Masterplan');
   const [hoveredPoly, setHoveredPoly] = useState(null);
   const [selectedPoly, setSelectedPoly] = useState(null);
   const [infoWindowPos, setInfoWindowPos] = useState(null);
@@ -214,8 +217,8 @@ const InteractiveMasterplan = ({ polygonsData }) => {
         <SectionBox className="px-4 md:px-[50px] py-16 md:py-24">
           <div className="w-full relative overflow-hidden shadow-2xl flex items-center justify-center bg-gray-100" style={{ height: '70vh', minHeight: '500px' }}>
             <div className="text-center p-8">
-              <h3 className="text-xl font-bold text-red-600 mb-2">Error de Configuración</h3>
-              <p className="text-gray-700">Falta la variable de entorno <code className="bg-gray-200 px-2 py-1 rounded">NEXT_PUBLIC_GOOGLE_MAPS_API_KEY</code> en Vercel.</p>
+              <h3 className="text-xl font-bold text-red-600 mb-2">{t('configError')}</h3>
+              <p className="text-gray-700">{t('missingKey')}</p>
             </div>
           </div>
         </SectionBox>
@@ -230,13 +233,13 @@ const InteractiveMasterplan = ({ polygonsData }) => {
         <div className="text-center mb-10 md:mb-14">
           <ScrollReveal variant="fadeLeft">
             <h2 className="text-[28px] md:text-[40px] font-normal text-heading leading-tight mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
-              Masterplan Interactivo
+              {t('title')}
             </h2>
           </ScrollReveal>
           <div className="flex items-center justify-center gap-3 mb-6">
             <span className="w-7 h-px bg-[var(--color-brand)] flex-shrink-0" />
             <p className="text-[13px] md:text-[15px] font-medium text-[var(--color-brand)] uppercase tracking-[0.15em]">
-              Explorá Tu Próximo Lote
+              {t('subtitle')}
             </p>
             <span className="w-7 h-px bg-[var(--color-brand)] flex-shrink-0" />
           </div>
@@ -317,35 +320,35 @@ const InteractiveMasterplan = ({ polygonsData }) => {
                 </h3>
                 <div className="mb-4">
                   <span className={`text-[11px] font-bold uppercase tracking-[0.15em] px-2 py-1 rounded-[2px] ${infoWindowPos.status === 'Vendido' ? 'bg-red-500/20 text-red-400' : 'bg-[#C49A4A]/20 text-[#C49A4A]'}`}>
-                    {infoWindowPos.status || 'Consultar Disponibilidad'}
+                    {infoWindowPos.status || t('availability')}
                   </span>
                 </div>
 
                 <div className="space-y-2 mb-5">
                   <div className="flex justify-between items-center text-sm border-b border-white/5 pb-2">
-                    <span className="text-white/60 font-light">Superficie</span>
+                    <span className="text-white/60 font-light">{t('surface')}</span>
                     <span className="font-medium">{infoWindowPos.area_display || (infoWindowPos.area_sqm ? `${infoWindowPos.area_sqm.toLocaleString('es-AR')} m²` : 'N/D')}</span>
                   </div>
                   <div className="flex justify-between items-center text-sm border-b border-white/5 pb-2">
-                    <span className="text-white/60 font-light">Costa al arroyo</span>
-                    <span className="font-medium">{infoWindowPos.river_coast_m ? `${infoWindowPos.river_coast_m} m` : 'No dispone'}</span>
+                    <span className="text-white/60 font-light">{t('coast')}</span>
+                    <span className="font-medium">{infoWindowPos.river_coast_m ? `${infoWindowPos.river_coast_m} m` : t('noCoast')}</span>
                   </div>
                   {infoWindowPos.extras && infoWindowPos.extras !== 'Sin extras informados' && (
                     <div className="flex justify-between items-start text-sm border-b border-white/5 pb-2 gap-4">
-                      <span className="text-white/60 font-light whitespace-nowrap">Extras</span>
+                      <span className="text-white/60 font-light whitespace-nowrap">{t('extras')}</span>
                       <span className="font-medium text-right text-[12px]">{infoWindowPos.extras}</span>
                     </div>
                   )}
                   <div className="flex justify-between items-center pt-1">
-                    <span className="text-white/60 font-light text-sm">Precio</span>
+                    <span className="text-white/60 font-light text-sm">{t('price')}</span>
                     <span className="font-medium text-lg text-[#C49A4A]">
                       {infoWindowPos.price === 'Consultar' || infoWindowPos.price === 'Vendido' ? infoWindowPos.price : `USD ${Number(infoWindowPos.price).toLocaleString('es-AR')}`}
                     </span>
                   </div>
                 </div>
 
-                <a href={`https://wa.me/5493547563911?text=Hola, quiero consultar por el ${infoWindowPos.name} de La Montaña.`} target="_blank" rel="noopener noreferrer" className="block w-full text-center bg-[#C49A4A] text-white text-[13px] font-medium uppercase tracking-[0.1em] py-3 rounded-[2px] hover:bg-white hover:text-black transition-colors">
-                  Consultar por este lote
+                <a href={`https://wa.me/5493547563911?text=${encodeURIComponent(t('whatsappMsg', { lotName: infoWindowPos.name }))}`} target="_blank" rel="noopener noreferrer" className="block w-full text-center bg-[#C49A4A] text-white text-[13px] font-medium uppercase tracking-[0.1em] py-3 rounded-[2px] hover:bg-white hover:text-black transition-colors">
+                  {t('inquire')}
                 </a>
               </div>
             )}
@@ -353,11 +356,11 @@ const InteractiveMasterplan = ({ polygonsData }) => {
             <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white px-4 py-2 text-sm flex gap-4 pointer-events-none">
               <div className="flex items-center gap-2">
                 <span className="w-3 h-3 rounded-full bg-white opacity-40 border border-white"></span>
-                <span>Disponible</span>
+                <span>{t('available')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-3 h-3 bg-[#C49A4A]"></span>
-                <span>Seleccionado</span>
+                <span>{t('selected')}</span>
               </div>
             </div>
           </div>

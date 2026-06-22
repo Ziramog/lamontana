@@ -1,0 +1,114 @@
+{
+  "Navbar": {
+    "destacados": "LOTES DESTACADOS",
+    "galeria": "GALERÍA",
+    "verLotes": "VER LOTES",
+    "sectorBosque": "Sector Bosque",
+    "sectorAltura": "Sector Altura",
+    "sectorArroyo": "Sector Arroyo",
+    "verMasterplan": "Ver Masterplan Completo",
+    "historia": "NUESTRA HISTORIA",
+    "panel": "Panel de Control",
+    "salir": "Salir"
+  },
+  "HomePage": {
+    "heroTitle": "Encuentra la Propiedad de tus Sueños",
+    "heroSubtitle": "Descubre las mejores propiedades que se ajusten a tus necesidades.",
+    "searchPlaceholder": "Ingresa una Ubicación (Ej. Córdoba, Carlos Paz, etc)",
+    "propertyType": "Tipo de Propiedad",
+    "all": "Todos",
+    "house": "Casa",
+    "apartment": "Departamento",
+    "studio": "Monoambiente",
+    "condo": "Condominio",
+    "searchBtn": "Buscar",
+    "featured": "Propiedades Destacadas",
+    "recent": "Propiedades Recientes",
+    "viewAll": "Ver todas las propiedades",
+    "historiaTag": "Nuestra Historia",
+    "historiaTitle": "Un Proyecto de Vida",
+    "historiaSubtitle": "La Montaña",
+    "historiaText": "Loteo de campo ubicado en zona serrana, con acceso por Yacanto y El Durazno, a aproximadamente 6 km de este último.\n\nEl predio combina naturaleza, privacidad y condiciones ideales para desarrollar una vivienda, casa de descanso o refugio de montaña. Los lotes son aptos para vivienda o construcción, poseen agua de vertiente y, en su mayoría, cuentan con costa directa al arroyo.\n\nEl campo cuenta con alambrado perimetral, pircas, caminos internos de acceso a cada sector, forestación variada y añosa, además de casero permanente para seguridad y mantenimiento.\n\nUna propuesta para quienes buscan invertir en tierra con valor natural, en un entorno de tranquilidad, agua y paisaje serrano.\n\nTítulos perfectos para escrituración inmediata."
+  },
+  "Hero": {
+    "context": "A 7 km de El Durazno",
+    "title1": "LOTES DE CAMPO",
+    "title2": "EN LA MONTAÑA",
+    "subtitle1": "Agua de vertiente, costa de arroyo y forestación variada y añosa",
+    "subtitle2": ", acceso interno a cada sector",
+    "ctaLots": "Ver lotes disponibles",
+    "ctaWhatsapp": "Consultar por WhatsApp",
+    "scrollText": "Descubrí La Montaña"
+  },
+  "TrustStrip": {
+    "item1Title": "Aptos para vivienda",
+    "item1Text": "Todos los lotes son aptos para construir vivienda o casa de descanso.",
+    "item2Title": "Títulos perfectos",
+    "item2Text": "Seguridad documental para avanzar con total tranquilidad.",
+    "item3Title": "Escrituración inmediata",
+    "item3Text": "Documentación lista para concretar la operación."
+  },
+  "Pillars": {
+    "sectionSubtitle": "PILARES DEL DESARROLLO",
+    "sectionTitle": "¿Por qué elegir La Montaña?",
+    "sectionText": "Más que un loteo, es una oportunidad de conectar con la naturaleza con total seguridad.",
+    "item1Title": "Naturaleza Real",
+    "item1Text": "Campo serrano, vertientes, árboles añosos y paisaje inigualable.",
+    "item2Title": "Privacidad y Seguridad",
+    "item2Text": "Lotes en entorno natural, con acceso controlado, casero y mantenimiento permanente.",
+    "item3Title": "Agua y Arroyo",
+    "item3Text": "Agua de vertiente y costa al arroyo en todos los lotes.",
+    "item4Title": "Acceso Estratégico",
+    "item4Text": "A 40 minutos de Santa Rosa de Calamuchita y a 2 horas de Córdoba Capital.",
+    "item5Title": "Seguridad Jurídica",
+    "item5Text": "Títulos perfectos y listos para escrituración inmediata."
+  },
+  "Masterplan": {
+    "title": "Masterplan Interactivo",
+    "subtitle": "Explorá Tu Próximo Lote",
+    "configError": "Error de Configuración",
+    "missingKey": "Falta la variable de entorno NEXT_PUBLIC_GOOGLE_MAPS_API_KEY en Vercel.",
+    "availability": "Consultar Disponibilidad",
+    "surface": "Superficie",
+    "coast": "Costa al arroyo",
+    "noCoast": "No dispone",
+    "extras": "Extras",
+    "price": "Precio",
+    "inquire": "Consultar por este lote",
+    "available": "Disponible",
+    "selected": "Seleccionado",
+    "whatsappMsg": "Hola, quiero consultar por el {lotName} de La Montaña."
+  },
+  "FeaturedProperties": {
+    "title": "Lotes Destacados",
+    "subtitle": "ELEGIDOS PARA VOS",
+    "moreComing": "MÁS LOTES PRÓXIMAMENTE"
+  },
+  "GalleryPreview": {
+    "title": "Entorno y Paisajes",
+    "subtitle": "LA NATURALEZA EN SU MÁXIMA EXPRESIÓN",
+    "explore": "EXPLORAR GALERÍA COMPLETA",
+    "viewMore": "Ver más"
+  },
+  "GaleriaPage": {
+    "backToHome": "← Volver al Inicio",
+    "title": "El Entorno",
+    "subtitle": "VIVÍ LA EXPERIENCIA LA MONTAÑA",
+    "cta1Title": "Lotes con escrituración inmediata",
+    "cta1Text": "Contactanos para consultar valores, disponibilidad y coordinar una visita al loteo.",
+    "cta1Btn": "Consultar Disponibilidad",
+    "cta2Title": "Conocé los lotes disponibles",
+    "cta2Text": "Explorá las opciones destacadas con seguridad y acceso rápido.",
+    "cta2Btn": "Ver Lotes Destacados"
+  },
+  "Metadata": {
+    "siteName": "La Montaña",
+    "defaultTitle": "La Montaña | Lotes de campo en entorno serrano",
+    "description": "Loteo de campo ubicado en zona serrana, con acceso por Yacanto y El Durazno. Naturaleza, privacidad y lotes aptos para vivienda con costa de arroyo.",
+    "keywords": "loteo, lotes, campo, sierras, El Durazno, Yacanto, Córdoba, Argentina, venta, terrenos, La Montaña",
+    "homeTitle": "Inicio",
+    "homeDescription": "La Montaña — Loteo de campo en entorno serrano, El Durazno, Córdoba. Naturaleza, privacidad y lotes aptos para vivienda.",
+    "galeriaTitle": "Galería y Entorno",
+    "galeriaDescription": "Conocé el entorno natural, los arroyos y paisajes de La Montaña."
+  }
+}

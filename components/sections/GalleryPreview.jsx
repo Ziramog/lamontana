@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 const GalleryPreview = ({ items = [] }) => {
+  const t = useTranslations('GalleryPreview');
+
   // Prioritize some known good images if possible, otherwise just take the first 3 images
   const images = items.filter(i => i.type === 'image');
   
@@ -30,12 +33,12 @@ const GalleryPreview = ({ items = [] }) => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
           <div>
             <h2 className="text-[28px] md:text-[40px] font-normal text-heading leading-tight mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
-              Entorno y Paisajes
+              {t('title')}
             </h2>
             <div className="flex items-center gap-3">
               <span className="w-7 h-px bg-[var(--color-brand)] flex-shrink-0" />
               <p className="text-[13px] md:text-[15px] font-medium text-[var(--color-brand)] uppercase tracking-[0.15em]">
-                LA NATURALEZA EN SU MÁXIMA EXPRESIÓN
+                {t('subtitle')}
               </p>
             </div>
           </div>
@@ -43,7 +46,7 @@ const GalleryPreview = ({ items = [] }) => {
             href="/galeria" 
             className="inline-block text-[var(--color-brand)] text-[13px] font-bold uppercase tracking-wider transition-all duration-200 hover:underline underline-offset-4 decoration-[var(--color-brand)] pb-1"
           >
-            EXPLORAR GALERÍA COMPLETA
+            {t('explore')}
           </Link>
         </div>
 
@@ -82,7 +85,7 @@ const GalleryPreview = ({ items = [] }) => {
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-500" />
             <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                <span className="bg-[var(--color-brand)] text-white px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg">
-                 Ver más
+                 {t('viewMore')}
                </span>
             </div>
           </Link>

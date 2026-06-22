@@ -1,0 +1,114 @@
+{
+  "Navbar": {
+    "destacados": "FEATURED LOTS",
+    "galeria": "GALLERY",
+    "verLotes": "VIEW LOTS",
+    "sectorBosque": "Forest Sector",
+    "sectorAltura": "Heights Sector",
+    "sectorArroyo": "Stream Sector",
+    "verMasterplan": "View Full Masterplan",
+    "historia": "OUR HISTORY",
+    "panel": "Control Panel",
+    "salir": "Logout"
+  },
+  "HomePage": {
+    "heroTitle": "Find the Property of Your Dreams",
+    "heroSubtitle": "Discover the best properties that fit your needs.",
+    "searchPlaceholder": "Enter a Location (e.g., Cordoba, Carlos Paz, etc)",
+    "propertyType": "Property Type",
+    "all": "All",
+    "house": "House",
+    "apartment": "Apartment",
+    "studio": "Studio",
+    "condo": "Condo",
+    "searchBtn": "Search",
+    "featured": "Featured Properties",
+    "recent": "Recent Properties",
+    "viewAll": "View all properties",
+    "historiaTag": "Our Story",
+    "historiaTitle": "A Life Project",
+    "historiaSubtitle": "La Montaña",
+    "historiaText": "Field subdivision located in a mountain area, with access through Yacanto and El Durazno, approximately 6 km from the latter.\n\nThe property combines nature, privacy, and ideal conditions to develop a home, rest house, or mountain refuge. The lots are suitable for housing or construction, have spring water, and mostly feature direct stream frontage.\n\nThe field has perimeter fencing, stone walls (pircas), internal access roads to each sector, varied and old forestation, plus a permanent caretaker for security and maintenance.\n\nA proposal for those looking to invest in land with natural value, in an environment of tranquility, water, and mountain landscape.\n\nPerfect titles for immediate deed."
+  },
+  "Hero": {
+    "context": "7 km from El Durazno",
+    "title1": "COUNTRY LOTS",
+    "title2": "IN THE MOUNTAINS",
+    "subtitle1": "Spring water, stream frontage, and varied old forestation",
+    "subtitle2": ", internal access to each sector",
+    "ctaLots": "View available lots",
+    "ctaWhatsapp": "Inquire via WhatsApp",
+    "scrollText": "Discover La Montaña"
+  },
+  "TrustStrip": {
+    "item1Title": "Suitable for housing",
+    "item1Text": "All lots are suitable for building a home or rest house.",
+    "item2Title": "Perfect titles",
+    "item2Text": "Documentary security to move forward with total peace of mind.",
+    "item3Title": "Immediate deed",
+    "item3Text": "Documentation ready to complete the transaction."
+  },
+  "Pillars": {
+    "sectionSubtitle": "DEVELOPMENT PILLARS",
+    "sectionTitle": "Why choose La Montaña?",
+    "sectionText": "More than a subdivision, it's an opportunity to connect with nature with complete security.",
+    "item1Title": "Real Nature",
+    "item1Text": "Mountain fields, springs, old trees, and an unparalleled landscape.",
+    "item2Title": "Privacy and Security",
+    "item2Text": "Lots in a natural environment, with controlled access, caretaker, and permanent maintenance.",
+    "item3Title": "Water and Stream",
+    "item3Text": "Spring water and stream frontage on all lots.",
+    "item4Title": "Strategic Access",
+    "item4Text": "40 minutes from Santa Rosa de Calamuchita and 2 hours from Cordoba Capital.",
+    "item5Title": "Legal Security",
+    "item5Text": "Perfect titles and ready for immediate deed."
+  },
+  "Masterplan": {
+    "title": "Interactive Masterplan",
+    "subtitle": "Explore Your Next Lot",
+    "configError": "Configuration Error",
+    "missingKey": "Missing environment variable NEXT_PUBLIC_GOOGLE_MAPS_API_KEY in Vercel.",
+    "availability": "Inquire Availability",
+    "surface": "Surface Area",
+    "coast": "Stream Frontage",
+    "noCoast": "None",
+    "extras": "Extras",
+    "price": "Price",
+    "inquire": "Inquire about this lot",
+    "available": "Available",
+    "selected": "Selected",
+    "whatsappMsg": "Hello, I want to inquire about {lotName} in La Montaña."
+  },
+  "FeaturedProperties": {
+    "title": "Featured Lots",
+    "subtitle": "CHOSEN FOR YOU",
+    "moreComing": "MORE LOTS COMING SOON"
+  },
+  "GalleryPreview": {
+    "title": "Environment & Landscapes",
+    "subtitle": "NATURE AT ITS FINEST",
+    "explore": "EXPLORE FULL GALLERY",
+    "viewMore": "View more"
+  },
+  "GaleriaPage": {
+    "backToHome": "← Back to Home",
+    "title": "The Environment",
+    "subtitle": "LIVE THE LA MONTAÑA EXPERIENCE",
+    "cta1Title": "Lots with immediate deed",
+    "cta1Text": "Contact us to inquire about prices, availability, and coordinate a visit to the subdivision.",
+    "cta1Btn": "Inquire Availability",
+    "cta2Title": "Discover the available lots",
+    "cta2Text": "Explore the featured options with security and fast access.",
+    "cta2Btn": "View Featured Lots"
+  },
+  "Metadata": {
+    "siteName": "La Montaña",
+    "defaultTitle": "La Montaña | Country lots in a mountain environment",
+    "description": "Country subdivision located in a mountain area, with access through Yacanto and El Durazno. Nature, privacy, and lots suitable for housing with stream frontage.",
+    "keywords": "subdivision, lots, country, mountains, El Durazno, Yacanto, Cordoba, Argentina, sale, land, La Montaña",
+    "homeTitle": "Home",
+    "homeDescription": "La Montaña — Country subdivision in a mountain environment, El Durazno, Córdoba. Nature, privacy, and lots suitable for housing.",
+    "galeriaTitle": "Gallery and Environment",
+    "galeriaDescription": "Discover the natural environment, streams, and landscapes of La Montaña."
+  }
+}

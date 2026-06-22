@@ -3,8 +3,10 @@ import { useState, useEffect, useRef } from 'react';
 import FeaturedPropertyCard from '@/components/FeaturedPropertyCard';
 import SectionBox from '@/components/sections/SectionBox';
 import ScrollReveal from '@/components/shared/ScrollReveal';
+import { useTranslations } from 'next-intl';
 
 const FeaturedProperties = ({ properties = [] }) => {
+  const t = useTranslations('FeaturedProperties');
   const [visible, setVisible] = useState(false);
   const ref = useRef(null);
 
@@ -26,13 +28,13 @@ const FeaturedProperties = ({ properties = [] }) => {
         <div className="text-center mb-10 md:mb-14">
           <ScrollReveal variant="fadeLeft">
             <h2 className="text-[28px] md:text-[40px] font-normal text-heading leading-tight mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
-              Lotes Destacados
+              {t('title')}
             </h2>
           </ScrollReveal>
           <div className="flex items-center justify-center gap-3">
             <span className="w-7 h-px bg-[var(--color-brand)] flex-shrink-0" />
             <p className="text-[13px] md:text-[15px] font-medium text-[var(--color-brand)] uppercase tracking-[0.15em]">
-              ELEGIDOS PARA VOS
+              {t('subtitle')}
             </p>
             <span className="w-7 h-px bg-[var(--color-brand)] flex-shrink-0" />
           </div>
@@ -65,7 +67,7 @@ const FeaturedProperties = ({ properties = [] }) => {
           <span
             className="inline-block text-[var(--color-brand)] text-[13px] font-bold uppercase tracking-wider transition-all duration-200 cursor-default"
           >
-            MÁS LOTES PRÓXIMAMENTE
+            {t('moreComing')}
           </span>
         </div>
       </SectionBox>

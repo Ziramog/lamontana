@@ -1,14 +1,17 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+import { usePathname } from '@/i18n/routing';
 import { FaWhatsapp } from 'react-icons/fa';
 import { generateWhatsAppLink, PHONE_NUMBER, PHONE_DISPLAY } from '@/utils/whatsapp';
 import logo from '@/assets/images/logo-white.png';
 import { signIn, signOut, useSession, getProviders } from 'next-auth/react';
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 9 3547 563911' }) => {
+  const t = useTranslations('Navbar');
   const { data: session } = useSession();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -100,16 +103,16 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
           {/* Main Nav — Senada .mainMenu */}
           <nav className="desktop-dropdown flex items-center gap-8 lg:gap-10 ml-auto">
             <Link href="/#propiedades-destacadas" className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
-              LOTES DESTACADOS
+              {t('destacados')}
             </Link>
 
             <Link href="/galeria" className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
-              GALERÍA
+              {t('galeria')}
             </Link>
 
               <div className="relative" onMouseEnter={() => openDropdown('props')} onMouseLeave={closeDropdown}>
                 <button className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
-                  VER LOTES
+                  {t('verLotes')}
                 </button>
                 <svg className={`absolute left-1/2 -translate-x-1/2 w-[14px] h-[12px] transition-transform ${desktopDropdown === 'props' ? 'rotate-180' : ''}`}
                   style={{ top: 'calc(100% + 2px)', color: desktopDropdown === 'props' ? 'var(--color-brand)' : '#fff' }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -124,10 +127,10 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
                 }}>
                   <ul className="bg-black rounded-[6px] min-w-[200px] text-center shadow-[0_8px_14px_-3px_rgba(255,255,255,0.1)] mt-2">
                     {[
-                      { href: '/#masterplan', label: 'Sector Bosque' },
-                      { href: '/#masterplan', label: 'Sector Altura' },
-                      { href: '/#masterplan', label: 'Sector Arroyo' },
-                      { href: '/#masterplan', label: 'Ver Masterplan Completo' },
+                      { href: '/#masterplan', label: t('sectorBosque') },
+                      { href: '/#masterplan', label: t('sectorAltura') },
+                      { href: '/#masterplan', label: t('sectorArroyo') },
+                      { href: '/#masterplan', label: t('verMasterplan') },
                     ].map(item => (
                       <li key={item.label} className="border-b border-[#252525] last:border-b-0">
                         <Link href={item.href} className="block text-white text-[13px] px-5 py-[15px] font-normal uppercase tracking-wider hover:opacity-40">
@@ -140,18 +143,20 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
               </div>
 
             <Link href="/#nuestra-historia" className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
-              NUESTRA HISTORIA
+              {t('historia')}
             </Link>
 
             {session && (
               <Link href="/admin" className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
-                Panel de Control
+                {t('panel')}
               </Link>
             )}
           </nav>
 
           {/* Side Nav — Senada .sideMenu: Phone | Search | Show More */}
           <div className="desktop-dropdown flex items-center gap-4 ml-8">
+            <LanguageSwitcher variant={isGlassMode ? 'switch' : 'minimal'} />
+            
             {/* Phone → WhatsApp */}
             <a href={`https://wa.me/${contactPhone.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-white/10 transition-colors" aria-label="WhatsApp">
               <img src="/senada/images/icons/ico_phone.svg" alt="Teléfono" className="w-5 h-5" style={{ filter: 'brightness(0) invert(1)' }} />
@@ -199,6 +204,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
 
           {/* Hamburger / Close — senada style */}
           <div className="flex items-center gap-5">
+            <LanguageSwitcher variant={isGlassMode ? 'switch' : 'minimal'} />
 
             {/* Hamburger / Close — senada style */}
             <button
@@ -243,12 +249,12 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
           <nav className="flex-1 flex flex-col px-0 mt-4">
             {/* Destacadas */}
             <Link href="/#propiedades-destacadas" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.2s' }} onClick={() => setIsMobileMenuOpen(false)}>
-              <span className="opacity-50 mr-3 text-[22px]">/</span>Lotes Destacados
+              <span className="opacity-50 mr-3 text-[22px]">/</span>{t('destacados')}
             </Link>
 
             {/* Galería */}
             <Link href="/galeria" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.22s' }} onClick={() => setIsMobileMenuOpen(false)}>
-              <span className="opacity-50 mr-3 text-[22px]">/</span>Galería
+              <span className="opacity-50 mr-3 text-[22px]">/</span>{t('galeria')}
             </Link>
 
             {/* Propiedades — expandable */}
@@ -258,17 +264,17 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
                   className="flex items-center justify-between w-full text-black text-[28px] uppercase tracking-wider py-[15px] hover:opacity-70 transition-opacity"
                   style={{ fontFamily: 'var(--font-heading)' }}
                 >
-                  <span><span className="opacity-50 mr-3 text-[22px]">/</span>Ver Lotes</span>
+                  <span><span className="opacity-50 mr-3 text-[22px]">/</span>{t('verLotes')}</span>
                 <svg className={`w-6 h-6 text-black/60 transition-transform duration-300 ${mobileSubOpen ? 'rotate-90' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M9 18l6-6-6-6"/>
                 </svg>
               </button>
               <div className={`overflow-hidden transition-all duration-300 ${mobileSubOpen ? 'max-h-[300px] opacity-100 mb-3' : 'max-h-0 opacity-0'}`}>
                 {[
-                  { href: '/#masterplan', label: 'Sector Bosque' },
-                  { href: '/#masterplan', label: 'Sector Altura' },
-                  { href: '/#masterplan', label: 'Sector Arroyo' },
-                  { href: '/#masterplan', label: 'Ver Masterplan Completo' },
+                  { href: '/#masterplan', label: t('sectorBosque') },
+                  { href: '/#masterplan', label: t('sectorAltura') },
+                  { href: '/#masterplan', label: t('sectorArroyo') },
+                  { href: '/#masterplan', label: t('verMasterplan') },
                 ].map(l => (
                     <Link key={l.label} href={l.href} className="block text-black/70 text-[18px] py-3 pl-8 hover:text-black transition-colors" style={{ fontFamily: 'var(--font-body)', fontWeight: 500 }} onClick={() => setIsMobileMenuOpen(false)}>
                     {l.label}
@@ -279,19 +285,19 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
 
             {/* SOBRE NOSOTROS */}
             <Link href="/#nuestra-historia" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.3s' }} onClick={() => setIsMobileMenuOpen(false)}>
-              <span className="opacity-50 mr-3 text-[22px]">/</span>Nuestra Historia
+              <span className="opacity-50 mr-3 text-[22px]">/</span>{t('historia')}
             </Link>
 
             {/* PANEL DE CONTROL */}
             {session && (
               <Link href="/admin" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.35s' }} onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="opacity-50 mr-3 text-[22px]">/</span>Panel de control
+                <span className="opacity-50 mr-3 text-[22px]">/</span>{t('panel')}
               </Link>
             )}
 
             {session && (
               <button onClick={() => { signOut(); setIsMobileMenuOpen(false); }} className={`block w-full text-left text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.4s' }}>
-                <span className="opacity-50 mr-3 text-[22px]">/</span>Salir
+                <span className="opacity-50 mr-3 text-[22px]">/</span>{t('salir')}
               </button>
             )}
           </nav>

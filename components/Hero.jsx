@@ -6,10 +6,13 @@ import { FaSearch, FaWhatsapp } from 'react-icons/fa';
 import logSearch from '@/app/actions/logSearch';
 import getTopSearches from '@/app/actions/getTopSearches';
 
+import { useTranslations } from 'next-intl';
+
 const fullDesktopLabel = 'Ciudad, Localidad, Tipo de Inmueble y Palabra Clave';
 const fullMobileLabel = 'Ciudad, Localidad, Tipo de Inmueble y Palabra Clave';
 
 const Hero = () => {
+  const t = useTranslations('Hero');
   const router = useRouter();
   const [filters, setFilters] = useState({
     operation: 'Venta',
@@ -234,28 +237,28 @@ const Hero = () => {
               {/* Microcopy Context */}
               <span className="hidden md:flex text-white/80 text-[10px] md:text-xs font-semibold uppercase tracking-[0.3em] mb-4 md:mb-6 items-center gap-3">
                 <span className="w-8 h-px bg-white/30" />
-                A 7 km de El Durazno
+                {t('context')}
                 <span className="w-8 h-px bg-white/30" />
               </span>
 
               {/* H1 Principal */}
               <h1 className='font-display font-normal text-white leading-[1.1] mb-5 md:mb-6 tracking-tight uppercase' style={{ fontSize: 'clamp(32px, 5vw, 64px)' }}>
-                LOTES DE CAMPO <br className="block md:hidden"/> EN LA MONTAÑA
+                {t('title1')} <br className="block md:hidden"/> {t('title2')}
               </h1>
 
               {/* Subtítulo Diferenciales */}
               <p className="text-white/90 font-light text-[15px] md:text-xl max-w-3xl leading-relaxed mb-10 md:mb-12 px-4 md:px-0">
-                Agua de vertiente, costa de arroyo y forestación variada y añosa<span className="hidden md:inline">, acceso interno a cada sector</span>.
+                {t('subtitle1')}<span className="hidden md:inline">{t('subtitle2')}</span>.
               </p>
 
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-6 w-full sm:w-auto mt-2 md:mt-0">
                 <a href="#masterplan" className="bg-[var(--color-brand)] hover:bg-[#a37d36] text-white font-medium text-[13px] md:text-sm uppercase tracking-[0.15em] px-8 py-4 rounded-[2px] transition-all flex items-center justify-center w-full sm:w-auto shadow-lg shadow-black/20">
-                  Ver lotes disponibles
+                  {t('ctaLots')}
                 </a>
-                <a href="https://wa.me/5493547563911" target="_blank" rel="noopener noreferrer" className="md:border border-white/20 hover:border-white/50 text-white/80 hover:text-white font-light text-[12px] md:text-[13px] uppercase tracking-[0.15em] px-4 md:px-8 py-3 md:py-4 rounded-[2px] transition-all flex items-center justify-center gap-3 w-full sm:w-auto mt-2 md:mt-0">
+                <a href="https://wa.me/5493547563911" target="_blank" rel="noopener noreferrer" className="md:border border-white/20 hover:border-white/50 text-white/80 hover:text-white font-light text-[12px] md:text-[13px] uppercase tracking-[0.15em] px-4 md:px-8 py-4 rounded-[2px] transition-all flex items-center justify-center gap-3 w-full sm:w-auto mt-2 md:mt-0">
                   <FaWhatsapp className="text-[18px] text-white/60 md:text-white/70" />
-                  Consultar por WhatsApp
+                  {t('ctaWhatsapp')}
                 </a>
               </div>
             </motion.div>
@@ -269,7 +272,7 @@ const Hero = () => {
           {!scrolled && (
             <div className='absolute left-0 right-0 z-[50] bottom-[40px] flex justify-center scroll-indicator-container cursor-pointer' onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
               <div className="flex flex-col items-center gap-3">
-                <span className="hidden md:block text-white/70 text-[11px] font-semibold uppercase tracking-[0.18em]">Descubrí La Montaña</span>
+                <span className="hidden md:block text-white/70 text-[11px] font-semibold uppercase tracking-[0.18em]">{t('scrollText')}</span>
                 <img
                   src='/senada/images/icons/ico_arrow-down.svg'
                   alt='scroll'

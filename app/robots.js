@@ -1,14 +1,16 @@
 export default function robots() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://lamontana-two.vercel.app';
+  
   return {
     rules: [
       {
         userAgent: '*',
         allow: ['/'],
         disallow: [
-          '/admin',
-          '/api',
-          '/profile',
-          '/messages',
+          '/admin/',
+          '/superadmin/',
+          '/api/',
+          '/profile/',
           '/properties/add',
           '/properties/*/edit',
           '/properties/saved',
@@ -16,6 +18,6 @@ export default function robots() {
         ],
       },
     ],
-    sitemap: 'https://properties-srs5.vercel.app/sitemap.xml',
+    sitemap: `${baseUrl}/sitemap.xml`,
   };
 }

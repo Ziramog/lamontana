@@ -6,7 +6,8 @@ import ScrollReveal from '@/components/shared/ScrollReveal';
 const Agents = ({ 
   title = 'Silvia Roggero de Roma', 
   subtitle = 'Negocios Inmobiliarios', 
-  text = 'Contamos con 20 años de experiencia propia en el rubro inmobiliario. Trabajamos con el objetivo de brindar confianza y seriedad en el rubro, dar información real y adecuada sobre el mercado y ofrecer la mejor variedad de alternativas a nuestros clientes.' 
+  text = 'Contamos con 20 años de experiencia propia en el rubro inmobiliario. Trabajamos con el objetivo de brindar confianza y seriedad en el rubro, dar información real y adecuada sobre el mercado y ofrecer la mejor variedad de alternativas a nuestros clientes.',
+  sectionTag
 }) => {
   const [visible, setVisible] = useState(false);
   const ref = useRef(null);
@@ -38,7 +39,7 @@ const Agents = ({
           <div className="flex items-center justify-center gap-3">
             <span className="w-7 h-px bg-[var(--color-brand)] flex-shrink-0" />
             <p className="text-[13px] md:text-[15px] font-medium text-[var(--color-brand)] uppercase tracking-[0.15em]">
-              Nuestra Historia
+              {sectionTag || 'Nuestra Historia'}
             </p>
             <span className="w-7 h-px bg-[var(--color-brand)] flex-shrink-0" />
           </div>
