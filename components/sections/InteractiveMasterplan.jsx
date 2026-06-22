@@ -136,12 +136,12 @@ const InteractiveMasterplan = ({ polygonsData }) => {
         }
       }
       
-      // Caminos exteriores -> amarillo intercalado, mas cuerpo
-      if (nameLower.includes('durazno') || nameLower.includes('campo arriba') || nameLower.includes('montaña arriba')) {
-        fillColor = '#eab308'; 
+      // Caminos exteriores -> indigo intercalado, mas cuerpo
+      if (nameLower.includes('durazno') || nameLower.includes('campo arriba') || nameLower.includes('montaña arriba') || nameLower.includes('lote #10')) {
+        fillColor = '#4f46e5'; 
         fillOpacity = 0.15;
-        strokeColor = '#eab308';
-        strokeWeight = 4;
+        strokeColor = '#4f46e5';
+        strokeWeight = 6;
         isDashed = true;
       }
       
@@ -210,6 +210,8 @@ const InteractiveMasterplan = ({ polygonsData }) => {
       lat: e.latLng.lat(),
       lng: e.latLng.lng(),
       name: item.name,
+      isPath: item.isPath,
+      distance: item.distance,
       ...lotInfo
     });
   };
