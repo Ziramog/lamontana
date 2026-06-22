@@ -17,7 +17,7 @@ export default function LanguageSwitcher({ variant = 'minimal' }) {
     return (
       <button 
         onClick={toggleLanguage}
-        className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-[12px] font-normal tracking-[0.15em] uppercase"
+        className="flex items-center gap-3 md:gap-2 px-3 py-2 md:p-0 text-white/80 hover:text-white transition-colors text-[14px] md:text-[12px] font-normal tracking-[0.15em] uppercase"
       >
         <span className={locale === 'es' ? 'text-[var(--color-brand)] font-medium' : 'opacity-50 transition-opacity'}>ES</span>
         <span className="w-[1px] h-3 bg-white/30"></span>
@@ -38,8 +38,8 @@ export default function LanguageSwitcher({ variant = 'minimal' }) {
         <path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z"/>
       </svg>
       <div className="relative flex items-center bg-black/40 rounded-[4px] p-0.5">
-        <span className={`relative z-10 w-[26px] py-1 text-center text-[10px] font-bold tracking-widest transition-colors duration-300 ${locale === 'es' ? 'text-[var(--color-brand)]' : 'text-white/40'}`}>ES</span>
-        <span className={`relative z-10 w-[26px] py-1 text-center text-[10px] font-bold tracking-widest transition-colors duration-300 ${locale === 'en' ? 'text-[var(--color-brand)]' : 'text-white/40'}`}>EN</span>
+        <span className={`relative z-10 w-[36px] md:w-[26px] py-2 md:py-1 text-center text-[11px] md:text-[10px] font-bold tracking-widest transition-colors duration-300 ${locale === 'es' ? 'text-[var(--color-brand)]' : 'text-white/40'}`}>ES</span>
+        <span className={`relative z-10 w-[36px] md:w-[26px] py-2 md:py-1 text-center text-[11px] md:text-[10px] font-bold tracking-widest transition-colors duration-300 ${locale === 'en' ? 'text-[var(--color-brand)]' : 'text-white/40'}`}>EN</span>
       </div>
     </button>
   );

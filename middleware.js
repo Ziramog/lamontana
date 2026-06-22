@@ -71,6 +71,20 @@ const authMiddleware = withAuth(
 export default function middleware(req) {
   const isPrivatePage = privatePathnameRegex.test(req.nextUrl.pathname);
 
+  // If the user hasn't explicitly chosen a language (no NEXT_LOCALE cookie),
+  // try to set the default language based on their IP country geolocation.
+  if (!req.cookies.has('NEXT_LOCALE')) {
+    const country = req.geo?.country || req.headers.get('x-vercel-ip-country');
+    if (country) {
+      const esCountries = ['AR', 'ES', 'MX', 'CO', 'PE', 'CL', 'EC', 'GT', 'CU', 'BO', 'DO', 'HN', 'PY', 'SV', 'NI', 'CR', 'PR', 'PA', 'UY', 'GQ', 'VE'];
+      // If country is in Latin America / Spain, use 'es', otherwise 'en'
+      const geoLocale = esCountries.includes(country.toUpperCase()) ? 'es' : 'en';
+      
+      // Override Accept-Language so next-intl picks up the geolocation preference
+      req.headers.set('Accept-Language', geoLocale);
+    }
+  }
+
   if (isPrivatePage) {
     return authMiddleware(req);
   } else {
