@@ -136,11 +136,11 @@ const InteractiveMasterplan = ({ polygonsData }) => {
         }
       }
       
-      // Camino Durazno -> Negro intercalado
+      // Camino Durazno -> Blanco intercalado
       if (nameLower.includes('durazno')) {
-        fillColor = '#000000'; 
+        fillColor = '#ffffff'; 
         fillOpacity = 0.15;
-        strokeColor = '#000000';
+        strokeColor = '#ffffff';
         strokeWeight = 6;
         isDashed = true;
       }
