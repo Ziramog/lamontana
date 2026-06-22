@@ -136,11 +136,20 @@ const InteractiveMasterplan = ({ polygonsData }) => {
         }
       }
       
-      // Caminos exteriores -> indigo intercalado, mas cuerpo
-      if (nameLower.includes('durazno') || nameLower.includes('campo arriba') || nameLower.includes('montaña arriba') || nameLower.includes('lote #10')) {
-        fillColor = '#4f46e5'; 
+      // Camino Durazno -> Negro intercalado
+      if (nameLower.includes('durazno')) {
+        fillColor = '#000000'; 
         fillOpacity = 0.15;
-        strokeColor = '#4f46e5';
+        strokeColor = '#000000';
+        strokeWeight = 6;
+        isDashed = true;
+      }
+      
+      // Camino a Lote 10 -> Blanco intercalado
+      if (nameLower.includes('campo arriba') || nameLower.includes('montaña arriba') || nameLower.includes('lote #10')) {
+        fillColor = '#ffffff'; 
+        fillOpacity = 0.15;
+        strokeColor = '#ffffff';
         strokeWeight = 6;
         isDashed = true;
       }
