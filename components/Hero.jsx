@@ -227,7 +227,7 @@ const Hero = () => {
           />
         )}
           {/* Commercial Funnel Area */}
-          <div className='w-full px-4 md:px-8 text-center flex flex-col items-center transition-all duration-500 shrink-0 translate-y-[8vh] md:translate-y-[15vh] relative z-[30] max-w-5xl mx-auto'>
+          <div className='w-full px-4 md:px-8 text-center flex flex-col items-center transition-all duration-500 shrink-0 translate-y-[4vh] md:translate-y-[6vh] relative z-[30] max-w-5xl mx-auto'>
             <motion.div
               initial={{ opacity: 0, y: -40 }}
               animate={{ opacity: 1, y: 0 }}
@@ -270,7 +270,7 @@ const Hero = () => {
           
           {/* Scroll indicator moving to absolute bottom */}
           {!scrolled && (
-            <div className='absolute left-0 right-0 z-[50] bottom-[40px] flex justify-center scroll-indicator-container cursor-pointer' onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
+            <div className='absolute left-0 right-0 z-[50] bottom-[40px] hidden [@media(min-height:650px)]:flex justify-center scroll-indicator-container cursor-pointer' onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
               <div className="flex flex-col items-center gap-3">
                 <span className="hidden md:block text-white/70 text-[11px] font-semibold uppercase tracking-[0.18em]">{t('scrollText')}</span>
                 <img
