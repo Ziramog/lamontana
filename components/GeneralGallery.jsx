@@ -69,9 +69,9 @@ const GeneralGallery = ({ items = [] }) => {
             {block.video && (
               <div className="rounded-none md:rounded-[20px] overflow-hidden mx-[-16px] md:mx-0 bg-black shadow-2xl relative group">
                 <video 
-                  src={block.video.src} 
+                  src={`${block.video.src}#t=0.001`} 
                   controls 
-                  preload="none"
+                  preload="metadata"
                   controlsList="nodownload"
                   className="w-full h-auto max-h-[70vh] object-contain md:object-cover aspect-video" 
                 />

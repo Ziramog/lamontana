@@ -10,7 +10,7 @@ export default function Loading() {
         {/* Brand name */}
         <div className="flex flex-col items-center gap-1">
           <span className="text-white/80 text-[11px] font-bold uppercase tracking-[0.2em]">
-            Roggero & Roma
+            La Montaña
           </span>
           <span className="text-white/40 text-[10px] uppercase tracking-widest">
             Cargando experiencia

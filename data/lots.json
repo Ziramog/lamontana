@@ -75,8 +75,8 @@
     "_id": "8",
     "name": "Lote 8",
     "type": "Lote",
-    "area_sqm": 13000,
-    "river_coast_m": 30,
+    "area_sqm": 24000,
+    "river_coast_m": 60,
     "price": "Consultar",
     "status": "Disponible",
     "extras": "Sin extras informados"
@@ -85,8 +85,8 @@
     "_id": "9",
     "name": "Lote 9",
     "type": "Lote",
-    "area_sqm": 24000,
-    "river_coast_m": 60,
+    "area_sqm": 13000,
+    "river_coast_m": 30,
     "price": "Consultar",
     "status": "Disponible",
     "extras": "Sin extras informados"
