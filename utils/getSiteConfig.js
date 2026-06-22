@@ -15,7 +15,7 @@ export const getSiteConfig = async () => {
     contactAddress: 'El Durazno, Córdoba',
     whatsappGroupLink: '',
     whatsappDefaultMessage: 'Hola, vengo desde la web...',
-    analyticsId: 'G-PW4FH9WHQB',
+    analyticsId: 'G-LMK0YYK83H',
     facebookPixelId: '',
   };
 };

@@ -14,7 +14,7 @@ export default function GoogleAnalytics({ analyticsId, facebookPixelId }) {
     
     const hostname = window.location.hostname;
     // Permitimos dominios de vercel para que no explote en las vistas previas, y dominios reales
-    const allowedHosts = ['localhost', 'roggeroyroma.com', 'www.roggeroyroma.com', 'roggeroyroma.com.ar', 'www.roggeroyroma.com.ar'];
+    const allowedHosts = ['localhost', 'lamontaña.lat', 'www.lamontaña.lat', 'xn--lamontaa-j3a.lat', 'www.xn--lamontaa-j3a.lat'];
     
     // Si queremos habilitarlo también en vercel:
     if (hostname.includes('vercel.app') || allowedHosts.includes(hostname)) {
