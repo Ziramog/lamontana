@@ -10,7 +10,7 @@ import { signIn, signOut, useSession, getProviders } from 'next-auth/react';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 
-const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 9 3547 563911' }) => {
+const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 9 3571 54-1588' }) => {
   const t = useTranslations('Navbar');
   const { data: session } = useSession();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

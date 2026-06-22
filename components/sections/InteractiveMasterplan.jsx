@@ -354,7 +354,7 @@ const InteractiveMasterplan = ({ polygonsData }) => {
                   </div>
                 </div>
 
-                <a href={`https://wa.me/5493547563911?text=${encodeURIComponent(t('whatsappMsg', { lotName: infoWindowPos.name }))}`} target="_blank" rel="noopener noreferrer" className="block w-full text-center bg-[#C49A4A] text-white text-[13px] font-medium uppercase tracking-[0.1em] py-3 rounded-[2px] hover:bg-white hover:text-black transition-colors">
+                <a href={`https://wa.me/5493571541588?text=${encodeURIComponent(t('whatsappMsg', { lotName: infoWindowPos.name }))}`} target="_blank" rel="noopener noreferrer" className="block w-full text-center bg-[#C49A4A] text-white text-[13px] font-medium uppercase tracking-[0.1em] py-3 rounded-[2px] hover:bg-white hover:text-black transition-colors">
                   {t('inquire')}
                 </a>
               </div>

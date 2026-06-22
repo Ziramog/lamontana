@@ -14,7 +14,7 @@ export default function ProfileClient({ user, totalProps, payments, config: init
   const [rateValue, setRateValue] = useState(config?.exchangeRateARS || '');
   const [contactData, setContactData] = useState({
     contactEmail: config?.contactEmail || 'roggeroroma@hotmail.com',
-    contactPhone: config?.contactPhone || '+54 9 3547 563911',
+    contactPhone: config?.contactPhone || '+54 9 3571 54-1588',
     contactAddress: config?.contactAddress || 'Blvd. Carlos Pellegrini 710'
   });
   const sigRef = useRef(null);

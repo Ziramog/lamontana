@@ -148,7 +148,7 @@ const SellerCTA = () => {
 
                 {/* Orange outline button */}
                 <a
-                  href="https://wa.me/5493547596631?text=Hola%2C%20estoy%20buscando%20alquilar%20una%20propiedad.%20¿Podrían%20ayudarme%3F"
+                  href="https://wa.me/5493571541588?text=Hola%2C%20estoy%20buscando%20alquilar%20una%20propiedad.%20¿Podrían%20ayudarme%3F"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 w-full h-[52px] bg-transparent hover:bg-[var(--color-brand)] border-2 border-[var(--color-brand)] text-white rounded-[6px] text-sm font-bold uppercase tracking-[0.06em] transition-[background-color,transform] duration-200 hover:-translate-y-px"

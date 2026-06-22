@@ -256,7 +256,7 @@ const Hero = () => {
                 <a href="#masterplan" className="bg-[var(--color-brand)] hover:bg-[#a37d36] text-white font-medium text-[13px] md:text-sm uppercase tracking-[0.15em] px-8 py-4 rounded-[2px] transition-all flex items-center justify-center w-full sm:w-auto shadow-lg shadow-black/20">
                   {t('ctaLots')}
                 </a>
-                <a href="https://wa.me/5493547563911" target="_blank" rel="noopener noreferrer" className="md:border border-white/20 hover:border-white/50 text-white/80 hover:text-white font-light text-[12px] md:text-[13px] uppercase tracking-[0.15em] px-4 md:px-8 py-4 rounded-[2px] transition-all flex items-center justify-center gap-3 w-full sm:w-auto mt-2 md:mt-0">
+                <a href="https://wa.me/5493571541588" target="_blank" rel="noopener noreferrer" className="md:border border-white/20 hover:border-white/50 text-white/80 hover:text-white font-light text-[12px] md:text-[13px] uppercase tracking-[0.15em] px-4 md:px-8 py-4 rounded-[2px] transition-all flex items-center justify-center gap-3 w-full sm:w-auto mt-2 md:mt-0">
                   <FaWhatsapp className="text-[18px] text-white/60 md:text-white/70" />
                   {t('ctaWhatsapp')}
                 </a>

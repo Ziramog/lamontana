@@ -193,7 +193,7 @@ const PropertyGallery = ({ images = [], property }) => {
                 </h2>
 
                 <a
-                  href={`https://api.whatsapp.com/send?phone=5493547563911&text=${encodeURIComponent(`Hola, me interesa la propiedad: ${property?.name || ''}`)}`}
+                  href={`https://api.whatsapp.com/send?phone=5493571541588&text=${encodeURIComponent(`Hola, me interesa la propiedad: ${property?.name || ''}`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full text-white text-[15px] font-normal uppercase tracking-wider text-center py-3 px-[24px] rounded-[8px] transition-colors"

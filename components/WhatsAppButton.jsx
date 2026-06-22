@@ -2,7 +2,7 @@
 
 import WhatsAppIcon from './icons/WhatsAppIcon'
 
-const WHATSAPP_NUMBER = '+5493547563911'
+const WHATSAPP_NUMBER = '+5493571541588'
 
 const WhatsAppButton = ({ property }) => {
   const message = encodeURIComponent(

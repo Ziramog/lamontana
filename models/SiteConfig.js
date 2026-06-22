@@ -5,7 +5,7 @@ const SiteConfigSchema = new Schema({
   exchangeRateARS: { type: Number, default: null },
   signatureBase64: { type: String, default: null },
   contactEmail: { type: String, default: 'info@roggeroyroma.com.ar' },
-  contactPhone: { type: String, default: '+54 9 3547 563911' },
+  contactPhone: { type: String, default: '+54 9 3571 54-1588' },
   contactAddress: { type: String, default: 'Blvd. Carlos Pellegrini 710' },
   whatsappGroupLink: { type: String, default: '' },
   

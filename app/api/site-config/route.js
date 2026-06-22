@@ -14,7 +14,7 @@ export async function GET() {
       exchangeRateARS: config?.exchangeRateARS || null,
       signatureBase64: config?.signatureBase64 || null,
       contactEmail: config?.contactEmail || 'info@roggeroyroma.com.ar',
-      contactPhone: config?.contactPhone || '+54 9 3547 563911',
+      contactPhone: config?.contactPhone || '+54 9 3571 54-1588',
       contactAddress: config?.contactAddress || 'Blvd. Carlos Pellegrini 710',
       whatsappGroupLink: config?.whatsappGroupLink || '',
       heroTitle: config?.heroTitle || 'Vendemos Inmuebles, Construimos Confianza',

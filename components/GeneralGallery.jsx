@@ -91,7 +91,7 @@ const GeneralGallery = ({ items = [] }) => {
                       : t('cta2Text')}
                   </p>
                   <a 
-                    href="https://wa.me/5493547563911?text=Hola,%20vengo%20de%20la%20galer%C3%ADa%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20La%20Monta%C3%B1a" 
+                    href="https://wa.me/5493571541588?text=Hola,%20vengo%20de%20la%20galer%C3%ADa%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20La%20Monta%C3%B1a" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-[var(--color-brand)] text-black px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors"
