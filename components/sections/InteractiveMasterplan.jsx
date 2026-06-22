@@ -323,42 +323,54 @@ const InteractiveMasterplan = ({ polygonsData }) => {
                 <h3 className="text-xl font-medium text-white mb-1" style={{ fontFamily: 'var(--font-heading)' }}>
                   {infoWindowPos.name}
                 </h3>
-                <div className="mb-4">
-                  <span className={`text-[11px] font-bold uppercase tracking-[0.15em] px-2 py-1 rounded-[2px] ${infoWindowPos.status === 'Vendido' ? 'bg-red-500/20 text-red-400' : 'bg-[#C49A4A]/20 text-[#C49A4A]'}`}>
-                    {infoWindowPos.status || t('availability')}
-                  </span>
-                </div>
-
-                <div className="space-y-2 mb-5">
-                  <div className="flex justify-between items-center text-sm border-b border-white/5 pb-2">
-                    <span className="text-white/60 font-light">{t('surface')}</span>
-                    <span className="font-medium">{infoWindowPos.area_display || (infoWindowPos.area_sqm ? `${infoWindowPos.area_sqm.toLocaleString('es-AR')} m²` : 'N/D')}</span>
-                  </div>
-                  <div className="flex justify-between items-center text-sm border-b border-white/5 pb-2">
-                    <span className="text-white/60 font-light">{t('coast')}</span>
-                    <span className="font-medium text-right ml-4">
-                      {infoWindowPos.river_coast_display 
-                        ? infoWindowPos.river_coast_display 
-                        : (infoWindowPos.river_coast_m ? `${infoWindowPos.river_coast_m} m` : t('noCoast'))}
-                    </span>
-                  </div>
-                  {infoWindowPos.extras && infoWindowPos.extras !== 'Sin extras informados' && (
-                    <div className="flex justify-between items-start text-sm border-b border-white/5 pb-2 gap-4">
-                      <span className="text-white/60 font-light whitespace-nowrap">{t('extras')}</span>
-                      <span className="font-medium text-right text-[12px]">{infoWindowPos.extras}</span>
+                
+                {infoWindowPos.isPath ? (
+                  <div className="mt-4 pt-4 border-t border-white/10">
+                    <div className="flex justify-between items-center text-sm">
+                      <span className="text-white/60 font-light">Distancia</span>
+                      <span className="font-medium text-[#4f46e5] text-lg">{infoWindowPos.distance}</span>
                     </div>
-                  )}
-                  <div className="flex justify-between items-center pt-1">
-                    <span className="text-white/60 font-light text-sm">{t('price')}</span>
-                    <span className="font-medium text-lg text-[#C49A4A]">
-                      {infoWindowPos.price === 'Consultar' || infoWindowPos.price === 'Vendido' ? infoWindowPos.price : `USD ${Number(infoWindowPos.price).toLocaleString('es-AR')}`}
-                    </span>
                   </div>
-                </div>
+                ) : (
+                  <>
+                    <div className="mb-4">
+                      <span className={`text-[11px] font-bold uppercase tracking-[0.15em] px-2 py-1 rounded-[2px] ${infoWindowPos.status === 'Vendido' ? 'bg-red-500/20 text-red-400' : 'bg-[#C49A4A]/20 text-[#C49A4A]'}`}>
+                        {infoWindowPos.status || t('availability')}
+                      </span>
+                    </div>
 
-                <a href={`https://wa.me/5493571541588?text=${encodeURIComponent(t('whatsappMsg', { lotName: infoWindowPos.name }))}`} target="_blank" rel="noopener noreferrer" className="block w-full text-center bg-[#C49A4A] text-white text-[13px] font-medium uppercase tracking-[0.1em] py-3 rounded-[2px] hover:bg-white hover:text-black transition-colors">
-                  {t('inquire')}
-                </a>
+                    <div className="space-y-2 mb-5">
+                      <div className="flex justify-between items-center text-sm border-b border-white/5 pb-2">
+                        <span className="text-white/60 font-light">{t('surface')}</span>
+                        <span className="font-medium">{infoWindowPos.area_display || (infoWindowPos.area_sqm ? `${infoWindowPos.area_sqm.toLocaleString('es-AR')} m²` : 'N/D')}</span>
+                      </div>
+                      <div className="flex justify-between items-center text-sm border-b border-white/5 pb-2">
+                        <span className="text-white/60 font-light">{t('coast')}</span>
+                        <span className="font-medium text-right ml-4">
+                          {infoWindowPos.river_coast_display 
+                            ? infoWindowPos.river_coast_display 
+                            : (infoWindowPos.river_coast_m ? `${infoWindowPos.river_coast_m} m` : t('noCoast'))}
+                        </span>
+                      </div>
+                      {infoWindowPos.extras && infoWindowPos.extras !== 'Sin extras informados' && (
+                        <div className="flex justify-between items-start text-sm border-b border-white/5 pb-2 gap-4">
+                          <span className="text-white/60 font-light whitespace-nowrap">{t('extras')}</span>
+                          <span className="font-medium text-right text-[12px]">{infoWindowPos.extras}</span>
+                        </div>
+                      )}
+                      <div className="flex justify-between items-center pt-1">
+                        <span className="text-white/60 font-light text-sm">{t('price')}</span>
+                        <span className="font-medium text-lg text-[#C49A4A]">
+                          {infoWindowPos.price === 'Consultar' || infoWindowPos.price === 'Vendido' ? infoWindowPos.price : `USD ${Number(infoWindowPos.price).toLocaleString('es-AR')}`}
+                        </span>
+                      </div>
+                    </div>
+
+                    <a href={`https://wa.me/5493571541588?text=${encodeURIComponent(t('whatsappMsg', { lotName: infoWindowPos.name }))}`} target="_blank" rel="noopener noreferrer" className="block w-full text-center bg-[#C49A4A] text-white text-[13px] font-medium uppercase tracking-[0.1em] py-3 rounded-[2px] hover:bg-white hover:text-black transition-colors">
+                      {t('inquire')}
+                    </a>
+                  </>
+                )}
               </div>
             )}
             

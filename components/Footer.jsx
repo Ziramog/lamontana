@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { FaWhatsapp } from 'react-icons/fa';
 import { MapPin } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 import { generateWhatsAppLink, PHONE_NUMBER, PHONE_DISPLAY } from '@/utils/whatsapp';
 
 const Footer = ({ 
@@ -19,6 +20,7 @@ const Footer = ({
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [groupLink, setGroupLink] = useState('#');
   const pathname = usePathname();
+  const t = useTranslations('Navbar');
 
   if (pathname.startsWith('/p/')) {
     return null;
@@ -97,9 +99,9 @@ const Footer = ({
                     </span>
                     <ul>
                       {[
-                        { href: '/#masterplan', label: 'Sector Bosque' },
-                        { href: '/#masterplan', label: 'Sector Altura' },
-                        { href: '/#masterplan', label: 'Sector Arroyo' },
+                        { href: '/#masterplan', label: t('sectorBosque') },
+                        { href: '/#masterplan', label: t('sectorAltura') },
+                        { href: '/#masterplan', label: t('sectorArroyo') },
                       ].map(l => (
                         <li key={l.href}>
                           <Link href={l.href} className="block text-[13px] text-white/70 font-light py-[5px] pr-[10px] hover:text-white transition-colors">
@@ -109,7 +111,7 @@ const Footer = ({
                       ))}
                       <li>
                         <Link href="/#masterplan" className="block text-[13px] text-white/70 font-light py-[5px] pr-[10px] hover:text-white transition-colors">
-                          Ver Masterplan Completo
+                          {t('verMasterplan')}
                         </Link>
                       </li>
                     </ul>
@@ -165,16 +167,6 @@ const Footer = ({
               <li>
                 <a href={generateWhatsAppLink({ context: 'general' })} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-[40px] h-[40px] rounded-[9px] bg-white/[0.15] hover:bg-[var(--color-brand)] transition-all duration-300" aria-label="WhatsApp">
                   <FaWhatsapp className="text-xl" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/roggeroyroma" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-[40px] h-[40px] rounded-[9px] bg-white/[0.15] hover:bg-[var(--color-brand)] transition-all duration-300" aria-label="Facebook">
-                  <img src="/senada/images/icons/ico_facebook.svg" alt="facebook" className="w-[20px] h-[20px]" style={{ filter: 'brightness(0) invert(1)' }} />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/roggeroyroma" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-[40px] h-[40px] rounded-[9px] bg-white/[0.15] hover:bg-[var(--color-brand)] transition-all duration-300" aria-label="Instagram">
-                  <img src="/senada/images/icons/ico_instagram.svg" alt="instagram" className="w-[20px] h-[20px]" style={{ filter: 'brightness(0) invert(1)' }} />
                 </a>
               </li>
             </ul>
@@ -233,16 +225,16 @@ const Footer = ({
               <span className="block text-[15px] text-white uppercase font-bold mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Sectores</span>
               <div className="grid grid-cols-2 gap-y-1">
                 {[
-                  { href: '/#masterplan', label: 'Sector Bosque' },
-                  { href: '/#masterplan', label: 'Sector Altura' },
-                  { href: '/#masterplan', label: 'Sector Arroyo' },
+                  { href: '/#masterplan', label: t('sectorBosque') },
+                  { href: '/#masterplan', label: t('sectorAltura') },
+                  { href: '/#masterplan', label: t('sectorArroyo') },
                 ].map(l => (
                   <Link key={l.href} href={l.href} className="text-[13px] text-white/60 font-light py-[3px] hover:text-white transition-colors">
                     {l.label}
                   </Link>
                 ))}
                 <Link href="/#masterplan" className="text-[13px] text-white/60 font-light py-[3px] hover:text-white transition-colors">
-                  Ver Masterplan
+                  {t('verMasterplan')}
                 </Link>
               </div>
             </div>
@@ -283,16 +275,6 @@ const Footer = ({
               <li>
                 <a href={generateWhatsAppLink({ context: 'general' })} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-[40px] h-[40px] rounded-[9px] bg-white/[0.15] hover:bg-[var(--color-brand)] transition-all duration-300" aria-label="WhatsApp">
                   <FaWhatsapp className="text-xl" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/roggeroyroma" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-[40px] h-[40px] rounded-[9px] bg-white/[0.15] hover:bg-[var(--color-brand)] transition-all duration-300" aria-label="Facebook">
-                  <img src="/senada/images/icons/ico_facebook.svg" alt="facebook" className="w-5 h-5" style={{ filter: 'brightness(0) invert(1)' }} />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/roggeroyroma" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-[40px] h-[40px] rounded-[9px] bg-white/[0.15] hover:bg-[var(--color-brand)] transition-all duration-300" aria-label="Instagram">
-                  <img src="/senada/images/icons/ico_instagram.svg" alt="instagram" className="w-5 h-5" style={{ filter: 'brightness(0) invert(1)' }} />
                 </a>
               </li>
             </ul>

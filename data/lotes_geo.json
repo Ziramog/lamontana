@@ -806,7 +806,7 @@
     ]
   },
   {
-    "name": "ElDurazno - La Montaña",
+    "name": "El Durazno - La Montaña",
     "type": "LineString",
     "coords": [
       {
@@ -1057,10 +1057,17 @@
         "lat": -32.17923366133866,
         "lng": -64.80937417362905
       }
-    ]
+    ],
+    "isPath": true,
+    "distance": "5.2 km",
+    "options": {
+      "strokeColor": "#4f46e5",
+      "strokeOpacity": 0.8,
+      "strokeWeight": 4
+    }
   },
   {
-    "name": "Campo Arriba",
+    "name": "Camino a Lote #10",
     "type": "LineString",
     "coords": [
       {
@@ -1127,7 +1134,14 @@
         "lat": -32.17450000524117,
         "lng": -64.82013612523977
       }
-    ]
+    ],
+    "isPath": true,
+    "distance": "1.5 km",
+    "options": {
+      "strokeColor": "#4f46e5",
+      "strokeOpacity": 0.8,
+      "strokeWeight": 4
+    }
   },
   {
     "name": "Lote 10",
