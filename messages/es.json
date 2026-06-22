@@ -65,24 +65,25 @@
   },
   "Masterplan": {
     "title": "Masterplan Interactivo",
-    "subtitle": "Explorá Tu Próximo Lote",
-    "configError": "Error de Configuración",
-    "missingKey": "Falta la variable de entorno NEXT_PUBLIC_GOOGLE_MAPS_API_KEY en Vercel.",
-    "availability": "Consultar Disponibilidad",
+    "subtitle": "EXPLORÁ NUESTROS LOTES",
+    "availability": "Disponible",
     "surface": "Superficie",
-    "coast": "Costa al arroyo",
-    "noCoast": "No dispone",
+    "coast": "Costa de arroyo",
+    "noCoast": "Sin costa",
     "extras": "Extras",
-    "price": "Precio",
-    "inquire": "Consultar por este lote",
+    "price": "Valor",
+    "inquire": "Consultar a un asesor",
+    "whatsappMsg": "Hola, me interesa obtener más información sobre el {lotName} en La Montaña.",
     "available": "Disponible",
+    "sold": "Vendido",
     "selected": "Seleccionado",
-    "whatsappMsg": "Hola, quiero consultar por el {lotName} de La Montaña."
+    "configError": "Error de Configuración",
+    "missingKey": "Falta la clave API de Google Maps"
   },
   "FeaturedProperties": {
     "title": "Lotes Destacados",
-    "subtitle": "ELEGIDOS PARA VOS",
-    "moreComing": "MÁS LOTES PRÓXIMAMENTE"
+    "subtitle": "UNA SELECCIÓN EXCLUSIVA",
+    "moreComing": "VER TODOS LOS LOTES"
   },
   "GalleryPreview": {
     "title": "Entorno y Paisajes",

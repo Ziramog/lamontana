@@ -65,24 +65,25 @@
   },
   "Masterplan": {
     "title": "Interactive Masterplan",
-    "subtitle": "Explore Your Next Lot",
-    "configError": "Configuration Error",
-    "missingKey": "Missing environment variable NEXT_PUBLIC_GOOGLE_MAPS_API_KEY in Vercel.",
-    "availability": "Inquire Availability",
-    "surface": "Surface Area",
-    "coast": "Stream Frontage",
-    "noCoast": "None",
+    "subtitle": "EXPLORE OUR LOTS",
+    "availability": "Available",
+    "surface": "Surface",
+    "coast": "Stream coast",
+    "noCoast": "No coast",
     "extras": "Extras",
-    "price": "Price",
-    "inquire": "Inquire about this lot",
+    "price": "Value",
+    "inquire": "Consult an advisor",
+    "whatsappMsg": "Hello, I am interested in getting more information about {lotName} in La Montaña.",
     "available": "Available",
+    "sold": "Sold",
     "selected": "Selected",
-    "whatsappMsg": "Hello, I want to inquire about {lotName} in La Montaña."
+    "configError": "Configuration Error",
+    "missingKey": "Google Maps API Key is missing"
   },
   "FeaturedProperties": {
     "title": "Featured Lots",
     "subtitle": "CHOSEN FOR YOU",
-    "moreComing": "MORE LOTS COMING SOON"
+    "moreComing": "VIEW ALL LOTS"
   },
   "GalleryPreview": {
     "title": "Environment & Landscapes",

@@ -110,37 +110,9 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
               {t('galeria')}
             </Link>
 
-              <div className="relative" onMouseEnter={() => openDropdown('props')} onMouseLeave={closeDropdown}>
-                <button className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
-                  {t('verLotes')}
-                </button>
-                <svg className={`absolute left-1/2 -translate-x-1/2 w-[14px] h-[12px] transition-transform ${desktopDropdown === 'props' ? 'rotate-180' : ''}`}
-                  style={{ top: 'calc(100% + 2px)', color: desktopDropdown === 'props' ? 'var(--color-brand)' : '#fff' }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <path d="M6 9l6 6 6-6"/>
-                </svg>
-                <div style={{
-                  maxHeight: desktopDropdown === 'props' ? '500px' : '0',
-                  opacity: desktopDropdown === 'props' ? 1 : 0,
-                  overflow: 'hidden',
-                  transition: 'max-height 500ms cubic-bezier(0.16, 1, 0.3, 1), opacity 300ms ease',
-                  position: 'absolute', top: '100%', left: '50%', transform: 'translateX(-50%)', zIndex: 50,
-                }}>
-                  <ul className="bg-black rounded-[6px] min-w-[200px] text-center shadow-[0_8px_14px_-3px_rgba(255,255,255,0.1)] mt-2">
-                    {[
-                      { href: '/#masterplan', label: t('sectorBosque') },
-                      { href: '/#masterplan', label: t('sectorAltura') },
-                      { href: '/#masterplan', label: t('sectorArroyo') },
-                      { href: '/#masterplan', label: t('verMasterplan') },
-                    ].map(item => (
-                      <li key={item.label} className="border-b border-[#252525] last:border-b-0">
-                        <Link href={item.href} className="block text-white text-[13px] px-5 py-[15px] font-normal uppercase tracking-wider hover:opacity-40">
-                          {item.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+            <Link href="/#masterplan" className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
+              {t('verLotes')}
+            </Link>
 
             <Link href="/#nuestra-historia" className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
               {t('historia')}
@@ -257,31 +229,10 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
               <span className="opacity-50 mr-3 text-[22px]">/</span>{t('galeria')}
             </Link>
 
-            {/* Propiedades — expandable */}
-            <div className={`border-b border-black/[.08] ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ animationDelay: '0.25s' }}>
-              <button
-                  onClick={() => setMobileSubOpen(!mobileSubOpen)}
-                  className="flex items-center justify-between w-full text-black text-[28px] uppercase tracking-wider py-[15px] hover:opacity-70 transition-opacity"
-                  style={{ fontFamily: 'var(--font-heading)' }}
-                >
-                  <span><span className="opacity-50 mr-3 text-[22px]">/</span>{t('verLotes')}</span>
-                <svg className={`w-6 h-6 text-black/60 transition-transform duration-300 ${mobileSubOpen ? 'rotate-90' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M9 18l6-6-6-6"/>
-                </svg>
-              </button>
-              <div className={`overflow-hidden transition-all duration-300 ${mobileSubOpen ? 'max-h-[300px] opacity-100 mb-3' : 'max-h-0 opacity-0'}`}>
-                {[
-                  { href: '/#masterplan', label: t('sectorBosque') },
-                  { href: '/#masterplan', label: t('sectorAltura') },
-                  { href: '/#masterplan', label: t('sectorArroyo') },
-                  { href: '/#masterplan', label: t('verMasterplan') },
-                ].map(l => (
-                    <Link key={l.label} href={l.href} className="block text-black/70 text-[18px] py-3 pl-8 hover:text-black transition-colors" style={{ fontFamily: 'var(--font-body)', fontWeight: 500 }} onClick={() => setIsMobileMenuOpen(false)}>
-                    {l.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
+            {/* Ver Lotes */}
+            <Link href="/#masterplan" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.25s' }} onClick={() => setIsMobileMenuOpen(false)}>
+              <span className="opacity-50 mr-3 text-[22px]">/</span>{t('verLotes')}
+            </Link>
 
             {/* SOBRE NOSOTROS */}
             <Link href="/#nuestra-historia" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.3s' }} onClick={() => setIsMobileMenuOpen(false)}>

@@ -14,8 +14,8 @@
     "_id": "2",
     "name": "Lote 2",
     "type": "Lote",
-    "area_sqm": 41469,
-    "river_coast_m": 220,
+    "area_sqm": 41649,
+    "river_coast_m": 217,
     "price": "Vendido",
     "status": "Vendido",
     "extras": "Con edificación"
@@ -98,6 +98,7 @@
     "area_sqm": 200000,
     "area_display": "20 ha aprox. (1.000 m x 200 m)",
     "river_coast_m": 0,
+    "river_coast_display": "Dispone de arroyo interno al lote",
     "price": 240000,
     "status": "Disponible",
     "extras": "Vivienda de construcción en piedra de 58 m², con cocina-comedor y dormitorio",

@@ -47,7 +47,7 @@ const FeaturedPropertyCard = ({ property }) => {
 
   return (
     <article className="group">
-      <div className="block cursor-default">
+      <Link href="/galeria" className="block">
         {/* Card image area */}
         <div className="relative overflow-hidden rounded-xl" style={{ aspectRatio: '3/2' }}>
           <Image
@@ -100,7 +100,7 @@ const FeaturedPropertyCard = ({ property }) => {
 
         {/* Footer */}
         <PropertyCardInfo property={property} />
-      </div>
+      </Link>
     </article>
   );
 };

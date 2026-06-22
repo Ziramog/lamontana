@@ -2,13 +2,14 @@
 import { getAreaDisplay } from '@/utils/propertyDisplay';
 
 const PropertyCardInfo = ({ property, className = '' }) => {
-  const name = property.name || '';
+  const rawName = property.name || '';
+  const formattedName = rawName.toUpperCase().replace('LOTE ', 'LOTE #');
   const city = property.location?.city || '';
 
   return (
     <div className={`px-3 py-3 ${className}`}>
       <h3 className="text-[22px] font-medium text-heading group-hover:text-[var(--color-brand)] leading-snug line-clamp-2 mb-1" style={{ fontFamily: 'var(--font-heading)' }}>
-        {name}
+        {formattedName}
       </h3>
       <p className="text-[16px] text-[#878787] leading-tight line-clamp-1">
         {city}

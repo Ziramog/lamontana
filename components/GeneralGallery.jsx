@@ -71,6 +71,8 @@ const GeneralGallery = ({ items = [] }) => {
                 <video 
                   src={block.video.src} 
                   controls 
+                  preload="none"
+                  controlsList="nodownload"
                   className="w-full h-auto max-h-[70vh] object-contain md:object-cover aspect-video" 
                 />
               </div>
@@ -88,12 +90,14 @@ const GeneralGallery = ({ items = [] }) => {
                       ? t('cta1Text') 
                       : t('cta2Text')}
                   </p>
-                  <Link 
-                    href={idx === 0 ? "/#contacto" : "/#propiedades-destacadas"} 
+                  <a 
+                    href="https://wa.me/5493547563911?text=Hola,%20vengo%20de%20la%20galer%C3%ADa%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20La%20Monta%C3%B1a" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-[var(--color-brand)] text-black px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors"
                   >
                      {idx === 0 ? t('cta1Btn') : t('cta2Btn')}
-                  </Link>
+                  </a>
               </div>
             )}
 

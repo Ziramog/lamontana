@@ -6,7 +6,12 @@ export async function getGalleryMedia() {
     const galleryDir = path.join(process.cwd(), 'public', 'gallery');
     const files = await fs.readdir(galleryDir);
     
-    return files.map(file => {
+    const validExtensions = ['.jpg', '.jpeg', '.png', '.webp', '.mp4'];
+    
+    return files.filter(file => {
+      const ext = path.extname(file).toLowerCase();
+      return validExtensions.includes(ext);
+    }).map(file => {
       const isVideo = file.toLowerCase().endsWith('.mp4');
       return {
         src: `/gallery/${file}`,
