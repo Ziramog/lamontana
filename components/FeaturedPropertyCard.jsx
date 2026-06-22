@@ -89,7 +89,7 @@ const FeaturedPropertyCard = ({ property }) => {
 
             {price && (
               <span
-                className="ml-auto self-end text-white text-[32px] font-bold leading-none group-hover:scale-[1.1] transition-transform duration-300"
+                className="ml-auto self-end text-white text-[24px] md:text-[32px] font-bold leading-none group-hover:scale-[1.1] transition-transform duration-300"
                 style={{ fontFamily: 'var(--font-heading)', transformOrigin: 'right bottom' }}
               >
                 {price}

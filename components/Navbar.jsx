@@ -166,7 +166,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
               width={600}
               height={200}
               style={{ 
-                height: (!isScrolled && isHomepage) ? '154px' : '44px', 
+                height: (!isScrolled && isHomepage) ? 'clamp(80px, 15vh, 154px)' : '44px', 
                 width: 'auto',
                 maxWidth: (!isScrolled && isHomepage) ? '85vw' : 'none',
                 objectFit: 'contain'
