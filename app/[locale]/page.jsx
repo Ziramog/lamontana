@@ -1,4 +1,4 @@
-import dynamic from 'next/dynamic';
+import nextDynamic from 'next/dynamic';
 import Hero from '@/components/Hero';
 import SellerCTA from '@/components/sections/SellerCTA';
 import StatsBar from '@/components/sections/StatsBar';
@@ -16,8 +16,8 @@ import { getGalleryMedia } from '@/utils/getGallery';
 import GalleryPreview from '@/components/sections/GalleryPreview';
 import polygonsData from '@/data/lotes_geo.json';
 
-const InteractiveMasterplan = dynamic(() => import('@/components/sections/InteractiveMasterplan'), { ssr: false });
-const FeaturedPropertiesCarousel = dynamic(() => import('@/components/FeaturedPropertiesCarousel'));
+const InteractiveMasterplan = nextDynamic(() => import('@/components/sections/InteractiveMasterplan'), { ssr: false });
+const FeaturedPropertiesCarousel = nextDynamic(() => import('@/components/FeaturedPropertiesCarousel'));
 
 export const dynamic = 'force-dynamic';
 
