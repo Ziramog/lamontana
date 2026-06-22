@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState, useMemo, useRef } from 'react';
-import { APIProvider, Map, useMap, Marker } from '@vis.gl/react-google-maps';
+import { APIProvider, Map, useMap, AdvancedMarker } from '@vis.gl/react-google-maps';
 import { MapPin } from 'lucide-react';
 import SectionBox from '@/components/sections/SectionBox';
 import ScrollReveal from '@/components/shared/ScrollReveal';
@@ -286,22 +286,24 @@ const InteractiveMasterplan = ({ polygonsData }) => {
                 {mapPolygons.map((p) => {
                   if (p.label && p.center) {
                     return (
-                      <Marker 
+                      <AdvancedMarker 
                         key={`marker-${p.name}`}
                         position={p.center}
-                        label={{
-                          text: p.label,
-                          color: 'white',
-                          fontWeight: 'bold',
-                          fontSize: '14px'
-                        }}
-                        icon={{
-                          path: (typeof window !== 'undefined' && window.google?.maps?.SymbolPath?.CIRCLE) ? window.google.maps.SymbolPath.CIRCLE : 0,
-                          scale: 0,
-                        }}
                         zIndex={10}
                         onClick={(e) => handlePolyClick(e, null, p)}
-                      />
+                      >
+                        <div style={{
+                          color: 'white',
+                          fontWeight: 'bold',
+                          fontSize: '14px',
+                          textShadow: '1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black',
+                          whiteSpace: 'nowrap',
+                          transform: 'translate(-50%, -50%)',
+                          pointerEvents: 'none'
+                        }}>
+                          {p.label}
+                        </div>
+                      </AdvancedMarker>
                     );
                   }
                   return null;
