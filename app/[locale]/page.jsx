@@ -1,5 +1,5 @@
+import dynamic from 'next/dynamic';
 import Hero from '@/components/Hero';
-import FeaturedPropertiesCarousel from '@/components/FeaturedPropertiesCarousel';
 import SellerCTA from '@/components/sections/SellerCTA';
 import StatsBar from '@/components/sections/StatsBar';
 import Agents from '@/components/sections/Agents';
@@ -13,9 +13,11 @@ import { getTranslations } from 'next-intl/server';
 import { getSiteConfig } from '@/utils/getSiteConfig';
 import { getLots } from '@/utils/getLots';
 import { getGalleryMedia } from '@/utils/getGallery';
-import InteractiveMasterplan from '@/components/sections/InteractiveMasterplan';
 import GalleryPreview from '@/components/sections/GalleryPreview';
 import polygonsData from '@/data/lotes_geo.json';
+
+const InteractiveMasterplan = dynamic(() => import('@/components/sections/InteractiveMasterplan'), { ssr: false });
+const FeaturedPropertiesCarousel = dynamic(() => import('@/components/FeaturedPropertiesCarousel'));
 
 export const dynamic = 'force-dynamic';
 

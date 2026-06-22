@@ -195,6 +195,7 @@ const Hero = () => {
             src={src}
             muted
             playsInline
+            preload={idx === 0 ? "auto" : "none"}
             onEnded={() => setCurrentVideo((prev) => (prev === 2 ? 1 : prev + 1))}
             className={`absolute w-full h-full object-cover block transition-opacity duration-1000 ${currentVideo === idx ? 'opacity-100 z-20' : 'opacity-0 z-10'}`}
             style={{ transitionDelay: currentVideo === idx ? '0ms' : '1000ms' }}

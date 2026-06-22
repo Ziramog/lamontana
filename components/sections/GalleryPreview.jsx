@@ -55,6 +55,7 @@ const GalleryPreview = ({ items = [] }) => {
               src={selected[0].src} 
               alt="La Montaña" 
               fill 
+              sizes="(max-width: 768px) 100vw, 66vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105" 
             />
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-500" />
@@ -66,6 +67,7 @@ const GalleryPreview = ({ items = [] }) => {
               src={selected[1].src} 
               alt="La Montaña" 
               fill 
+              sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105" 
             />
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-500" />
@@ -77,6 +79,7 @@ const GalleryPreview = ({ items = [] }) => {
               src={selected[2].src} 
               alt="La Montaña" 
               fill 
+              sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105" 
             />
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-500" />

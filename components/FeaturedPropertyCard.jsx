@@ -57,7 +57,7 @@ const FeaturedPropertyCard = ({ property }) => {
             className="object-cover transition-transform duration-500 z-0 group-hover:scale-110"
             onLoad={() => setImgLoaded(true)}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            priority={true}
+            loading="lazy"
           />
 
           {/* Gradient overlay — black default (bottom 1/5), orange on hover (bottom 1/5) */}

@@ -8,9 +8,7 @@ const Preloader = () => {
   useEffect(() => {
     // Wait for document to be fully loaded, plus a small delay for visual effect
     const handleLoad = () => {
-      setTimeout(() => {
-        setLoading(false);
-      }, 1000); // 1s minimum delay to show the "Cargando experiencia"
+      setLoading(false);
     };
 
     if (document.readyState === 'complete') {
