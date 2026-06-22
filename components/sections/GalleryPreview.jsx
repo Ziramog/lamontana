@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import SectionBox from '@/components/sections/SectionBox';
+import ScrollReveal from '@/components/shared/ScrollReveal';
 
 const GalleryPreview = ({ items = [] }) => {
   const t = useTranslations('GalleryPreview');
@@ -27,33 +29,28 @@ const GalleryPreview = ({ items = [] }) => {
   if (selected.length < 3) return null; // Not enough images to render the grid
 
   return (
-    <section className="py-16 md:py-24 bg-[#0a0a09]">
-      <div className="max-w-[1200px] mx-auto px-4 md:px-[50px]">
-        {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
-          <div>
+    <section className="pt-[12px] pb-[12px]">
+      <SectionBox className="px-4 md:px-[50px] py-16 md:py-24">
+        {/* Section Header */}
+        <div className="text-center mb-10 md:mb-14">
+          <ScrollReveal variant="fadeLeft">
             <h2 className="text-[28px] md:text-[40px] font-normal text-heading leading-tight mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
               {t('title')}
             </h2>
-            <div className="flex items-center gap-3">
-              <span className="w-7 h-px bg-[var(--color-brand)] flex-shrink-0" />
-              <p className="text-[13px] md:text-[15px] font-medium text-[var(--color-brand)] uppercase tracking-[0.15em]">
-                {t('subtitle')}
-              </p>
-            </div>
+          </ScrollReveal>
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="w-7 h-px bg-[var(--color-brand)] flex-shrink-0" />
+            <p className="text-[13px] md:text-[15px] font-medium text-[var(--color-brand)] uppercase tracking-[0.15em]">
+              {t('subtitle')}
+            </p>
+            <span className="w-7 h-px bg-[var(--color-brand)] flex-shrink-0" />
           </div>
-          <Link 
-            href="/galeria" 
-            className="inline-block text-[var(--color-brand)] text-[13px] font-bold uppercase tracking-wider transition-all duration-200 hover:underline underline-offset-4 decoration-[var(--color-brand)] pb-1"
-          >
-            {t('explore')}
-          </Link>
         </div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[250px] md:auto-rows-[300px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[250px] md:auto-rows-[300px] mb-12">
           {/* Main Large Image */}
-          <Link href="/galeria" className="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl block">
+          <Link href="/galeria" className="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-[2px] block">
             <Image 
               src={selected[0].src} 
               alt="La Montaña" 
@@ -64,7 +61,7 @@ const GalleryPreview = ({ items = [] }) => {
           </Link>
 
           {/* Top Right Image */}
-          <Link href="/galeria" className="relative group overflow-hidden rounded-xl block">
+          <Link href="/galeria" className="relative group overflow-hidden rounded-[2px] block">
             <Image 
               src={selected[1].src} 
               alt="La Montaña" 
@@ -75,7 +72,7 @@ const GalleryPreview = ({ items = [] }) => {
           </Link>
 
           {/* Bottom Right Image */}
-          <Link href="/galeria" className="relative group overflow-hidden rounded-xl block">
+          <Link href="/galeria" className="relative group overflow-hidden rounded-[2px] block">
             <Image 
               src={selected[2].src} 
               alt="La Montaña" 
@@ -84,13 +81,22 @@ const GalleryPreview = ({ items = [] }) => {
             />
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-500" />
             <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-               <span className="bg-[var(--color-brand)] text-white px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg">
+               <span className="bg-[var(--color-brand)] text-white px-4 py-2 rounded-[2px] text-sm font-bold uppercase tracking-wider shadow-lg">
                  {t('viewMore')}
                </span>
             </div>
           </Link>
         </div>
-      </div>
+
+        <div className="text-center">
+          <Link 
+            href="/galeria" 
+            className="inline-block border border-[var(--color-brand)] text-[var(--color-brand)] hover:bg-[var(--color-brand)] hover:text-white px-8 py-3 rounded-[2px] text-[13px] font-bold uppercase tracking-wider transition-all duration-300"
+          >
+            {t('explore')}
+          </Link>
+        </div>
+      </SectionBox>
     </section>
   );
 };
