@@ -13,6 +13,11 @@ try {
       const ext = path.extname(file).toLowerCase();
       return validExtensions.includes(ext);
     })
+    .sort((a, b) => {
+      if (a === 'recorrido2.11.mp4') return -1;
+      if (b === 'recorrido2.11.mp4') return 1;
+      return a.localeCompare(b);
+    })
     .map(file => {
       const isVideo = file.toLowerCase().endsWith('.mp4');
       return {

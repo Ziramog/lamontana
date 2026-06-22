@@ -1,5 +1,10 @@
 [
   {
+    "src": "/gallery/recorrido2.11.mp4",
+    "type": "video",
+    "filename": "recorrido2.11.mp4"
+  },
+  {
     "src": "/gallery/20260407_114208.mp4",
     "type": "video",
     "filename": "20260407_114208.mp4"
@@ -273,11 +278,6 @@
     "src": "/gallery/recorrido.mp4",
     "type": "video",
     "filename": "recorrido.mp4"
-  },
-  {
-    "src": "/gallery/recorrido2.11.mp4",
-    "type": "video",
-    "filename": "recorrido2.11.mp4"
   },
   {
     "src": "/gallery/WhatsApp Image 2026-06-11 at 10.00.25 AM (1).jpeg",
