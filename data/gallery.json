@@ -1,0 +1,532 @@
+[
+  {
+    "src": "/gallery/20260407_114208.mp4",
+    "type": "video",
+    "filename": "20260407_114208.mp4"
+  },
+  {
+    "src": "/gallery/20260407_120400.mp4",
+    "type": "video",
+    "filename": "20260407_120400.mp4"
+  },
+  {
+    "src": "/gallery/20260407_122605.mp4",
+    "type": "video",
+    "filename": "20260407_122605.mp4"
+  },
+  {
+    "src": "/gallery/20260407_151613.mp4",
+    "type": "video",
+    "filename": "20260407_151613.mp4"
+  },
+  {
+    "src": "/gallery/campoarriba.jpeg",
+    "type": "image",
+    "filename": "campoarriba.jpeg"
+  },
+  {
+    "src": "/gallery/casavictor.mp4",
+    "type": "video",
+    "filename": "casavictor.mp4"
+  },
+  {
+    "src": "/gallery/entrada.jpeg",
+    "type": "image",
+    "filename": "entrada.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_01.jpeg",
+    "type": "image",
+    "filename": "galeria_img_01.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_02.jpeg",
+    "type": "image",
+    "filename": "galeria_img_02.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_03.jpeg",
+    "type": "image",
+    "filename": "galeria_img_03.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_04.jpeg",
+    "type": "image",
+    "filename": "galeria_img_04.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_05.jpeg",
+    "type": "image",
+    "filename": "galeria_img_05.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_06.jpeg",
+    "type": "image",
+    "filename": "galeria_img_06.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_07.jpeg",
+    "type": "image",
+    "filename": "galeria_img_07.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_08.jpeg",
+    "type": "image",
+    "filename": "galeria_img_08.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_09.jpeg",
+    "type": "image",
+    "filename": "galeria_img_09.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_10.jpeg",
+    "type": "image",
+    "filename": "galeria_img_10.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_11.jpeg",
+    "type": "image",
+    "filename": "galeria_img_11.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_12.jpeg",
+    "type": "image",
+    "filename": "galeria_img_12.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_13.jpeg",
+    "type": "image",
+    "filename": "galeria_img_13.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_14.jpeg",
+    "type": "image",
+    "filename": "galeria_img_14.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_15.jpeg",
+    "type": "image",
+    "filename": "galeria_img_15.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_16.jpeg",
+    "type": "image",
+    "filename": "galeria_img_16.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_17.jpeg",
+    "type": "image",
+    "filename": "galeria_img_17.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_18.jpeg",
+    "type": "image",
+    "filename": "galeria_img_18.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_19.jpeg",
+    "type": "image",
+    "filename": "galeria_img_19.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_20.jpeg",
+    "type": "image",
+    "filename": "galeria_img_20.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_21.jpeg",
+    "type": "image",
+    "filename": "galeria_img_21.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_22.jpeg",
+    "type": "image",
+    "filename": "galeria_img_22.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_23.jpeg",
+    "type": "image",
+    "filename": "galeria_img_23.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_24.jpeg",
+    "type": "image",
+    "filename": "galeria_img_24.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_25.jpeg",
+    "type": "image",
+    "filename": "galeria_img_25.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_26.jpeg",
+    "type": "image",
+    "filename": "galeria_img_26.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_27.jpeg",
+    "type": "image",
+    "filename": "galeria_img_27.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_28.jpeg",
+    "type": "image",
+    "filename": "galeria_img_28.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_29.jpeg",
+    "type": "image",
+    "filename": "galeria_img_29.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_30.jpeg",
+    "type": "image",
+    "filename": "galeria_img_30.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_31.jpeg",
+    "type": "image",
+    "filename": "galeria_img_31.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_32.jpeg",
+    "type": "image",
+    "filename": "galeria_img_32.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_33.jpeg",
+    "type": "image",
+    "filename": "galeria_img_33.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_34.jpeg",
+    "type": "image",
+    "filename": "galeria_img_34.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_35.jpeg",
+    "type": "image",
+    "filename": "galeria_img_35.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_36.jpeg",
+    "type": "image",
+    "filename": "galeria_img_36.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_37.jpeg",
+    "type": "image",
+    "filename": "galeria_img_37.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_38.jpeg",
+    "type": "image",
+    "filename": "galeria_img_38.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_39.jpeg",
+    "type": "image",
+    "filename": "galeria_img_39.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_40.jpeg",
+    "type": "image",
+    "filename": "galeria_img_40.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_41.jpeg",
+    "type": "image",
+    "filename": "galeria_img_41.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_42.jpeg",
+    "type": "image",
+    "filename": "galeria_img_42.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_img_43.jpeg",
+    "type": "image",
+    "filename": "galeria_img_43.jpeg"
+  },
+  {
+    "src": "/gallery/galeria_vid_01.mp4",
+    "type": "video",
+    "filename": "galeria_vid_01.mp4"
+  },
+  {
+    "src": "/gallery/galeria_vid_02.mp4",
+    "type": "video",
+    "filename": "galeria_vid_02.mp4"
+  },
+  {
+    "src": "/gallery/galeria_vid_03.mp4",
+    "type": "video",
+    "filename": "galeria_vid_03.mp4"
+  },
+  {
+    "src": "/gallery/galeria_vid_04.mp4",
+    "type": "video",
+    "filename": "galeria_vid_04.mp4"
+  },
+  {
+    "src": "/gallery/galeria_vid_05.mp4",
+    "type": "video",
+    "filename": "galeria_vid_05.mp4"
+  },
+  {
+    "src": "/gallery/galeria_vid_06.mp4",
+    "type": "video",
+    "filename": "galeria_vid_06.mp4"
+  },
+  {
+    "src": "/gallery/galeria_vid_07.mp4",
+    "type": "video",
+    "filename": "galeria_vid_07.mp4"
+  },
+  {
+    "src": "/gallery/generador.jpeg",
+    "type": "image",
+    "filename": "generador.jpeg"
+  },
+  {
+    "src": "/gallery/perorio .jpeg",
+    "type": "image",
+    "filename": "perorio .jpeg"
+  },
+  {
+    "src": "/gallery/perorio_.jpeg",
+    "type": "image",
+    "filename": "perorio_.jpeg"
+  },
+  {
+    "src": "/gallery/presa.jpeg",
+    "type": "image",
+    "filename": "presa.jpeg"
+  },
+  {
+    "src": "/gallery/recorrido.mp4",
+    "type": "video",
+    "filename": "recorrido.mp4"
+  },
+  {
+    "src": "/gallery/recorrido2.11.mp4",
+    "type": "video",
+    "filename": "recorrido2.11.mp4"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.00.25 AM (1).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.00.25 AM (1).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.00.25 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.00.25 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.00.27 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.00.27 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.00.33 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.00.33 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.00.34 AM (1).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.00.34 AM (1).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.00.34 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.00.34 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.00 AM (1).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.00 AM (1).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.00 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.00 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.01 AM (1).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.01 AM (1).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.01 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.01 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.14 AM (1).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.14 AM (1).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.14 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.14 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.15 AM (1).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.15 AM (1).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.15 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.15 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.23 AM (1).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.23 AM (1).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.23 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.23 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.24 AM (1).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.24 AM (1).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.24 AM (2).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.24 AM (2).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.24 AM (3).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.24 AM (3).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.24 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.24 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.25 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.25 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.26 AM (1).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.26 AM (1).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.26 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.26 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.27 AM (1).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.27 AM (1).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.27 AM (2).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.27 AM (2).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.27 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.27 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.28 AM (1).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.28 AM (1).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.28 AM (2).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.28 AM (2).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.28 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.28 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.29 AM (1).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.29 AM (1).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.29 AM (2).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.29 AM (2).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.29 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.29 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.30 AM (1).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.30 AM (1).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.30 AM (2).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.30 AM (2).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.30 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.30 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.31 AM (1).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.31 AM (1).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.31 AM (2).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.31 AM (2).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.31 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.31 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.32 AM (1).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.32 AM (1).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.32 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.32 AM.jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.33 AM (1).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.33 AM (1).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.33 AM (2).jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.33 AM (2).jpeg"
+  },
+  {
+    "src": "/gallery/WhatsApp Image 2026-06-11 at 10.01.33 AM.jpeg",
+    "type": "image",
+    "filename": "WhatsApp Image 2026-06-11 at 10.01.33 AM.jpeg"
+  }
+]
