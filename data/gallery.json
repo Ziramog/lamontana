@@ -2,155 +2,111 @@
   {
     "src": "/gallery/foto1.jpeg",
     "type": "image",
-    "filename": "foto1.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto1.jpeg"
   },
   {
     "src": "/gallery/foto2.jpeg",
     "type": "image",
-    "filename": "foto2.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto2.jpeg"
   },
   {
     "src": "/gallery/foto3.jpeg",
     "type": "image",
-    "filename": "foto3.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto3.jpeg"
   },
   {
     "src": "/gallery/foto4.jpeg",
     "type": "image",
-    "filename": "foto4.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto4.jpeg"
   },
   {
     "src": "/gallery/foto5.jpeg",
     "type": "image",
-    "filename": "foto5.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto5.jpeg"
   },
   {
     "src": "/gallery/foto6.jpeg",
     "type": "image",
-    "filename": "foto6.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto6.jpeg"
   },
   {
     "src": "/gallery/foto7.jpeg",
     "type": "image",
-    "filename": "foto7.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto7.jpeg"
   },
   {
     "src": "/gallery/foto8.jpeg",
     "type": "image",
-    "filename": "foto8.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto8.jpeg"
   },
   {
     "src": "/gallery/foto9.jpeg",
     "type": "image",
-    "filename": "foto9.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto9.jpeg"
   },
   {
     "src": "/gallery/foto10.jpeg",
     "type": "image",
-    "filename": "foto10.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto10.jpeg"
   },
   {
     "src": "/gallery/foto11.jpeg",
     "type": "image",
-    "filename": "foto11.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto11.jpeg"
   },
   {
     "src": "/gallery/foto12.jpeg",
     "type": "image",
-    "filename": "foto12.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto12.jpeg"
   },
   {
     "src": "/gallery/foto13.jpeg",
     "type": "image",
-    "filename": "foto13.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto13.jpeg"
   },
   {
     "src": "/gallery/foto14.jpeg",
     "type": "image",
-    "filename": "foto14.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto14.jpeg"
   },
   {
     "src": "/gallery/foto15.jpeg",
     "type": "image",
-    "filename": "foto15.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto15.jpeg"
   },
   {
     "src": "/gallery/foto16.jpeg",
     "type": "image",
-    "filename": "foto16.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto16.jpeg"
   },
   {
     "src": "/gallery/foto18.jpeg",
     "type": "image",
-    "filename": "foto18.jpeg",
-    "width": 1920,
-    "height": 1280
+    "filename": "foto18.jpeg"
   },
   {
     "src": "/gallery/Video1.mp4",
     "type": "video",
-    "filename": "Video1.mp4",
-    "width": 1920,
-    "height": 1280
+    "filename": "Video1.mp4"
   },
   {
     "src": "/gallery/video2.mp4",
     "type": "video",
-    "filename": "video2.mp4",
-    "width": 1920,
-    "height": 1280
+    "filename": "video2.mp4"
   },
   {
     "src": "/gallery/video3.mp4",
     "type": "video",
-    "filename": "video3.mp4",
-    "width": 1920,
-    "height": 1280
+    "filename": "video3.mp4"
   },
   {
     "src": "/gallery/video4.mp4",
     "type": "video",
-    "filename": "video4.mp4",
-    "width": 1920,
-    "height": 1280
+    "filename": "video4.mp4"
   },
   {
     "src": "/gallery/video5.mp4",
     "type": "video",
-    "filename": "video5.mp4",
-    "width": 1920,
-    "height": 1280
+    "filename": "video5.mp4"
   }
 ]

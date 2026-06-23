@@ -11,12 +11,13 @@ try {
   const galleryMedia = files
     .filter(file => {
       const ext = path.extname(file).toLowerCase();
-      return validExtensions.includes(ext);
+      if (!validExtensions.includes(ext)) return false;
+      
+      // Only include files starting with "foto" or "video" (case insensitive) followed by numbers
+      return /^(foto|video)\d+\./i.test(file);
     })
     .sort((a, b) => {
-      if (a === 'recorrido2.11.mp4') return -1;
-      if (b === 'recorrido2.11.mp4') return 1;
-      return a.localeCompare(b);
+      return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
     })
     .map(file => {
       const isVideo = file.toLowerCase().endsWith('.mp4');

@@ -102,14 +102,12 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
 
           {/* Main Nav — Senada .mainMenu */}
           <nav className="desktop-dropdown flex items-center gap-8 lg:gap-10 ml-auto">
-            <Link href="/#propiedades-destacadas" className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
-              {t('destacados')}
-            </Link>
-
-
-
             <Link href="/#masterplan" className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
               {t('verLotes')}
+            </Link>
+
+            <Link href="/#galeria" className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
+              {t('galeria')}
             </Link>
 
             <Link href="/#nuestra-historia" className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
@@ -217,16 +215,14 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
             </svg>
           </button>
           <nav className="flex-1 flex flex-col px-0 mt-4">
-            {/* Destacadas */}
-            <Link href="/#propiedades-destacadas" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.2s' }} onClick={() => setIsMobileMenuOpen(false)}>
-              <span className="opacity-50 mr-3 text-[22px]">/</span>{t('destacados')}
+            {/* Ver Lotes */}
+            <Link href="/#masterplan" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.2s' }} onClick={() => setIsMobileMenuOpen(false)}>
+              <span className="opacity-50 mr-3 text-[22px]">/</span>{t('verLotes')}
             </Link>
 
-
-
-            {/* Ver Lotes */}
-            <Link href="/#masterplan" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.25s' }} onClick={() => setIsMobileMenuOpen(false)}>
-              <span className="opacity-50 mr-3 text-[22px]">/</span>{t('verLotes')}
+            {/* Galeria */}
+            <Link href="/#galeria" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.25s' }} onClick={() => setIsMobileMenuOpen(false)}>
+              <span className="opacity-50 mr-3 text-[22px]">/</span>{t('galeria')}
             </Link>
 
             {/* SOBRE NOSOTROS */}
