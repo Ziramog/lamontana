@@ -92,26 +92,15 @@ const Footer = ({
               {/* Footer nav — 3 columns */}
               <nav className="pr-[35px] md:pr-[75px]">
                 <ul className="flex gap-[50px] md:gap-[100px]">
-                  {/* PROPIEDADES */}
+                  {/* GALERIA */}
                   <li>
                     <span className="block text-[15px] text-white uppercase font-bold mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
-                      Sectores
+                      Galería
                     </span>
                     <ul>
-                      {[
-                        { href: '/#masterplan', label: t('sectorBosque') },
-                        { href: '/#masterplan', label: t('sectorAltura') },
-                        { href: '/#masterplan', label: t('sectorArroyo') },
-                      ].map(l => (
-                        <li key={l.href}>
-                          <Link href={l.href} className="block text-[13px] text-white/70 font-light py-[5px] pr-[10px] hover:text-white transition-colors">
-                            {l.label}
-                          </Link>
-                        </li>
-                      ))}
                       <li>
-                        <Link href="/#masterplan" className="block text-[13px] text-white/70 font-light py-[5px] pr-[10px] hover:text-white transition-colors">
-                          {t('verMasterplan')}
+                        <Link href="/#galeria" className="block text-[13px] text-white/70 font-light py-[5px] pr-[10px] hover:text-white transition-colors">
+                          Ver Galería
                         </Link>
                       </li>
                     </ul>
@@ -220,21 +209,12 @@ const Footer = ({
 
           {/* Nav columns — stacked with headings */}
           <div className="flex flex-col gap-6 mb-8">
-            {/* Propiedades */}
+            {/* Galería */}
             <div>
-              <span className="block text-[15px] text-white uppercase font-bold mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Sectores</span>
-              <div className="grid grid-cols-2 gap-y-1">
-                {[
-                  { href: '/#masterplan', label: t('sectorBosque') },
-                  { href: '/#masterplan', label: t('sectorAltura') },
-                  { href: '/#masterplan', label: t('sectorArroyo') },
-                ].map(l => (
-                  <Link key={l.href} href={l.href} className="text-[13px] text-white/60 font-light py-[3px] hover:text-white transition-colors">
-                    {l.label}
-                  </Link>
-                ))}
-                <Link href="/#masterplan" className="text-[13px] text-white/60 font-light py-[3px] hover:text-white transition-colors">
-                  {t('verMasterplan')}
+              <span className="block text-[15px] text-white uppercase font-bold mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Galería</span>
+              <div className="flex flex-col gap-y-1">
+                <Link href="/#galeria" className="text-[13px] text-white/60 font-light py-[3px] hover:text-white transition-colors">
+                  Ver Galería
                 </Link>
               </div>
             </div>
