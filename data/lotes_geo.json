@@ -807,6 +807,8 @@
   },
   {
     "name": "El Durazno - La Montaña",
+    "isPath": true,
+    "distance": "6 km",
     "type": "LineString",
     "coords": [
       {
