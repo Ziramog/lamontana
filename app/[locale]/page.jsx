@@ -13,7 +13,7 @@ import { getTranslations } from 'next-intl/server';
 import { getSiteConfig } from '@/utils/getSiteConfig';
 import { getLots } from '@/utils/getLots';
 import { getGalleryMedia } from '@/utils/getGallery';
-import GalleryPreview from '@/components/sections/GalleryPreview';
+import FullLandingGallery from '@/components/sections/FullLandingGallery';
 import polygonsData from '@/data/lotes_geo.json';
 
 const InteractiveMasterplan = nextDynamic(() => import('@/components/sections/InteractiveMasterplan'), { ssr: false });
@@ -131,7 +131,10 @@ const HomePage = async ({ params: { locale } }) => {
       {/* 3. Mapa Interactivo */}
       <InteractiveMasterplan polygonsData={polygonsData} />
 
-      {/* 3.5 Lotes destacados */}
+      {/* 4. Galería Completa */}
+      <FullLandingGallery items={galleryItems} />
+
+      {/* SECCIONES OCULTAS 
       <div id="propiedades-destacadas">
         <FeaturedPropertiesCarousel 
           properties={serializedProperties
@@ -147,11 +150,6 @@ const HomePage = async ({ params: { locale } }) => {
           } 
         />
       </div>
-
-      {/* 4. Preview de Galería */}
-      <GalleryPreview items={galleryItems} />
-
-      {/* SECCIONES OCULTAS 
       <StatsBar />
       <SellerCTA />
       <ScrollReveal variant="fadeScale">

@@ -60,14 +60,14 @@ const CommunicationPillars = () => {
         </div>
 
         {/* Pillars Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-5">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-5">
           {PILLARS.map(({ id, title, description, icon: Icon }, index) => {
             return (
               <article
                 key={id}
                 className={`
                   group relative border rounded-2xl p-5 pb-6 md:p-8 md:pb-7
-                  flex flex-col items-center gap-3 md:gap-4
+                  ${id === 'proyecto' ? 'hidden sm:flex' : 'flex'} flex-col items-center gap-3 md:gap-4
                   border-white/5 bg-[#141412]/50
                   shadow-[0_2px_8px_rgba(0,0,0,0.5)]
                   transition-all duration-300

@@ -106,9 +106,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
               {t('destacados')}
             </Link>
 
-            <Link href="/galeria" className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
-              {t('galeria')}
-            </Link>
+
 
             <Link href="/#masterplan" className="text-white hover:text-[var(--color-brand)] transition-colors text-[15px] font-normal tracking-[0.02em] uppercase">
               {t('verLotes')}
@@ -224,10 +222,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
               <span className="opacity-50 mr-3 text-[22px]">/</span>{t('destacados')}
             </Link>
 
-            {/* Galería */}
-            <Link href="/galeria" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.22s' }} onClick={() => setIsMobileMenuOpen(false)}>
-              <span className="opacity-50 mr-3 text-[22px]">/</span>{t('galeria')}
-            </Link>
+
 
             {/* Ver Lotes */}
             <Link href="/#masterplan" className={`block text-black text-[28px] uppercase tracking-wider py-[15px] border-b border-black/[.08] hover:opacity-70 transition-opacity ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ fontFamily: 'var(--font-heading)', animationDelay: '0.25s' }} onClick={() => setIsMobileMenuOpen(false)}>
