@@ -85,6 +85,11 @@
     "filename": "foto18.jpeg"
   },
   {
+    "src": "/gallery/foto19.jpeg",
+    "type": "image",
+    "filename": "foto19.jpeg"
+  },
+  {
     "src": "/gallery/Video1.mp4",
     "type": "video",
     "filename": "Video1.mp4"
