@@ -32,7 +32,7 @@ export default function Ranger2015Page() {
     <div className="flex flex-col md:flex-row h-[100dvh] w-full bg-gray-900 overflow-hidden font-sans">
       
       {/* LEFT / TOP: Image Gallery Area (Takes up majority of space) */}
-      <div className="relative flex-1 flex flex-col bg-black overflow-hidden h-[55dvh] md:h-full">
+      <div className="relative flex-1 flex flex-col bg-black overflow-hidden h-[47dvh] md:h-full">
         {/* Main Image Viewer */}
         <div 
           className="flex-1 relative flex items-center justify-center overflow-hidden cursor-pointer group bg-[#0a0a0a]"
@@ -64,11 +64,10 @@ export default function Ranger2015Page() {
       </div>
 
       {/* RIGHT / BOTTOM: Info & CTA Area (Compact design to avoid scroll) */}
-      <div className="w-full md:w-[420px] lg:w-[480px] bg-white h-[45dvh] md:h-full flex flex-col shrink-0 relative shadow-[-10px_0_20px_rgba(0,0,0,0.1)]">
+      <div className="w-full md:w-[420px] lg:w-[480px] bg-white h-[53dvh] md:h-full flex flex-col shrink-0 relative shadow-[-10px_0_20px_rgba(0,0,0,0.1)]">
         
-        {/* Scrollable content area in case of extreme small screens, but designed to fit */}
-        {/* Scrollable content area in case of extreme small screens, but designed to fit */}
-        <div className="flex-1 overflow-y-auto p-4 md:p-6 flex flex-col justify-center pb-24 md:pb-6">
+        {/* Content area configured to fit without scroll */}
+        <div className="flex-1 overflow-y-hidden p-3 md:p-6 flex flex-col justify-center pb-[85px] md:pb-6">
           
           <div>
             <h1 className="text-[22px] md:text-2xl font-heading font-extrabold text-gray-900 leading-tight mb-0.5">
@@ -113,9 +112,10 @@ export default function Ranger2015Page() {
               Excelente estado general
             </li>
           </ul>
-          <p className="text-[12.5px] md:text-[14px] text-gray-600 font-medium pb-1">
-            Consultas directas con Victor por WhatsApp.
-          </p>
+          <div className="text-[12.5px] md:text-[14px] text-gray-600 font-medium pb-1 mt-1 leading-tight">
+            <p>Consultas directas con Victor</p>
+            <p className="font-bold text-gray-800">WhatsApp: +54 9 3571 54-1588</p>
+          </div>
         </div>
 
         {/* CTA Button Fixed at bottom of the info panel */}
