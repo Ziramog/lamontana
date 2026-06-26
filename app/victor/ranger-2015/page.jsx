@@ -5,12 +5,12 @@ export default function Ranger2015Page() {
   const whatsappUrl = "https://wa.me/5493571541588?text=Hola%20Victor%2C%20quiero%20consultar%20por%20la%20Ford%20Ranger%20XLT%204x4%20AT%203.2%20modelo%202015";
 
   const images = [
-    { src: '/victor/frente.jpeg', alt: 'Frente' },
     { src: '/victor/costado.jpeg', alt: 'Lateral' },
-    { src: '/victor/interior.jpeg', alt: 'Interior delantero' },
-    { src: '/victor/interior2.jpeg', alt: 'Interior plazas' },
+    { src: '/victor/frente.jpeg', alt: 'Frente' },
+    { src: '/victor/interior.jpeg', alt: 'Interior' },
     { src: '/victor/velocimetro.jpeg', alt: 'Tablero' },
-    { src: '/victor/motor.jpeg', alt: 'Motor' }
+    { src: '/victor/motor.jpeg', alt: 'Motor' },
+    { src: '/victor/interior2.jpeg', alt: 'Interior plazas' }
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -75,11 +75,14 @@ export default function Ranger2015Page() {
             </div>
             
             <h1 className="text-xl md:text-3xl font-heading font-extrabold text-gray-900 leading-tight mb-1">
-              Ford Ranger XLT 4x4
+              Ford Ranger XLT 4x4 AT 3.2
             </h1>
-            <h2 className="text-lg md:text-xl font-semibold text-gray-600 mb-4 md:mb-6">
-              AT 3.2 — Modelo 2015
+            <h2 className="text-lg md:text-xl font-semibold text-gray-600 mb-2">
+              Modelo 2015
             </h2>
+            <p className="text-[13px] md:text-sm font-medium text-gray-500 mb-4 md:mb-6">
+              194.541 km · Automática · 4x4 · Lista para transferir
+            </p>
           </div>
 
           {/* Quick Specs Grid (Ultra Compact) */}
@@ -103,7 +106,7 @@ export default function Ranger2015Page() {
           </div>
 
           {/* Trust points */}
-          <ul className="space-y-1.5 md:space-y-2 mb-2 text-[13px] md:text-[15px] text-gray-700 font-medium">
+          <ul className="space-y-1.5 md:space-y-2 mb-3 text-[13px] md:text-[15px] text-gray-700 font-medium">
             <li className="flex items-center gap-2.5">
               <span className="flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-600 text-xs shrink-0">✓</span> 
               Documentación al día, lista para transferir
@@ -113,6 +116,9 @@ export default function Ranger2015Page() {
               Excelente estado general
             </li>
           </ul>
+          <p className="text-[13px] md:text-sm text-gray-600 font-medium pb-2">
+            Consultas directas con Victor por WhatsApp.
+          </p>
         </div>
 
         {/* CTA Button Fixed at bottom of the info panel */}
