@@ -67,26 +67,23 @@ export default function Ranger2015Page() {
       <div className="w-full md:w-[420px] lg:w-[480px] bg-white h-[45dvh] md:h-full flex flex-col shrink-0 relative shadow-[-10px_0_20px_rgba(0,0,0,0.1)]">
         
         {/* Scrollable content area in case of extreme small screens, but designed to fit */}
-        <div className="flex-1 overflow-y-auto p-5 md:p-8 flex flex-col justify-center pb-20 md:pb-8">
+        {/* Scrollable content area in case of extreme small screens, but designed to fit */}
+        <div className="flex-1 overflow-y-auto p-4 md:p-6 flex flex-col justify-center pb-24 md:pb-6">
           
           <div>
-            <div className="inline-block bg-blue-100 text-blue-800 text-[10px] md:text-xs font-bold px-2 py-1 uppercase tracking-wider rounded mb-2 md:mb-3">
-              Trato directo con dueño
-            </div>
-            
-            <h1 className="text-xl md:text-3xl font-heading font-extrabold text-gray-900 leading-tight mb-1">
+            <h1 className="text-[22px] md:text-2xl font-heading font-extrabold text-gray-900 leading-tight mb-0.5">
               Ford Ranger XLT 4x4 AT 3.2
             </h1>
-            <h2 className="text-lg md:text-xl font-semibold text-gray-600 mb-2">
+            <h2 className="text-base md:text-xl font-semibold text-gray-600 mb-1.5">
               Modelo 2015
             </h2>
-            <p className="text-[13px] md:text-sm font-medium text-gray-500 mb-4 md:mb-6">
+            <p className="text-[12.5px] md:text-sm font-medium text-gray-500 mb-3 md:mb-5">
               194.541 km · Automática · 4x4 · Lista para transferir
             </p>
           </div>
 
           {/* Quick Specs Grid (Ultra Compact) */}
-          <div className="grid grid-cols-2 gap-2 md:gap-3 mb-4 md:mb-6 bg-gray-50 p-3 md:p-4 rounded-xl border border-gray-100 text-[13px] md:text-sm">
+          <div className="grid grid-cols-2 gap-1.5 md:gap-3 mb-3 md:mb-5 bg-gray-50 p-2.5 md:p-4 rounded-xl border border-gray-100 text-[13px] md:text-sm">
             <div>
               <p className="text-gray-500 text-[11px] md:text-xs uppercase tracking-wide font-semibold">Kilometraje</p>
               <p className="font-bold text-gray-900 text-sm md:text-base">194.541 km</p>
@@ -106,17 +103,17 @@ export default function Ranger2015Page() {
           </div>
 
           {/* Trust points */}
-          <ul className="space-y-1.5 md:space-y-2 mb-3 text-[13px] md:text-[15px] text-gray-700 font-medium">
-            <li className="flex items-center gap-2.5">
-              <span className="flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-600 text-xs shrink-0">✓</span> 
+          <ul className="space-y-1 md:space-y-2 mb-2 text-[12.5px] md:text-[14px] text-gray-700 font-medium leading-snug">
+            <li className="flex items-start gap-2">
+              <span className="flex items-center justify-center w-4 h-4 mt-0.5 rounded-full bg-green-100 text-green-600 text-[10px] shrink-0">✓</span> 
               Documentación al día, lista para transferir
             </li>
-            <li className="flex items-center gap-2.5">
-              <span className="flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-600 text-xs shrink-0">✓</span> 
+            <li className="flex items-start gap-2">
+              <span className="flex items-center justify-center w-4 h-4 mt-0.5 rounded-full bg-green-100 text-green-600 text-[10px] shrink-0">✓</span> 
               Excelente estado general
             </li>
           </ul>
-          <p className="text-[13px] md:text-sm text-gray-600 font-medium pb-2">
+          <p className="text-[12.5px] md:text-[14px] text-gray-600 font-medium pb-1">
             Consultas directas con Victor por WhatsApp.
           </p>
         </div>
