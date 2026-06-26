@@ -143,6 +143,11 @@ const InteractiveMasterplan = ({ polygonsData }) => {
         strokeColor = '#ffffff';
         strokeWeight = 6;
         isDashed = true;
+        label = '7 km';
+        if (item.coords && item.coords.length > 0) {
+          const midIndex = Math.floor(item.coords.length / 2);
+          center = item.coords[midIndex];
+        }
       }
       
       // Camino a Lote 10 -> Blanco intercalado
