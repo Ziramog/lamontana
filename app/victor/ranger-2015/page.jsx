@@ -117,6 +117,10 @@ export default function Ranger2015Page() {
 
         {/* CTA Button Fixed at bottom of the info panel */}
         <div className="absolute bottom-0 left-0 right-0 md:relative p-4 md:p-6 bg-white border-t border-gray-100 shadow-[0_-10px_20px_-10px_rgba(0,0,0,0.05)] z-10 shrink-0">
+          <div className="flex items-center justify-center gap-1.5 mb-2.5 md:mb-3">
+             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 text-blue-600"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+             <span className="text-[11px] md:text-xs font-bold text-blue-700 uppercase tracking-wider">Trato directo con el dueño</span>
+          </div>
           <a 
             href={whatsappUrl}
             target="_blank"
@@ -129,7 +133,7 @@ export default function Ranger2015Page() {
             <WhatsappIcon />
             Consultar por WhatsApp
           </a>
-          <p className="text-center text-[11px] md:text-xs text-gray-400 mt-2.5 hidden md:block">
+          <p className="text-center text-[10px] md:text-xs text-gray-400 mt-2.5 hidden md:block">
             Gestión publicitaria por Wolfim
           </p>
         </div>
