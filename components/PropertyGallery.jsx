@@ -128,7 +128,8 @@ const PropertyGallery = ({ images = [], property }) => {
               )}`}
                  target="_blank" rel="noopener noreferrer"
                  className="inline-flex items-center gap-2 text-[#b8b8b8] hover:text-white transition-colors text-[16px] mb-4"
-                 itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+                 itemProp="address" itemScope itemType="https://schema.org/PostalAddress"
+                 onClick={() => typeof window !== 'undefined' && window.gtag && window.gtag('event', 'click_maps', { component: 'property_gallery', property_id: property?.id || '', property_name: property?.name || '' })}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="var(--color-brand)" strokeWidth="1.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
@@ -201,6 +202,7 @@ const PropertyGallery = ({ images = [], property }) => {
                     backgroundImage: 'linear-gradient(135deg, var(--color-brand), var(--color-brand), var(--color-brand-dark), var(--color-brand-dark))',
                     backgroundSize: '400% 100%',
                   }}
+                  onClick={() => typeof window !== 'undefined' && window.gtag && window.gtag('event', 'click_whatsapp', { component: 'property_gallery', property_id: property?.id || '', property_name: property?.name || '', number: '5493571541588' })}
                 >
                   Contáctanos
                 </a>

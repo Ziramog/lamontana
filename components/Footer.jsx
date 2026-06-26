@@ -29,6 +29,7 @@ const Footer = ({
   const handleSubscribe = async (e) => {
     e.preventDefault();
     if (!whatsappNumber) return;
+    if (typeof window !== 'undefined' && window.gtag) window.gtag('event', 'form_submit');
     setIsSubmitting(true);
     try {
       const res = await fetch('/api/subscribe', {
@@ -69,7 +70,7 @@ const Footer = ({
               </Link>
                   <ul>
                     <li className="py-[5px]">
-                      <a href={`https://maps.google.com/?q=${encodeURIComponent('32°10\'45.47"S 64°48\'35.01"W')}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-[5px] text-[13px] text-white/70 font-light hover:text-white transition-colors group">
+                      <a href={`https://maps.google.com/?q=${encodeURIComponent('32°10\'45.47"S 64°48\'35.01"W')}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-[5px] text-[13px] text-white/70 font-light hover:text-white transition-colors group" onClick={() => typeof window !== 'undefined' && window.gtag && window.gtag('event', 'click_maps', { component: 'footer', type: 'office_address' })}>
                         <MapPin className="w-4 h-4 text-[#C49A4A] mt-0.5 shrink-0 group-hover:scale-110 transition-transform" />
                         <span>
                           32°10&apos;45.47&quot;S 64°48&apos;35.01&quot;W
@@ -81,7 +82,7 @@ const Footer = ({
                 <img src="/senada/images/icons/ico_mail.svg" alt="email" className="w-[17px] h-[17px]" style={{ filter: 'brightness(0) invert(1)' }} />
                 {contactEmail}
               </a>
-              <a href={`https://wa.me/${contactPhone.replace(/\D/g, '')}`} className="flex items-center gap-[5px] text-[13px] text-white font-light py-[5px] hover:text-white/70 transition-colors">
+              <a href={`https://wa.me/${contactPhone.replace(/\D/g, '')}`} className="flex items-center gap-[5px] text-[13px] text-white font-light py-[5px] hover:text-white/70 transition-colors" onClick={() => typeof window !== 'undefined' && window.gtag && window.gtag('event', 'click_whatsapp', { component: 'footer' })}>
                 <img src="/senada/images/icons/ico_phone.svg" alt="phone" className="w-[17px] h-[17px]" style={{ filter: 'brightness(0) invert(1)' }} />
                 {contactPhone}
               </a>
@@ -154,7 +155,7 @@ const Footer = ({
                 </a>
               </li>
               <li>
-                <a href={generateWhatsAppLink({ context: 'general' })} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-[40px] h-[40px] rounded-[9px] bg-white/[0.15] hover:bg-[var(--color-brand)] transition-all duration-300" aria-label="WhatsApp">
+                <a href={generateWhatsAppLink({ context: 'general' })} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-[40px] h-[40px] rounded-[9px] bg-white/[0.15] hover:bg-[var(--color-brand)] transition-all duration-300" aria-label="WhatsApp" onClick={() => typeof window !== 'undefined' && window.gtag && window.gtag('event', 'click_whatsapp', { component: 'footer', context: 'general' })}>
                   <FaWhatsapp className="text-xl" />
                 </a>
               </li>
@@ -191,7 +192,7 @@ const Footer = ({
                 className="brightness-0 invert transition-opacity hover:opacity-80"
               />
             </Link>
-            <a href={`https://maps.google.com/?q=${encodeURIComponent('32°10\'45.47"S 64°48\'35.01"W')}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-[13px] text-white/60 font-light mt-3 hover:text-white transition-colors">
+            <a href={`https://maps.google.com/?q=${encodeURIComponent('32°10\'45.47"S 64°48\'35.01"W')}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-[13px] text-white/60 font-light mt-3 hover:text-white transition-colors" onClick={() => typeof window !== 'undefined' && window.gtag && window.gtag('event', 'click_maps', { component: 'footer_mobile' })}>
               <MapPin className="w-4 h-4 text-[#C49A4A] mt-0.5 shrink-0" />
               <span>
                 32°10&apos;45.47&quot;S 64°48&apos;35.01&quot;W
@@ -253,7 +254,7 @@ const Footer = ({
                 </a>
               </li>
               <li>
-                <a href={generateWhatsAppLink({ context: 'general' })} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-[40px] h-[40px] rounded-[9px] bg-white/[0.15] hover:bg-[var(--color-brand)] transition-all duration-300" aria-label="WhatsApp">
+                <a href={generateWhatsAppLink({ context: 'general' })} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-[40px] h-[40px] rounded-[9px] bg-white/[0.15] hover:bg-[var(--color-brand)] transition-all duration-300" aria-label="WhatsApp" onClick={() => typeof window !== 'undefined' && window.gtag && window.gtag('event', 'click_whatsapp', { component: 'footer', context: 'general' })}>
                   <FaWhatsapp className="text-xl" />
                 </a>
               </li>

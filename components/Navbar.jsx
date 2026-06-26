@@ -126,7 +126,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
             <LanguageSwitcher variant={isGlassMode ? 'switch' : 'minimal'} />
             
             {/* Phone → WhatsApp */}
-            <a href={`https://wa.me/${contactPhone.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-white/10 transition-colors" aria-label="WhatsApp">
+            <a href={`https://wa.me/${contactPhone.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-white/10 transition-colors" aria-label="WhatsApp" onClick={() => typeof window !== 'undefined' && window.gtag && window.gtag('event', 'click_whatsapp', { component: 'navbar_desktop' })}>
               <img src="/senada/images/icons/ico_phone.svg" alt="Teléfono" className="w-5 h-5" style={{ filter: 'brightness(0) invert(1)' }} />
             </a>
 
@@ -248,7 +248,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
           <div className={`flex-shrink-0 pt-8 pb-4 ${isMobileMenuOpen ? 'mobile-item' : ''}`} style={{ animationDelay: '0.5s' }}>
             <ul className="flex items-center justify-center gap-3 flex-wrap max-w-full mx-auto px-2">
               <li>
-                <a href={`tel:${contactPhone.replace(/\D/g, '')}`} className="flex items-center justify-center w-12 h-12 rounded-xl bg-black/10 hover:bg-black/20 transition-colors duration-300" aria-label="Llamar">
+                <a href={`tel:${contactPhone.replace(/\D/g, '')}`} className="flex items-center justify-center w-12 h-12 rounded-xl bg-black/10 hover:bg-black/20 transition-colors duration-300" aria-label="Llamar" onClick={() => typeof window !== 'undefined' && window.gtag && window.gtag('event', 'click_phone', { component: 'navbar_mobile' })}>
                   <img src="/senada/images/icons/ico_phone.svg" alt="phone" className="w-5 h-5" style={{ filter: 'brightness(0)' }} />
                 </a>
               </li>
@@ -258,7 +258,7 @@ const Navbar = ({ contactEmail = 'roggeroroma@hotmail.com', contactPhone = '+54 
                 </a>
               </li>
               <li>
-                <a href={`https://wa.me/${contactPhone.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-12 h-12 rounded-xl bg-black/10 hover:bg-black/20 transition-colors duration-300" aria-label="WhatsApp">
+                <a href={`https://wa.me/${contactPhone.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-12 h-12 rounded-xl bg-black/10 hover:bg-black/20 transition-colors duration-300" aria-label="WhatsApp" onClick={() => typeof window !== 'undefined' && window.gtag && window.gtag('event', 'click_whatsapp', { component: 'navbar_mobile' })}>
                   <FaWhatsapp className="text-black text-[22px]" />
                 </a>
               </li>
