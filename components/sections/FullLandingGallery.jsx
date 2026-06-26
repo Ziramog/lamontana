@@ -86,7 +86,7 @@ const FullLandingGallery = ({ items = [] }) => {
           <div className="space-y-16">
             <Gallery options={{ bgOpacity: 0.95, padding: { top: 80, bottom: 80, left: 20, right: 20 } }}>
               {blocks.map((block, idx) => (
-                <div key={idx} className="space-y-8 md:space-y-12">
+                <div key={idx} className={`space-y-8 md:space-y-12 ${idx >= 2 ? 'hidden md:block' : ''}`}>
                   
                   {/* 1. Bloque de Fotos (6 por bloque) */}
                   {block.images.length > 0 && (
