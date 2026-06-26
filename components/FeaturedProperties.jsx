@@ -32,11 +32,11 @@ const FeaturedProperties = ({ properties = [] }) => {
             </h2>
           </ScrollReveal>
           <div className="flex items-center justify-center gap-3">
-            <span className="w-7 h-px bg-[var(--color-brand)] flex-shrink-0" />
+            <span className="w-10 md:w-16 h-[2px] bg-[var(--color-brand)] flex-shrink-0 [clip-path:polygon(0_50%,100%_0,100%_100%)]" />
             <p className="text-[13px] md:text-[15px] font-medium text-[var(--color-brand)] uppercase tracking-[0.15em]">
               {t('subtitle')}
             </p>
-            <span className="w-7 h-px bg-[var(--color-brand)] flex-shrink-0" />
+            <span className="w-10 md:w-16 h-[2px] bg-[var(--color-brand)] flex-shrink-0 [clip-path:polygon(0_0,100%_50%,0_100%)]" />
           </div>
         </div>
 

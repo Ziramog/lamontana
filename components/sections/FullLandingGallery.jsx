@@ -74,11 +74,11 @@ const FullLandingGallery = ({ items = [] }) => {
                 Nuestra Galería
               </h2>
               <div className="flex items-center justify-center gap-3">
-                <span className="w-10 h-px bg-[var(--color-brand)] flex-shrink-0" />
+                <span className="w-10 md:w-16 h-[2px] bg-[var(--color-brand)] flex-shrink-0 [clip-path:polygon(0_50%,100%_0,100%_100%)]" />
                 <p className="text-[14px] md:text-[16px] font-medium text-[var(--color-brand)] uppercase tracking-[0.15em]">
                   Explora La Montaña
                 </p>
-                <span className="w-10 h-px bg-[var(--color-brand)] flex-shrink-0" />
+                <span className="w-10 md:w-16 h-[2px] bg-[var(--color-brand)] flex-shrink-0 [clip-path:polygon(0_0,100%_50%,0_100%)]" />
               </div>
             </ScrollReveal>
           </div>

@@ -30,7 +30,7 @@ const GaleriaPage = async ({ params: { locale } }) => {
             {t('title')}
           </h1>
           <div className="flex items-center gap-3">
-            <span className="w-10 h-px bg-[var(--color-brand)] flex-shrink-0" />
+            <span className="w-10 md:w-16 h-[2px] bg-[var(--color-brand)] flex-shrink-0 [clip-path:polygon(0_50%,100%_0,100%_100%)]" />
             <p className="text-[14px] md:text-[16px] font-medium text-[var(--color-brand)] uppercase tracking-[0.15em]">
               {t('subtitle')}
             </p>
