@@ -147,10 +147,13 @@ const FullLandingGallery = ({ items = [] }) => {
                     return (
                       <ScrollReveal variant="fadeUp">
                         <div className="bg-[#141412] border border-white/5 rounded-none md:rounded-[20px] p-8 md:p-16 my-8 flex flex-col items-center justify-center text-center">
-                            <span className="w-10 h-px bg-[var(--color-brand)] mb-6" />
-                            <h3 className="text-2xl md:text-4xl font-normal text-heading leading-tight mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
-                              {cta.title}
-                            </h3>
+                            <div className="flex items-center justify-center gap-3 mb-6">
+                              <span className="w-10 md:w-16 h-[2px] bg-[var(--color-brand)] flex-shrink-0 [clip-path:polygon(0_50%,100%_0,100%_100%)]" />
+                              <h3 className="text-2xl md:text-3xl font-normal text-heading leading-tight" style={{ fontFamily: 'var(--font-heading)' }}>
+                                {cta.title}
+                              </h3>
+                              <span className="w-10 md:w-16 h-[2px] bg-[var(--color-brand)] flex-shrink-0 [clip-path:polygon(0_0,100%_50%,0_100%)]" />
+                            </div>
                             <p className="text-white/60 mb-8 max-w-lg">
                               {cta.description}
                             </p>
@@ -158,7 +161,7 @@ const FullLandingGallery = ({ items = [] }) => {
                               href={waUrl} 
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center justify-center h-[52px] px-8 bg-[var(--color-brand)] hover:bg-[var(--color-brand-dark)] text-white rounded-[6px] text-sm font-bold uppercase tracking-[0.06em] transition-all duration-200 shadow-lg shadow-[var(--color-brand)]/30 hover:-translate-y-1"
+                              className="inline-flex items-center justify-center h-[52px] px-8 bg-transparent border border-[var(--color-brand)] hover:bg-[var(--color-brand)] text-[var(--color-brand)] hover:text-[#0a0a09] rounded-[6px] text-sm font-bold uppercase tracking-[0.06em] transition-all duration-300 shadow-lg shadow-black/20 hover:-translate-y-1"
                             >
                                {cta.buttonText}
                             </a>
